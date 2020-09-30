@@ -3,5 +3,12 @@
   "repository": "https://github.com/elytre/fusion",
   "author": "Clément Bourgoin",
   "license": "Copyright",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "elytre": "^0.11.0"
+  },
+  "scripts": {
+    "start": "elytre start",
+    "build": "elytre build"
+  }
 }
