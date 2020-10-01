@@ -5,7 +5,7 @@
   "license": "Copyright",
   "private": true,
   "dependencies": {
-    "elytre": "^0.11.0"
+    "elytre": "^0.12.0"
   },
   "scripts": {
     "start": "elytre start",
