@@ -10,5 +10,8 @@
   "scripts": {
     "start": "elytre start",
     "build": "elytre build"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.2"
   }
 }
