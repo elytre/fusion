@@ -1,1 +1,15 @@
 title: Collection Fusion - Éditions L'Atalante
+menus:
+  header:
+    - label: Livres
+      href: /
+    - label: Auteurs
+      href: /
+    - label: Traducteurs
+      href: /
+    - label: Actualités
+      href: /
+    - label: À propos
+      href: /
+    - label: Contact
+      href: /
