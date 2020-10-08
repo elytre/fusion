@@ -1,4 +1,4 @@
-title: Collection Fusion - Éditions L'Atalante
+title: Fusion
 menus:
   header:
     - label: Livres
@@ -12,4 +12,25 @@ menus:
     - label: À propos
       href: /
     - label: Contact
+      href: /
+    - label: F
+      href: https://www.facebook.com/fusionatalante/
+    - label: T
+      href: https://www.twitter.com/fusionatalante/
+  footer:
+    - label: Accueil
+      href: /
+    - label: Livres
+      href: /
+    - label: Auteurs
+      href: /
+    - label: Traducteurs
+      href: /
+    - label: Actualités
+      href: /
+    - label: Contact
+      href: /
+    - label: À propos
+      href: /
+    - label: Mentions légales
       href: /
