@@ -2154,10 +2154,10 @@ elliptic@^6.5.3:
     minimalistic-assert "^1.0.0"
     minimalistic-crypto-utils "^1.0.0"
 
-elytre@^0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/elytre/-/elytre-0.12.0.tgz#861f728cbf4476a58ce19254b2398f6faa5922f4"
-  integrity sha512-q4sGrTgVxQmVl9dTxkRs/xIyIaLv3wHC0WM32POI1KgfBH7J7a3Xd7XjZPtjpY2oAdTRZylF9WkLEHzv1T2yyQ==
+elytre@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/elytre/-/elytre-0.13.0.tgz#0b0b0371ad8000027bb5ae950eb372eda8064d94"
+  integrity sha512-WD63vUIxy/eRf2B/c5f1NzuFaruBSqSjph+pgGM0imLuZehJeYRzhU7qz2SzH/TOXWWru2Gg+Cy0SejGJZsaaA==
   dependencies:
     "@babel/core" "^7.11.6"
     "@babel/preset-env" "^7.11.0"
