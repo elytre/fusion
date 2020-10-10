@@ -1,14 +1,6 @@
 title: Fusion
 menus:
   header:
-    - label: Livres
-      href: /
-    - label: Auteurs
-      href: /
-    - label: Traducteurs
-      href: /
-    - label: Actualités
-      href: /
     - label: À propos
       href: /
     - label: Contact
@@ -17,6 +9,15 @@ menus:
       href: https://www.facebook.com/fusionatalante/
     - label: T
       href: https://www.twitter.com/fusionatalante/
+  nav:
+    - label: Livres
+      href: /
+    - label: Auteurs
+      href: /
+    - label: Traducteurs
+      href: /
+    - label: Actualités
+      href: /
   footer:
     - label: Accueil
       href: /
