@@ -82,7 +82,7 @@ a {
   justify-content: flex-end;
 }
 
-.Header .Menu-entry {
+.Header .MenuEntry {
   margin: 0 15px;
 }
 
@@ -115,7 +115,7 @@ a {
   justify-content: flex-end;
 }
 
-.ElytreSite > .Menu .Menu-entry {
+.ElytreSite > .Menu .MenuEntry {
   margin-left: 57px;
 }
 
@@ -163,7 +163,7 @@ a {
   text-transform: uppercase;
 }
 
-.Footer .Menu-entry {
+.Footer .MenuEntry {
   line-height: 30px;
   width: 160px;
 }
