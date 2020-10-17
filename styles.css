@@ -125,6 +125,70 @@ a {
   margin-bottom: 200px;
 }
 
+/* Product */
+
+.ProductPage .Product {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.ProductPage .Product-cover {
+  margin-right: 50px;
+  max-width: 300px;
+}
+
+.ProductPage .Product-infos {
+  display: flex;
+  flex-direction: column;
+}
+
+.ProductPage .Product-author {
+  font-family: var(--teko);
+  font-size: 5rem;
+  margin-top: 70px;
+  order: 1;
+}
+
+.ProductPage .Product-author-by {
+  display: none;
+}
+
+.ProductPage .Product-title {
+  color: var(--red);
+  font-family: var(--teko);
+  font-size: 10rem;
+  margin-top: 40px;
+  order: 2;
+}
+
+.ProductPage .Product-isbn {
+  display: none;
+}
+
+.ProductPage .Product-details {
+  border-left: 6px solid black;
+  margin-top: 100px;
+  padding: 5px 0 0 45px;
+  width: 100%;
+}
+
+.ProductPage .Product-detail {
+  padding: 5px 0;
+}
+
+.ProductPage .Product-detail .detail-label {
+  display: inline-block;
+  font-family: var(--teko);
+  font-size: 2rem;
+  font-weight: 300;
+  width: 145px;
+}
+
+.ProductPage .Product-detail .detail-value {
+  font-size: 1.3rem;
+}
+
 /* Footer */
 
 .Footer {
