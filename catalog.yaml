@@ -1,3 +1,5 @@
+global:
+  buyLink: https://librairielatalante.com/isbn/:ean
 products:
   - ean: 9781234567890
     title: Nuit bleue
@@ -10,14 +12,15 @@ products:
     releaseDate: 2021-01-21
     pageCount: 240
     originalLanguage: de
-    backCover: |
-      « Partir seule à la campagne, c’est comme bouffer du scotch. »
+    backCoverText: |
+      « *Partir seule à la campagne, c’est comme bouffer du scotch.* »
 
-      Fille d’une Allemande et d’un soldat américain, grande fumeuse, amatrice de bière et de foot, indépendante : c’est la procureure Chastity Riley. À la solitude de son bureau, elle préfère les rues de la ville portuaire de Hambourg.
-      Placardisée suite à quelques déboires, Chastity s’occupe de la protection des victimes. Le cas d’un mystérieux homme sans nom, hospitalisé après avoir été laissé pour mort, va l’emmener sur la route d’un truand Albanais.
-      La personnalité unique de Chastity Riley cache autant de mystère que ses enquêtes. Elle ne pourrait pas affronter le monde du crime sans Carla, Rocco, Faller, Calabretta et Klatsche. Collègue, ami, amant... ils sont la chaleur humaine dans ce roman noir à l’écriture singulière, drôle et déstabilisante.
+      Fille d’une Allemande et d’un soldat américain, grande fumeuse, amatrice de bière et de foot, indépendante : c’est la procureure Chastity Riley. À la solitude de son bureau, elle préfère les rues de la ville portuaire de Hambourg.  
+      Placardisée suite à quelques déboires, Chastity s’occupe de la protection des victimes. Le cas d’un mystérieux homme sans nom, hospitalisé après avoir été laissé pour mort, va l’emmener sur la route d’un truand Albanais.  
+      La personnalité unique de Chastity Riley cache autant de mystère que ses enquêtes. Elle ne pourrait pas affronter le monde du crime sans Carla, Rocco, Faller, Calabretta et Klatsche. Collègue, ami, amant... ils sont la chaleur humaine dans ce roman noir à l’écriture singulière, drôle et déstabilisante.  
 
       Vous tenez entre vos mains une des aventures de Chastity, ce ne sera pas la dernière.
   - ean: 9781234567811
     title: Clark
     author: Anouk Langaney
+    releaseDate: 2021-01-21
