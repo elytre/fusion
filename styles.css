@@ -1,5 +1,5 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Teko:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Teko:wght@300;400&display=swap');
 
 :root {
   --white: #f6f6f6;
@@ -31,6 +31,10 @@ body {
 a {
   color: black;
   text-decoration: none;
+}
+
+em {
+  font-style: italic;
 }
 
 /* Layout */
@@ -139,6 +143,7 @@ a {
 }
 
 .ProductPage .Product-infos {
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
 }
@@ -162,12 +167,38 @@ a {
   order: 2;
 }
 
-.ProductPage .Product-isbn {
-  display: none;
+.ProductPage .Product-buy-link-button {
+  background: black;
+  color: white;
+  display: inline-block;
+  font-family: var(--teko);
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 40px;
+  order: 3;
+  padding: 10px 35px 5px;
+  text-transform: uppercase;
+}
+
+.ProductPage .Product-back-cover-text {
+  background: white;
+  box-shadow: 7px 7px 0px 0px rgba(255, 0, 0, 1);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 50px;
+  padding: 4rem 5rem;
+}
+
+.ProductPage .Product-back-cover-text p {
+  margin: 1em 0;
 }
 
 .ProductPage .Product-details {
+  display: flex;
   border-left: 6px solid black;
+  height: 125px;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin-top: 100px;
   padding: 5px 0 0 45px;
   width: 100%;
