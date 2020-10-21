@@ -5,9 +5,9 @@ menus:
       href: /
     - label: Contact
       href: /
-    - label: F
+    - label: Facebook
       href: https://www.facebook.com/fusionatalante/
-    - label: T
+    - label: Twitter
       href: https://www.twitter.com/fusionatalante/
   nav:
     - label: Livres
