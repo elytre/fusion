@@ -239,6 +239,10 @@ em {
 
 .ProductView .Product-cover {
   margin-right: 50px;
+}
+
+.ProductPage .Product-cover-image {
+  max-height: 425px;
   max-width: 300px;
 }
 
