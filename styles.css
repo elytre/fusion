@@ -125,41 +125,41 @@ em {
 
 /* Main */
 
-.HomePage {
+.HomeView {
   margin-bottom: 200px;
 }
 
 /* Product */
 
-.ProductPage .Product {
+.ProductView .Product {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
 }
 
-.ProductPage .Product-cover {
+.ProductView .Product-cover {
   margin-right: 50px;
   max-width: 300px;
 }
 
-.ProductPage .Product-infos {
+.ProductView .Product-infos {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
 }
 
-.ProductPage .Product-author {
+.ProductView .Product-author {
   font-family: var(--teko);
   font-size: 5rem;
   margin-top: 70px;
   order: 1;
 }
 
-.ProductPage .Product-author-by {
+.ProductView .Product-author-by {
   display: none;
 }
 
-.ProductPage .Product-title {
+.ProductView .Product-title {
   color: var(--red);
   font-family: var(--teko);
   font-size: 10rem;
@@ -167,7 +167,7 @@ em {
   order: 2;
 }
 
-.ProductPage .Product-buy-link-button {
+.ProductView .Product-buy-link-button {
   background: black;
   color: white;
   display: inline-block;
@@ -180,7 +180,7 @@ em {
   text-transform: uppercase;
 }
 
-.ProductPage .Product-back-cover-text {
+.ProductView .Product-back-cover-text {
   background: white;
   box-shadow: 7px 7px 0px 0px rgba(255, 0, 0, 1);
   font-size: 1.5rem;
@@ -189,11 +189,11 @@ em {
   padding: 4rem 5rem;
 }
 
-.ProductPage .Product-back-cover-text p {
+.ProductView .Product-back-cover-text p {
   margin: 1em 0;
 }
 
-.ProductPage .Product-details {
+.ProductView .Product-details {
   display: flex;
   border-left: 6px solid black;
   height: 125px;
@@ -204,11 +204,11 @@ em {
   width: 100%;
 }
 
-.ProductPage .Product-detail {
+.ProductView .Product-detail {
   padding: 5px 0;
 }
 
-.ProductPage .Product-detail .detail-label {
+.ProductView .Product-detail .detail-label {
   display: inline-block;
   font-family: var(--teko);
   font-size: 2rem;
@@ -216,7 +216,7 @@ em {
   width: 145px;
 }
 
-.ProductPage .Product-detail .detail-value {
+.ProductView .Product-detail .detail-value {
   font-size: 1.3rem;
 }
 
@@ -224,8 +224,8 @@ em {
 
 .Footer {
   background: var(--red);
-  /* Hack to make footer reach page bottom */
-  /* https://stackoverflow.com/questions/9741701/how-can-i-extend-a-footer-to-bottom-of-page */
+  /* Hack to make footer reach View bottom */
+  /* https://stackoverflow.com/questions/9741701/how-can-i-extend-a-footer-to-bottom-of-View */
   box-shadow: 0 50vh 0 50vh var(--red);
   color: var(--white);
   margin-top: 200px;
