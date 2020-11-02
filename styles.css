@@ -4,6 +4,7 @@
 :root {
   --white: #f6f6f6;
   --red: #fe0000;
+  --blue: #0000ff;
   --open: 'Open Sans', sans-serif;
   --teko: 'Teko', sans-serif;
 }
@@ -125,8 +126,107 @@ em {
 
 /* Main */
 
-.HomeView {
+/* Main > Home */
+
+.HomeView .home-page {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 200px;
+}
+
+.HomeView .headline {
+  background: var(--blue);
+  color: white;
+  height: 350px;
+  margin-top: 75px;
+  width: 100%;
+}
+
+/* Main > Home > Upcoming */
+
+.HomeView .upcoming {
+  margin-top: 45px;
+  width: 50%;
+}
+
+.HomeView .upcoming-title {
+  font-family: var(--teko);
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.HomeView .upcoming-products {
+  display: flex;
+  margin-top: 10px;
+}
+
+.HomeView .upcoming-product {
+  padding-right: 12px;
+  width: 50%;
+}
+
+.HomeView .upcoming-product-cover {
+  max-width: 100%;
+}
+
+.HomeView .upcoming-product-title {
+  font-family: var(--teko);
+  font-size: 3rem;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.HomeView .upcoming-product-title a {
+  color: var(--red);
+}
+
+.HomeView .upcoming-product-author {
+  font-family: var(--teko);
+  font-size: 2.5rem;
+}
+
+/* Main > Home > Manifest */
+
+.HomeView .manifest {
+  background: black;
+  color: white;
+  margin-top: 85px;
+  padding: 45px;
+  position: relative;
+  width: 50%;
+}
+
+.HomeView .manifest-title {
+  background: white;
+  box-shadow: 4px 4px 0px 0px rgba(255, 0, 0, 1);
+  color: black;
+  font-family: var(--teko);
+  font-size: 30px;
+  left: 50%;
+  position: absolute;
+  padding: 15px 0 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: -32px;
+  width: 325px;
+  transform: translateX(-50%);
+}
+
+.HomeView .manifest p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-align: justify;
+  text-indent: 1rem;
+}
+
+/* Main > Home > Newsletter */
+
+.HomeView .newsletter {
+  background: white;
+  box-shadow: 4px 4px 0px 0px rgba(255, 0, 0, 1);
+  height: 225px;
+  margin-top: 45px;
+  width: 100%;
 }
 
 /* Product */
