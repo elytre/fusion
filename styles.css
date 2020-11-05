@@ -54,6 +54,8 @@ em {
 /* Header */
 
 .Header {
+  display: flex;
+  flex-direction: column;
   height: 170px;
   position: relative;
 }
@@ -79,6 +81,7 @@ em {
   font-weight: 300;
   font-size: 2rem;
   margin-top: 10px;
+  order: 1;
   text-transform: uppercase;
 }
 
@@ -92,10 +95,8 @@ em {
 }
 
 .SearchForm {
-  margin: 0;
-  position: absolute;
-  right: 0;
-  bottom: 10px;
+  order: 2;
+  margin: 10px auto;
 }
 
 .SearchForm-input {
@@ -104,24 +105,48 @@ em {
   border-bottom: 1px solid var(--white);
 }
 
+@media (min-width: 1024px) {
+  .Header {
+    display: block;
+  }
+
+  .SearchForm {
+    margin: 0;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+  }
+}
+
 /* Nav menu */
 
 .ElytreSite > .Menu {
   font-family: var(--teko);
   font-weight: 300;
-  font-size: 3rem;
-  margin: auto;
+  font-size: 2.5rem;
+  margin: 35px auto;
   text-transform: uppercase;
-  width: 1000px;
 }
 
 .ElytreSite > .Menu .Menu-entries {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-evenly;
 }
 
-.ElytreSite > .Menu .MenuEntry {
-  margin-left: 57px;
+@media (min-width: 1024px) {
+  .ElytreSite > .Menu {
+    font-size: 3rem;
+    margin: auto;
+    width: 1000px;
+  }
+
+  .ElytreSite > .Menu .Menu-entries {
+    justify-content: flex-end;
+  }
+
+  .ElytreSite > .Menu .MenuEntry {
+    margin-left: 57px;
+  }
 }
 
 /* Main */
@@ -129,8 +154,8 @@ em {
 /* Main > Home */
 
 .HomeView .home-page {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   margin-bottom: 200px;
 }
 
@@ -344,7 +369,6 @@ em {
 .Footer .Menu {
   font-family: var(--teko);
   margin: auto;
-  width: 1000px;
   font-size: 1.8rem;
   font-weight: bold;
 }
@@ -373,9 +397,15 @@ em {
   text-transform: lowercase;
   margin: auto;
   padding-left: 35px;
-  width: 1000px;
 }
 
 .Footer .Footer-powered-by a {
   text-decoration: underline;
+}
+
+@media (min-width: 1024px) {
+  .Footer .Menu,
+  .Footer .Footer-powered-by {
+    width: 1000px;
+  }
 }
