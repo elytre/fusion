@@ -303,7 +303,7 @@ em {
   background: black;
   color: white;
   margin-top: 50px;
-  /* padding: 45px; */
+  padding: 40px 15px 15px;
   position: relative;
 }
 
@@ -333,6 +333,7 @@ em {
 @media (min-width: 1024px) {
   .HomeView .manifest {
     margin-top: 85px;
+    padding: 45px;
     width: 50%;
   }
 
@@ -347,7 +348,7 @@ em {
   background: white;
   box-shadow: 4px 4px 0px 0px rgba(255, 0, 0, 1);
   height: 225px;
-  /* margin-top: 45px; */
+  margin-top: 45px;
   width: 100%;
 }
 
