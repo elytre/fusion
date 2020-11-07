@@ -45,9 +45,13 @@ em {
   width: 100%;
 }
 
+.Main {
+  padding: 0 6px;
+}
+
 .Header,
 .Main {
-  max-width: 1000px;
+  max-width: 1024px;
   margin: auto;
 }
 
@@ -87,11 +91,7 @@ em {
 
 .Header .Menu-entries {
   display: flex;
-  justify-content: flex-end;
-}
-
-.Header .MenuEntry {
-  margin: 0 15px;
+  justify-content: space-between;
 }
 
 .SearchForm {
@@ -108,6 +108,14 @@ em {
 @media (min-width: 1024px) {
   .Header {
     display: block;
+  }
+
+  .Header .Menu-entries {
+    justify-content: flex-end;
+  }
+
+  .Header .MenuEntry {
+    margin: 0 15px;
   }
 
   .SearchForm {
@@ -154,24 +162,36 @@ em {
 /* Main > Home */
 
 .HomeView .home-page {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
   margin-bottom: 200px;
 }
 
+@media (min-width: 1024px) {
+  .HomeView .home-page {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* Main > Headline */
+
 .HomeView .headline {
-  background: var(--blue);
-  color: white;
-  height: 350px;
-  margin-top: 75px;
+  background: url('headline.png');
+  background-size: contain;
+  margin-top: 25px;
+  padding-bottom: 36.84%;
   width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .HomeView .headline {
+    margin-top: 75px;
+  }
 }
 
 /* Main > Home > Upcoming */
 
 .HomeView .upcoming {
-  margin-top: 45px;
-  width: 50%;
+  margin-top: 25px;
 }
 
 .HomeView .upcoming-title {
@@ -182,12 +202,12 @@ em {
 
 .HomeView .upcoming-products {
   display: flex;
+  justify-content: space-between;
   margin-top: 10px;
 }
 
 .HomeView .upcoming-product {
-  padding-right: 12px;
-  width: 50%;
+  width: calc(50% - 3px);
 }
 
 .HomeView .upcoming-product-cover {
@@ -210,15 +230,26 @@ em {
   font-size: 2.5rem;
 }
 
+@media (min-width: 1024px) {
+  .HomeView .upcoming {
+    margin-top: 45px;
+    width: 50%;
+  }
+
+  .HomeView .upcoming-product {
+    padding-right: 12px;
+    width: 50%;
+  }
+}
+
 /* Main > Home > Manifest */
 
 .HomeView .manifest {
   background: black;
   color: white;
-  margin-top: 85px;
+  margin-top: 50px;
   padding: 45px;
   position: relative;
-  width: 50%;
 }
 
 .HomeView .manifest-title {
@@ -233,8 +264,8 @@ em {
   text-align: center;
   text-transform: uppercase;
   top: -32px;
-  width: 325px;
   transform: translateX(-50%);
+  width: 275px;
 }
 
 .HomeView .manifest p {
@@ -242,6 +273,17 @@ em {
   line-height: 2rem;
   text-align: justify;
   text-indent: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .HomeView .manifest {
+    margin-top: 85px;
+    width: 50%;
+  }
+
+  .HomeView .manifest-title {
+    width: 325px;
+  }
 }
 
 /* Main > Home > Newsletter */
@@ -357,7 +399,7 @@ em {
   /* https://stackoverflow.com/questions/9741701/how-can-i-extend-a-footer-to-bottom-of-View */
   box-shadow: 0 50vh 0 50vh var(--red);
   color: var(--white);
-  margin-top: 200px;
+  margin-top: 150px;
   padding-bottom: 25px;
   position: relative;
   text-align: center;
