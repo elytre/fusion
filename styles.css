@@ -456,12 +456,6 @@ em {
   top: -111px;
 }
 
-@media (min-width: 1600px) {
-  .Footer::before {
-    background-position: center right;
-  }
-}
-
 .Footer a {
   color: var(--white);
 }
@@ -488,7 +482,7 @@ em {
 
 .Footer .MenuEntry {
   line-height: 30px;
-  width: 160px;
+  width: 125px;
 }
 
 .Footer .Footer-powered-by {
@@ -507,5 +501,15 @@ em {
   .Footer .Menu,
   .Footer .Footer-powered-by {
     width: 1000px;
+  }
+
+  .Footer .MenuEntry {
+    width: 160px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .Footer::before {
+    background-position: center right;
   }
 }
