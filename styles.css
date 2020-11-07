@@ -5,6 +5,7 @@
   --white: #f6f6f6;
   --red: #fe0000;
   --blue: #0000ff;
+  --grey: rgb(50, 50, 50);
   --open: 'Open Sans', sans-serif;
   --teko: 'Teko', sans-serif;
 }
@@ -92,6 +93,7 @@ em {
 }
 
 .SearchForm {
+  border-bottom: 1px solid var(--grey);
   order: 2;
   margin: 10px auto;
 }
@@ -99,7 +101,26 @@ em {
 .SearchForm-input {
   background: black;
   border: 0;
-  border-bottom: 1px solid var(--white);
+  color: white;
+  line-height: 2rem;
+  font-family: var(--teko);
+  font-size: 2.5rem;
+  padding: 0 5px;
+}
+
+.SearchForm-input:focus {
+  background: var(--grey);
+  outline: none;
+}
+
+.SearchForm button {
+  border: 0;
+  background-image: url('search-button.png');
+  color: transparent;
+  cursor: pointer;
+  margin-left: 5px;
+  height: 20px;
+  width: 20px;
 }
 
 @media (min-width: 1024px) {
@@ -118,8 +139,8 @@ em {
   .SearchForm {
     margin: 0;
     position: absolute;
-    right: 0;
-    bottom: 10px;
+    right: 20px;
+    bottom: 20px;
   }
 }
 
