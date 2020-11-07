@@ -358,8 +358,28 @@ em {
   box-shadow: 0 50vh 0 50vh var(--red);
   color: var(--white);
   margin-top: 200px;
+  padding-bottom: 25px;
+  position: relative;
   text-align: center;
   width: 100vw;
+}
+
+.Footer::before {
+  background-image: url('footer.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  content: '';
+  height: 111px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  top: -111px;
+}
+
+@media (min-width: 1600px) {
+  .Footer::before {
+    background-position: center right;
+  }
 }
 
 .Footer a {
