@@ -50,6 +50,9 @@ em {
 .Main {
   max-width: 1024px;
   margin: auto;
+}
+
+.Main {
   padding: 0 6px;
 }
 
@@ -77,25 +80,37 @@ em {
   width: 189px;
 }
 
+.Header-site-title a:hover {
+  box-shadow: 7px 7px 0px 0px rgba(255, 0, 0, 1);
+}
+
 .Header .Menu {
   color: white;
   font-family: var(--teko);
   font-weight: 300;
   font-size: 2rem;
-  margin-top: 10px;
   order: 1;
   text-transform: uppercase;
 }
 
 .Header .Menu-entries {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.Header .MenuEntry {
+  padding: 10px 15px;
+}
+
+.Header .MenuEntry:hover {
+  background: var(--red);
 }
 
 .SearchForm {
   border-bottom: 1px solid var(--grey);
   order: 2;
-  margin: 10px auto;
+  margin: 5px auto;
+  padding-right: 5px;
 }
 
 .SearchForm-input {
@@ -108,19 +123,29 @@ em {
   padding: 0 5px;
 }
 
-.SearchForm-input:focus {
-  background: var(--grey);
-  outline: none;
-}
-
 .SearchForm button {
   border: 0;
+  background: black;
   background-image: url('search-button.png');
   color: transparent;
   cursor: pointer;
   margin-left: 5px;
   height: 20px;
   width: 20px;
+}
+
+.SearchForm:hover,
+.SearchForm:hover .SearchForm-input,
+.SearchForm:hover button {
+  background: var(--grey);
+}
+
+.SearchForm:hover {
+  box-shadow: 4px 4px 0px 0px rgba(255, 0, 0, 1);
+}
+
+.SearchForm:hover button {
+  background-image: url('search-button.png');
 }
 
 @media (min-width: 1024px) {
@@ -130,10 +155,6 @@ em {
 
   .Header .Menu-entries {
     justify-content: flex-end;
-  }
-
-  .Header .MenuEntry {
-    margin: 0 15px;
   }
 
   .SearchForm {
@@ -159,10 +180,19 @@ em {
   justify-content: space-evenly;
 }
 
+.ElytreSite > .Menu .MenuEntry {
+  border-bottom: 3px solid transparent;
+}
+
+.ElytreSite > .Menu .MenuEntry:hover {
+  border-bottom-color: var(--red);
+}
+
 @media (min-width: 1024px) {
   .ElytreSite > .Menu {
     font-size: 3rem;
     margin: auto;
+    transform: translateY(-3px);
     width: 1000px;
   }
 
@@ -171,7 +201,14 @@ em {
   }
 
   .ElytreSite > .Menu .MenuEntry {
+    border-bottom: 0;
+    border-top: 6px solid transparent;
     margin-left: 57px;
+    padding-top: 12px;
+  }
+
+  .ElytreSite > .Menu .MenuEntry:hover {
+    border-top-color: var(--red);
   }
 }
 
