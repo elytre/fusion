@@ -11,7 +11,7 @@ menus:
       href: https://www.twitter.com/fusionatalante/
   nav:
     - label: Livres
-      href: /
+      href: /fr/pages/livres
     - label: Auteurs
       href: /
     - label: Traducteurs

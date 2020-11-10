@@ -352,7 +352,62 @@ em {
   width: 100%;
 }
 
-/* Product */
+/* Books page */
+
+.breadcrumbs,
+.breadcrumbs a {
+  color: rgb(85, 85, 85);
+  font-family: var(--teko);
+  font-size: 2.2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.breadcrumbs .current {
+  color: rgb(178, 178, 178);
+}
+
+.books-products {
+  margin: 35px;
+}
+
+.books-product {
+  margin-top: 25px;
+}
+
+.books-products .books-product-cover {
+  max-width: 100%;
+}
+
+.books-products .books-product-title {
+  font-family: var(--teko);
+  font-size: 5rem;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+.books-products .books-product-title a {
+  color: var(--red);
+}
+
+.books-products .books-product-author {
+  font-family: var(--teko);
+  font-size: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .books-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .books-products .books-product {
+    width: 400px;
+  }
+}
+
+/* ProductView */
 
 .ProductView .Product {
   margin-top: 25px;
