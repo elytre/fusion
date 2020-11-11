@@ -1,0 +1,80 @@
+import BuchholzImage from './simone-buchholz.author.jpg';
+import LanganeyImage from './anouk-langaney.author.jpg';
+
+<div className="contributors-page">
+  <nav className="breadcrumbs">
+    <a href="/">Accueil</a> > <span className="current">Auteurs</span>
+  </nav>
+
+
+  <div className="contributors">
+    <article className="contributor">
+      <div class="contributor-portrait">
+        <img
+          src={BuchholzImage}
+          alt="Nuit bleue"
+          className="contributor-portrait-image"
+        />
+      </div>
+      <h1 className="contributor-name">Simone Buchholz</h1>
+      <p class="contributor-bio">
+        Simone Buchholz est née en 1972 en Allemagne, dans la région de 
+        Francfort, et elle vit à Hambourg. Elle a été journaliste avant de 
+        choisir la fiction criminelle. Ses romans sont traduits en anglais et 
+        en italien et ont remporté de nombreux prix.
+      </p>
+      <h2 className="contributor-books-title">Livres</h2>
+      <div className="contributor-books-products">
+        <article className="contributor-books-product">
+          <a href="/fr/p/nuit-bleue">
+            <img
+              src="/nuit-bleue.cover.jpg"
+              alt="Nuit bleue"
+              className="contributor-books-product-cover"
+            />
+          </a>
+          <h1 className="contributor-books-product-title">
+            <a href="/fr/p/nuit-bleue">Nuit bleue</a>
+          </h1>
+          <p className="contributor-books-product-author">Simone Buchholz</p>
+        </article>
+      </div>
+    </article>
+    
+    <article className="contributor">
+      <div class="contributor-portrait">
+        <img
+          src={LanganeyImage}
+          alt="Clark"
+          className="contributor-portrait-image"
+        />
+      </div>
+      <h1 className="contributor-name">Anouk Langaney</h1>
+      <p class="contributor-bio">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at elit
+        non magna egestas congue viverra sit amet dolor. Etiam eu pretium elit.
+        Mauris cursus ac orci nec vulputate. Nunc egestas turpis sed imperdiet
+        venenatis. Donec suscipit nisl erat, eu tempor turpis ullamcorper nec.
+      </p>
+      <h2 className="contributor-books-title">Livres</h2>
+      <div className="contributor-books-products">
+        <article className="contributor-books-product">
+          <a href="/fr/p/clark">
+            <img
+              src="/clark.cover.jpg"
+              alt="Clark"
+              className="contributor-books-product-cover"
+            />
+          </a>
+          <h1 className="contributor-books-product-title">
+            <a href="/fr/p/clark">Clark</a>
+          </h1>
+          <p className="contributor-books-product-author">Anouk Langaney</p>
+        </article>
+      </div>
+    </article>
+
+
+  </div>
+</div>
+
