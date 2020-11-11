@@ -15,7 +15,7 @@ menus:
     - label: Auteurs
       href: /fr/page/auteurs
     - label: Traducteurs
-      href: /
+      href: /fr/page/traducteurs
     - label: Actualités
       href: /
   footer:
