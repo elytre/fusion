@@ -22,16 +22,16 @@ menus:
     - label: Accueil
       href: /
     - label: Livres
-      href: /
+      href: /fr/page/livres
     - label: Auteurs
-      href: /
+      href: /fr/page/auteurs
     - label: Traducteurs
-      href: /
+      href: /fr/page/traducteurs
     - label: Actualités
       href: /
     - label: Contact
       href: /
     - label: À propos
-      href: /
+      href: /fr/page/contact
     - label: Mentions légales
-      href: /
+      href: /fr/page/mentions-legales

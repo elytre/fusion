@@ -579,6 +579,54 @@ em {
   }
 }
 
+/* Legal notice page */
+
+.legal-page .legal-page-block {
+  background: white;
+  font-size: 1.5rem;
+  margin-top: 45px;
+  padding: 45px 15px 15px;
+  position: relative;
+}
+
+.legal-page .legal-page-block h1 {
+  background: var(--red);
+  box-shadow: 4px 4px 0px 0px black;
+  color: white;
+  font-family: var(--teko);
+  font-size: 3rem;
+  left: 50%;
+  position: absolute;
+  padding: 15px 0 10px 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: -32px;
+  transform: translateX(-50%);
+  width: 275px;
+}
+
+.legal-page .legal-page-block h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1em;
+}
+
+.legal-page .legal-page-block p {
+  margin-bottom: 1em;
+}
+
+@media (min-width: 1024px) {
+  .legal-page .legal-page-block {
+    margin: 25px auto;
+    padding: 45px;
+    max-width: 600px;
+  }
+
+  .legal-page .legal-page-block h1 {
+    left: 60px;
+    transform: none;
+  }
+}
+
 /* ProductView */
 
 .ProductView .Product {
