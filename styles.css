@@ -614,6 +614,7 @@ em {
 }
 
 .legal-page .legal-page-block p {
+  line-height: 1.2em;
   margin-bottom: 1em;
 }
 
