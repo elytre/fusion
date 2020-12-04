@@ -451,6 +451,7 @@ em {
 .contributors-page .contributor-bio {
   background: white;
   box-shadow: 4px 4px 0px 0px black;
+  line-height: 1.2em;
   margin-top: 25px;
   padding: 15px 20px;
 }
@@ -536,7 +537,7 @@ em {
 
   .contributors-page .contributor-books-product {
     padding-right: 15px;
-    width: 250px;
+    width: 200px;
   }
 }
 
