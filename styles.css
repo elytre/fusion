@@ -332,6 +332,7 @@ em {
 
 @media (min-width: 1024px) {
   .HomeView .manifest {
+    height: 317px;
     margin-top: 85px;
     padding: 45px;
     width: 50%;
