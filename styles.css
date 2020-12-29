@@ -615,15 +615,14 @@ em {
 }
 
 .legal-page .legal-page-block p {
-  line-height: 1.2em;
+  line-height: 1.5em;
   margin-bottom: 1em;
 }
 
 @media (min-width: 1024px) {
   .legal-page .legal-page-block {
-    margin: 25px auto;
+    margin: 45px auto;
     padding: 45px;
-    max-width: 600px;
   }
 
   .legal-page .legal-page-block h1 {
