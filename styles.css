@@ -331,9 +331,18 @@ em {
   text-indent: 1rem;
 }
 
+.HomeView .manifest-link {
+  display: block;
+  color: white;
+  font-family: var(--teko);
+  font-size: 2.0rem;
+  margin-top: 15px;
+  text-align: right;
+}
+
 @media (min-width: 1024px) {
   .HomeView .manifest {
-    height: 317px;
+    /* height: 317px; */
     margin-top: 85px;
     padding: 45px;
     width: 50%;
