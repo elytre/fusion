@@ -54,7 +54,7 @@ em {
 }
 
 .Main {
-  padding: 0 12px;
+  padding: 0 24px;
 }
 
 /* Header */
@@ -368,6 +368,11 @@ em {
 
 .breadcrumbs .current {
   color: rgb(178, 178, 178);
+}
+
+.breadcrumbs a,
+.breadcrumbs span {
+  margin: 0 6px;
 }
 
 /* Books pages */
