@@ -335,7 +335,7 @@ em {
   display: block;
   color: white;
   font-family: var(--teko);
-  font-size: 2.0rem;
+  font-size: 2rem;
   margin-top: 15px;
   text-align: right;
 }
@@ -885,7 +885,12 @@ em {
 }
 
 @media (min-width: 1600px) {
+  .Footer {
+    padding-top: 50px;
+    margin-top: 0;
+  }
+
   .Footer::before {
-    background-position: center right;
+    display: none;
   }
 }
