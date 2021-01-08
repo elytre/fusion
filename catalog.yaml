@@ -1,7 +1,7 @@
 global:
   buyLink: https://librairielatalante.com/isbn/:ean
 products:
-  - ean: 9781234567890
+  - ean: 9791036000638
     title: Nuit bleue
     author: Simone Buchholz
     contributors:
@@ -23,7 +23,7 @@ products:
 
       Simone Buchholz donne naissance à un personnage récurrent et à une famille, deceux dont la vie nous est chère et que l'on prendrait bien pour amis. Conciseet poétique, tour à tour drôle et piquante, son écriture emporte le lecteur.
       Lauréate du Prix du Polar Allemand en 2019 pour *Mexikoring*, Simone Buchholz est traduite en Angleterre et enItalie. Elle vit à Sankt Pauli, le célèbre quartier de Hambourg.
-  - ean: 9781234567811
+  - ean: 9791036000690
     title: Clark
     author: Anouk Langaney
     contributors:
