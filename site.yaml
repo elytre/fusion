@@ -17,7 +17,7 @@ menus:
     - label: Traducteurs
       href: /fr/page/traducteurs
     - label: Actualités
-      href: /
+      href: /fr/page/actualites
   footer:
     - label: Accueil
       href: /
@@ -28,7 +28,7 @@ menus:
     - label: Traducteurs
       href: /fr/page/traducteurs
     - label: Actualités
-      href: /
+      href: /fr/page/actualites
     - label: Contact
       href: /
     - label: À propos
