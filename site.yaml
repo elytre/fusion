@@ -2,7 +2,7 @@ title: Fusion
 menus:
   header:
     - label: À propos
-      href: /
+      href: /fr/page/a-propos
     - label: Contact
       href: /fr/page/contact
     - label: Facebook
@@ -32,6 +32,6 @@ menus:
     - label: Contact
       href: /
     - label: À propos
-      href: /fr/page/contact
+      href: /fr/page/a-propos
     - label: Mentions légales
       href: /fr/page/mentions-legales
