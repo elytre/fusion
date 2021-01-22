@@ -915,7 +915,7 @@ em {
   box-shadow: 0 50vh 0 50vh var(--red);
   color: var(--white);
   margin-top: 150px;
-  padding-bottom: 225px;
+  padding-bottom: 350px;
   position: relative;
   text-align: center;
   width: 100vw;
@@ -940,7 +940,7 @@ em {
   background-size: 100% 100%;
   bottom: 25px;
   content: '';
-  height: 146px;
+  height: 291px;
   left: 50%;
   position: absolute;
   transform: translateX(-50%);
@@ -990,7 +990,7 @@ em {
 
 @media (min-width: 1024px) {
   .Footer {
-    padding-bottom: 25px;
+    padding-bottom: 150px;
   }
 
   .Footer::after {
