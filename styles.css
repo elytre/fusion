@@ -296,7 +296,7 @@ em {
   width: 100%;
 }
 
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .HomeView .headline {
     margin-top: 25px;
   }
@@ -1021,7 +1021,7 @@ em {
 @media (min-width: 1600px) {
   .Footer {
     padding-top: 50px;
-    margin-top: 0;
+    margin-top: 50px;
   }
 
   .Footer::before {
