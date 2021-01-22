@@ -710,6 +710,22 @@ em {
   text-align: right;
 }
 
+.news-youtube-video {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  margin: 15px 0;
+  position: relative;
+  height: 0;
+}
+
+.news-youtube-video iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 @media (min-width: 1024px) {
   .news {
     margin-bottom: 100px;
