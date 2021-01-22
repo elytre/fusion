@@ -581,6 +581,7 @@ em {
 
   .contributors-page .contributor-portrait {
     height: 356px;
+    margin: 0;
     width: 356px;
   }
 
@@ -593,7 +594,7 @@ em {
     font-size: 11rem;
     padding: 100px;
     padding-bottom: 0;
-    width: 656px;
+    width: 620px;
   }
 
   .contributors-page .contributor-bio {
