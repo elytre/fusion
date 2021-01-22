@@ -421,9 +421,18 @@ em {
 .HomeView .newsletter {
   background: white;
   box-shadow: 4px 4px 0px 0px rgba(255, 0, 0, 1);
-  height: 225px;
   margin-top: 45px;
   width: 100%;
+}
+
+.HomeView .newsletter-iframe {
+  height: 430px;
+}
+
+@media (min-width: 1024px) {
+  .HomeView .newsletter-iframe {
+    height: 340px;
+  }
 }
 
 /* Pages */
