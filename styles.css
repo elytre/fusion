@@ -324,6 +324,12 @@ em {
   width: calc(50% - 3px);
 }
 
+.HomeView .upcoming-product-publication-date {
+  display: block;
+  font-size: 0.8em;
+  padding-bottom: 0.5em;
+}
+
 .HomeView .upcoming-product-cover {
   max-width: 100%;
 }
@@ -400,8 +406,7 @@ em {
 
 @media (min-width: 1024px) {
   .HomeView .manifest {
-    /* height: 317px; */
-    margin-top: 85px;
+    margin-top: 82px;
     padding: 45px;
     width: 50%;
   }
