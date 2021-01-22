@@ -289,16 +289,16 @@ em {
 /* Main > Headline */
 
 .HomeView .headline {
-  background: url('headline-nuit-bleue.jpg');
-  background-size: contain;
-  margin-top: 25px;
-  padding-bottom: 36.84%;
   width: 100%;
 }
 
-@media (min-width: 1024px) {
+.HomeView .headline-image {
+  width: 100%;
+}
+
+@media(min-width: 1024px) {
   .HomeView .headline {
-    margin-top: 75px;
+    margin-top: 25px;
   }
 }
 
