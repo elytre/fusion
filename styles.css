@@ -457,42 +457,48 @@ em {
 
 /* Books pages */
 
-.books-products {
+.ProductList {
   margin: 35px;
 }
 
-.books-product {
+.Product {
   margin-top: 25px;
 }
 
-.books-products .books-product-cover {
+.ProductList .Product-cover-image {
   max-width: 100%;
 }
 
-.books-products .books-product-title {
+.ProductList .Product-title {
   font-family: var(--teko);
   font-size: 5rem;
   font-weight: 400;
   margin-top: 15px;
 }
 
-.books-products .books-product-title a {
+.ProductList .Product-title a {
   color: var(--red);
 }
 
-.books-products .books-product-author {
+.ProductList .Product-author {
   font-family: var(--teko);
   font-size: 3rem;
 }
 
+.ProductList .Product-buy-link-button,
+.ProductList .Product-back-cover-text,
+.ProductList .Product-details {
+  display: none;
+}
+
 @media (min-width: 1024px) {
-  .books-products {
+  .ProductList {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
-  .books-products .books-product {
+  .ProductList .Product {
     width: 400px;
   }
 }
