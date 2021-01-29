@@ -419,9 +419,8 @@ em {
 /* Main > Home > Newsletter */
 
 .HomeView .newsletter {
-  background: white;
-  box-shadow: 4px 4px 0px 0px rgba(255, 0, 0, 1);
-  margin-top: 45px;
+  margin: 45px auto;
+  max-width: 780px;
   width: 100%;
 }
 
