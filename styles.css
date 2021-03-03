@@ -312,12 +312,12 @@ em {
   font-family: var(--teko);
   font-weight: 300;
   font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 .HomeView .upcoming-products {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
 }
 
 .HomeView .upcoming-product {
