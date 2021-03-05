@@ -487,6 +487,7 @@ em {
 
 .ProductList .Product-buy-link-button,
 .ProductList .Product-back-cover-text,
+.ProductList .Product-extras,
 .ProductList .Product-details {
   display: none;
 }
@@ -867,6 +868,25 @@ em {
   margin: 1em 0;
 }
 
+.ProductView .Product-extras {
+  margin-top: 50px;
+}
+
+.ProductView .ProductExtra-youtube {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.ProductView .ProductExtra-youtube iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 .ProductView .Product-details {
   border-left: 6px solid black;
   margin-top: 50px;
@@ -920,6 +940,12 @@ em {
 
   .ProductView .Product-back-cover-text {
     padding: 40px 50px;
+  }
+
+  .ProductView .Product-extras {
+    margin: 50px auto;
+    max-width: 720px;
+    width: 100%;
   }
 
   .ProductView .Product-details {
