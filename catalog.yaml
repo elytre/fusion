@@ -42,3 +42,7 @@ products:
       *Clark* pose des questions actuelles et intemporelles sur la maternité, le rôle de la femme et l’écoterrorisme. En ligne de mire, le monde que nous laissons à nos enfants.
 
       Anouk Langaney vit à Ajaccio et enseigne la littérature à l’université de Corse. On lui doit *Même pas morte*, *Cannibal Tour* et le roman jeunesse *Le Temps des hordes*.
+    extras:
+      - type: "youtube"
+        title: "Bande-annonce de Clark"
+        href: https://www.youtube.com/watch?v=tsRNjxwNkmQ
