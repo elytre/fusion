@@ -488,6 +488,7 @@ em {
 .ProductList .Product-buy-link-button,
 .ProductList .Product-back-cover-text,
 .ProductList .Product-extras,
+.ProductList .Product-reviews,
 .ProductList .Product-details {
   display: none;
 }
@@ -877,10 +878,53 @@ em {
   margin: 1em 0;
 }
 
+.ProductView .Product-reviews {
+  background: white;
+  box-shadow: 7px 7px 0px 0px rgba(255, 0, 0, 1);
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 25px;
+  margin-top: 50px;
+  order: 5;
+  padding: 5px 20px;
+  width: 100%;
+}
+
+.ProductView .Product-reviews-title {
+  font-family: var(--teko);
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.ProductView .ProductReview {
+  margin: 1em 0;
+}
+
+
+.ProductView .ProductReview-content {
+  margin: 0;
+}
+
+.ProductView .ProductReview-content p {
+  margin-bottom: 0.25em;
+}
+
+.ProductView .ProductReview-content p::before {
+  content: "«\00a0";
+}
+
+.ProductView .ProductReview-content p::after {
+  content: "\00a0»";
+}
+
+.ProductView .ProductReview-source {
+  font-weight: bold;
+}
+
 .ProductView .Product-extras {
   margin: 50px auto;
   max-width: 720px;
-  order: 5;
+  order: 6;
   width: 100%;
 }
 
@@ -964,6 +1008,10 @@ em {
 
   .ProductView .Product-detail .detail-label {
     width: 145px;
+  }
+
+  .ProductView .Product-reviews {
+    padding: 40px 50px;
   }
 }
 
