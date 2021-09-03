@@ -717,6 +717,10 @@ em {
   padding-left: 25px;
 }
 
+.news-body a {
+  border-bottom: 1px solid black;
+}
+
 .news-read-more {
   font-weight: bold;
   text-align: right;
@@ -747,6 +751,8 @@ em {
   }
 
   .news-illustration-image {
+    max-height: 258px;
+    max-width: 524px;
     top: -50px;
     position: absolute;
     right: -50px;
