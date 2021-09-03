@@ -72,3 +72,10 @@ products:
       - type: "youtube"
         title: "Bande-annonce de Clark"
         href: https://www.youtube.com/watch?v=tsRNjxwNkmQ
+    reviews:
+      - text: Un condensé d'humour tendrement noir.
+        source: Les Échos
+      - text: Clark est un divertissement étonnant, doublé d’une vision acerbe du monde, couplé à un fantasme d’éducation flippant.
+        source: EmOtionS
+      - text: Avec un humour noir et une plume grinçante, l'auteure nous offre un ovni littéraire, jubilatoire et inclassable.
+        source: Télé 7 Jours
