@@ -23,8 +23,8 @@ products:
 
       Lauréate du Prix du Polar Allemand en 2019 pour *Mexikoring*, Simone Buchholz est traduite en Angleterre et en Italie. Elle vit à Sankt Pauli, le célèbre quartier de Hambourg.
     extras:
-      - type: "youtube"
-        title: "Bande-annonce de Nuit bleue"
+      - type: youtube
+        title: Bande-annonce de Nuit bleue
         href: https://www.youtube.com/watch?v=5OpS5cPGfcw
     reviews:
       - text: Un très grand talent de la littérature noire.
