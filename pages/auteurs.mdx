@@ -1,3 +1,4 @@
+import BordacarreImage from './olivier-bordacarre.author.jpg';
 import BuchholzImage from './simone-buchholz.author.jpg';
 import LanganeyImage from './anouk-langaney.author.jpg';
 
@@ -6,21 +7,51 @@ import LanganeyImage from './anouk-langaney.author.jpg';
     <a href="/">Accueil</a> > <span className="current">Auteurs</span>
   </nav>
 
-
   <div className="contributors">
     <article className="contributor">
       <div className="contributor-portrait">
         <img
+          src={BordacarreImage}
+          alt="Portrait de Olivier Bordaçarre"
+          className="contributor-portrait-image"
+        />
+      </div>
+      <h1 className="contributor-name">Olivier Bordaçarre</h1>
+      <p className="contributor-bio">
+        Olivier Bordaçarre est comédien et scénariste. Son premier roman a paru en 2006 chez Fayard. Il est connu des
+        lecteurs pour <em>La France tranquille</em> et <em>Dernier désir</em> (Prix de la ville de Mauves-sur-Loire en
+        2015).
+      </p>
+      <h2 className="contributor-books-title">Livres</h2>
+      <div className="contributor-books-products">
+        <article className="contributor-books-product">
+          <a href="/fr/p/appartement-816">
+            <img
+              src="/appartement-816.cover.jpg"
+              alt="Appartement 816"
+              className="contributor-books-product-cover"
+            />
+          </a>
+          <h1 className="contributor-books-product-title">
+            <a href="/fr/p/appartement-816">Appartement 816</a>
+          </h1>
+          <p className="contributor-books-product-author">Olivier Bordaçarre</p>
+        </article>
+      </div>
+    </article>
+    <article className="contributor">
+      <div className="contributor-portrait">
+        <img
           src={BuchholzImage}
-          alt="Nuit bleue"
+          alt="Portrait de Simone Buchholz"
           className="contributor-portrait-image"
         />
       </div>
       <h1 className="contributor-name">Simone Buchholz</h1>
       <p className="contributor-bio">
-        Simone Buchholz est née en 1972 en Allemagne, dans la région de 
-        Francfort, et elle vit à Hambourg. Elle a été journaliste avant de 
-        choisir la fiction criminelle. Ses romans sont traduits en anglais et 
+        Simone Buchholz est née en 1972 en Allemagne, dans la région de
+        Francfort, et elle vit à Hambourg. Elle a été journaliste avant de
+        choisir la fiction criminelle. Ses romans sont traduits en anglais et
         en italien et ont remporté de nombreux prix.
       </p>
       <h2 className="contributor-books-title">Livres</h2>
@@ -40,22 +71,21 @@ import LanganeyImage from './anouk-langaney.author.jpg';
         </article>
       </div>
     </article>
-    
     <article className="contributor">
       <div className="contributor-portrait">
         <img
           src={LanganeyImage}
-          alt="Clark"
+          alt="Portrait de Anouk Langaney"
           className="contributor-portrait-image"
         />
       </div>
       <h1 className="contributor-name">Anouk Langaney</h1>
       <p className="contributor-bio">
         Anouk Langaney est une autrice française, elle vit et enseigne en Corse.<br />
-        Clark est son troisième roman. Elle a publié Même pas morte (2013, 
-        Albiana), Cannibal Tour (2014, Albiana) et le roman jeunesse Le Temps 
+        Clark est son troisième roman. Elle a publié Même pas morte (2013,
+        Albiana), Cannibal Tour (2014, Albiana) et le roman jeunesse Le Temps
         des hordes (2020, Albiana).<br />
-        Anouk Langaney se caractérise par une écriture qui oscille entre 
+        Anouk Langaney se caractérise par une écriture qui oscille entre
         l’humour et une forme d’ironie piquante.<br />
       </p>
       <h2 className="contributor-books-title">Livres</h2>
