@@ -1,12 +1,3 @@
-import BibliothequesIdealesStrasbourg from './bibliotheque-ideales-strasbourg.news.jpg';
-import SimoneBuchholzImage from './simone-buchholz.news.jpg';
-import AnoukLanganeyImage from './anouk-langaney.news.jpg';
-import NuitBleueParLesDirecteursImage from './nuit-bleue-par-les-directeurs.news.jpg';
-import ParutionNuitBleueImage from './parution-nuit-bleue.news.jpg';
-import DouzeMinutesAvecImage from './12-minutes-avec.news.jpg';
-import LivresHebdoImage from './livres-hebdo.news.png';
-import OuestFranceImage from './ouest-france.news.jpg';
-
 <div className="news-page">
   <nav className="breadcrumbs">
     <a href="/">Accueil</a> > <span className="current">Actualités</span>
@@ -40,7 +31,7 @@ import OuestFranceImage from './ouest-france.news.jpg';
   <article className="news">
       <div className="news-illustration">
         <img
-          src={BibliothequesIdealesStrasbourg}
+          src={require('./bibliotheque-ideales-strasbourg.news.jpg').default}
           alt="Affiche de l'évènement Bibliothèques Idéales"
           className="news-illustration-image"
         />
@@ -95,7 +86,7 @@ import OuestFranceImage from './ouest-france.news.jpg';
   <article className="news">
       <div className="news-illustration">
         <img
-          src={SimoneBuchholzImage}
+          src={require('./simone-buchholz.news.jpg').default}
           alt="Portrait de Simone Buchholz"
           className="news-illustration-image"
         />
@@ -119,7 +110,7 @@ import OuestFranceImage from './ouest-france.news.jpg';
   <article className="news">
       <div className="news-illustration">
         <img
-          src={AnoukLanganeyImage}
+          src={require('./anouk-langaney.news.jpg').default}
           alt="Portrait d'Anouk Langaney"
           className="news-illustration-image"
         />
@@ -142,7 +133,7 @@ import OuestFranceImage from './ouest-france.news.jpg';
     <article className="news">
       <div className="news-illustration">
         <img
-          src={NuitBleueParLesDirecteursImage}
+          src={require('./nuit-bleue-par-les-directeurs.news.jpg').default}
           alt="Nuit Bleue de Simone Buchholz : présentation par les directeurs de collection !"
           className="news-illustration-image"
         />
@@ -169,7 +160,7 @@ import OuestFranceImage from './ouest-france.news.jpg';
     <article className="news">
       <div className="news-illustration">
         <img
-          src={ParutionNuitBleueImage}
+          src={require('./parution-nuit-bleue.news.jpg').default}
           alt="Report de parution – Nuit bleue"
           className="news-illustration-image"
         />
@@ -191,7 +182,7 @@ import OuestFranceImage from './ouest-france.news.jpg';
     <article className="news">
       <div className="news-illustration">
         <img
-          src={DouzeMinutesAvecImage}
+          src={require('./12-minutes-avec.news.jpg').default}
           alt="12 minutes avec Caroline de Benedetti et Emeric Cloche"
           className="news-illustration-image"
         />
@@ -222,7 +213,7 @@ import OuestFranceImage from './ouest-france.news.jpg';
     <article className="news">
       <div className="news-illustration">
         <img
-          src={LivresHebdoImage}
+          src={require('./livres-hebdo.news.png').default}
           alt="L'Atalante lance une nouvelle collection"
           className="news-illustration-image"
         />
@@ -260,7 +251,7 @@ import OuestFranceImage from './ouest-france.news.jpg';
     <article className="news">
       <div className="news-illustration">
         <img
-          src={OuestFranceImage}
+          src={require('./ouest-france.news.jpg').default}
           alt="L'Atalante lance une nouvelle collection"
           className="news-illustration-image"
         />
