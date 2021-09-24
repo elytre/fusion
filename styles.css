@@ -304,59 +304,66 @@ em {
 
 /* Main > Home > Upcoming */
 
-.HomeView .upcoming {
+.HomeView .home-products {
   margin-top: 25px;
 }
 
-.HomeView .upcoming-title {
-  font-family: var(--teko);
-  font-weight: 300;
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.HomeView .upcoming-products {
+.HomeView .home-products-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.HomeView .upcoming-product {
-  width: calc(50% - 3px);
+.HomeView .home-products-section-title {
+  font-family: var(--teko);
+  font-weight: 300;
+  font-size: 3rem;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
-.HomeView .upcoming-product-publication-date {
+.HomeView .home-product {
+  width: calc(50% - 3px);
+  margin-bottom: 16px;
+}
+
+.HomeView .home-product-publication-date {
   display: block;
   font-size: 0.8em;
   padding-bottom: 0.5em;
 }
 
-.HomeView .upcoming-product-cover {
+.HomeView .home-product-cover {
   max-width: 100%;
 }
 
-.HomeView .upcoming-product-title {
+.HomeView .home-product-title {
   font-family: var(--teko);
   font-size: 3rem;
   font-weight: 400;
   margin-top: 15px;
 }
 
-.HomeView .upcoming-product-title a {
+.HomeView .home-product-title a {
   color: var(--red);
 }
 
-.HomeView .upcoming-product-author {
+.HomeView .home-product-author {
   font-family: var(--teko);
   font-size: 2.5rem;
 }
 
-@media (min-width: 1024px) {
-  .HomeView .upcoming {
+@media (min-width: 768px) {
+  .HomeView .home-products {
+    display: flex;
+  }
+
+  .HomeView .home-products-section {
     width: 50%;
   }
 
-  .HomeView .upcoming-product {
+  .HomeView .home-product {
     padding-right: 12px;
     width: 50%;
   }
@@ -408,7 +415,6 @@ em {
   .HomeView .manifest {
     margin-top: 82px;
     padding: 45px;
-    width: 50%;
   }
 
   .HomeView .manifest-title {
