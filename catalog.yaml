@@ -1,6 +1,9 @@
 global:
   buyLink: https://librairielatalante.com/isbn/:ean
 products:
+
+  # NUIT BLEUE
+
   - ean: 9791036000638
     title: Nuit bleue
     author: Simone Buchholz
@@ -14,8 +17,8 @@ products:
     originalLanguage: de
     price: 19.90
     backCoverText: |
-      « *Joe, qui vous a brisé les os ?
-      \- La vie.* »
+      « *Joe, qui vous a brisé les os ?\
+      \- La vie.* »\
       Au Blaue Nacht, la procureure Chastity Riley écluse des bières et trouve le réconfort auprès de sa bande d’amis. Mise sur la touche après avoir fait condamner son supérieur, elle est désormais chargée de la protection des victimes. À l’hôpital l’attend un homme roué de coups, un Autrichien qui refuse de parler. C’est sans compter sur la force de persuasion de Chastity... prête à mettre les pieds dans le plat de la bonne société hambourgeoise.
       Dans la lignée des romans d’une ville, Chastity Riley est Hambourg, ville-port et ville monde, ville punk-rock.
 
@@ -52,6 +55,8 @@ products:
         author: Eric
         source: Librairie La Tache Noire – Strasbourg
 
+  # CLARK
+
   - ean: 9791036000690
     title: Clark
     author: Anouk Langaney
@@ -64,13 +69,13 @@ products:
     backCoverText: |
       « *... et hop ! Coincée. Pas mal, non ? Avoue que tu ne t’y attendais pas, à celle-là ! Tu coupes les ponts, tu pars au bout du monde, tu restes dix ans sans donner la moindre nouvelle ; quand je tente de reprendre contact, paf ! tu me flanques hors de ta maison et de ta vie, sans l’ombre d’une hésitation… et te voilà malgré tout obligée de me lire. On sous-estime toujours sa vieille mère.* »
 
-      Lire *Clark*, c’est ouvrir la lettre d’une mère à sa fille. L’histoire qu’elle raconte provoque la stupéfaction et l’effroi, mais elle est aussi drôle et grinçante. Pour quel projet fou cette femme indépendante a-t-elle bouleversé la vie de ses trois enfants ?
+      Lire *Clark*, c’est ouvrir la lettre d’une mère à sa fille. L’histoire qu’elle raconte provoque la stupéfaction et l’effroi, mais elle est aussi drôle et grinçante. Pour quel projet fou cette femme indépendante a-t-elle bouleversé la vie de ses trois enfants ?\
       *Clark* pose des questions actuelles et intemporelles sur la maternité, le rôle de la femme et l’écoterrorisme. En ligne de mire, le monde que nous laissons à nos enfants.
 
       Anouk Langaney vit à Ajaccio et enseigne la littérature à l’université de Corse. On lui doit *Même pas morte*, *Cannibal Tour* et le roman jeunesse *Le Temps des hordes*.
     extras:
-      - type: "youtube"
-        title: "Bande-annonce de Clark"
+      - type: youtube
+        title: Bande-annonce de Clark
         href: https://www.youtube.com/watch?v=tsRNjxwNkmQ
     reviews:
       - text: Un condensé d'humour tendrement noir.
@@ -79,6 +84,9 @@ products:
         source: EmOtionS
       - text: Avec un humour noir et une plume grinçante, l'auteure nous offre un ovni littéraire, jubilatoire et inclassable.
         source: Télé 7 Jours
+
+  # APPARTEMENT 816
+
   - ean: 9791036000935
     title: Appartement 816
     author: Olivier Bordaçarre
@@ -96,11 +104,11 @@ products:
       Le monde traverse une période peu ordinaire. Depuis trois ans, la France a assigné ses
       citoyens à résidence. Chacun reçoit ses courses par drone. Interdiction d’ouvrir sa fenêtre en
       dehors des heures programmées. Didier Martin, comptable, vit avec sa femme, son fils et son
-      chien dans un immeuble d’une ville moyenne. Il raconte son histoire à la première personne.
+      chien dans un immeuble d’une ville moyenne. Il raconte son histoire à la première personne.\
       Sur les murs, sur les meubles, sur les objets : partout autour de lui, il écrit. Petit à petit, le
       lecteur se retrouve happé par le mystère de sa situation. Le monde extérieur est devenu
       infréquentable, mais Didier Martin semble s’en satisfaire. Il aime l’ordre, le respect et préfère
-      la compagnie de ses poissons exotiques à celle des humains.
+      la compagnie de ses poissons exotiques à celle des humains.\
       Dans le huis clos de cet appartement, un suspense psychologique se noue.
 
       Les héros de polar ne sont pas toujours sympathiques. *Un tueur sur la route* (James Ellroy),
@@ -111,3 +119,22 @@ products:
       Olivier Bordaçarre est comédien et scénariste. Son premier roman a paru en 2006 chez
       Fayard. Il est connu des lecteurs pour *La France tranquille* et *Dernier désir* (Prix de la ville
       de Mauves-sur-Loire en 2015).
+
+  # BETON ROUGE
+
+  - ean: 9791036001000
+    title: Béton rouge
+    author: Simone Buchholz
+    contributors:
+      - name: Olivier Lavigne
+        role: Cover artist
+    releaseDate: 2022-01-20
+    pageCount: 240
+    price: 19.90
+    backCoverText: |
+        « *— Vous êtes socialo, Madame la procureure ?\
+        — Fille d’officier avec des tendances anarchistes. Et vous ?* »
+
+        Chastity Riley est appelée au petit matin sur une étrange scène sans cadavre.\
+        Un homme est découvert nu dans une cage, devant le siège d’un important éditeur de presse de Hambourg. Puis bientôt, un autre homme. Pour cette affaire, la procureure Riley écope d’un nouveau partenaire : Ivo Stepanovic, membre du bureau des Affaires spéciales. Une « troupe de spécialistes funky ». L’enquête plonge le duo dans le monde de l’entreprise et la crise financière.\
+        Hambourg reste au cœur de l’intrigue, mais les deux nouveaux partenaires fouillent le passé et ses secrets, et partent pour une incursion en Bavière.
