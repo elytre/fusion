@@ -1,5 +1,5 @@
 tasks:
-  - init: yarn install
+  - init: nvm install && yarn install
     command: yarn start
 ports:
   - port: 1854
