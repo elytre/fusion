@@ -360,12 +360,12 @@ em {
   }
 
   .HomeView .home-products-section {
-    width: 50%;
+    width: 100%;
   }
 
   .HomeView .home-product {
     padding-right: 12px;
-    width: 50%;
+    width: 25%;
   }
 }
 
