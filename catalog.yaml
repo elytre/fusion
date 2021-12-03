@@ -129,6 +129,8 @@ products:
         role: Translator
       - name: Olivier Lavigne
         role: Cover artist
+      - name: Apo Genc
+        role: Photographer
     releaseDate: 2022-01-13
     pageCount: 240
     price: 19.90
