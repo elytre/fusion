@@ -568,11 +568,12 @@ em {
 .contributor-books-products {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-top: 20px;
 }
 
 .contributor-books-product {
+  padding-right: 15px;
   width: 150px;
 }
 
@@ -634,7 +635,6 @@ em {
   }
 
   .contributors-page .contributor-books-products {
-    justify-content: flex-start;
     width: 100%;
   }
 
