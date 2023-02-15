@@ -844,6 +844,12 @@ em {
   flex-direction: column;
 }
 
+@media(min-width: 768px) {
+  .ProductView .Product-infos {
+    max-width: calc(100vw - 350px);
+  }
+}
+
 .ProductView .Product-author {
   font-family: var(--teko);
   font-size: 5rem;
@@ -991,6 +997,10 @@ em {
   .ProductView .Product-cover-image {
     max-width: 300px;
     max-height: 425px;
+  }
+
+  .ProductView .Product-infos {
+    max-width: calc(976px - 350px);
   }
 
   .ProductView .Product-author {
