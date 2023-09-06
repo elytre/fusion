@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="01892870-91e1-4aa0-9849-0372d03fa576" name="Default Changelist" comment="&#10;&#10;# Team Accès :flèche_de_cupidon:&#10;# Co-authored-by: Andreia Pena &lt;andreia.pena@pix.fr&gt;&#10;# Co-authored-by: Anne-G &lt;ang.schall@gmail.com&gt;&#10;# Co-authored-by: Anne-Marie Esteves &lt;anne-marie.esteves@octo.com&gt;&#10;# Co-authored-by: Clément Latzarus &lt;clement.latzarus@pix.fr&gt;&#10;# Co-authored-by: Ismael Gorissen &lt;ismael.gorissen@gmail.com&gt;&#10;# Co-authored-by: Marc-Aurèle Darche &lt;marc-aurele.darche@pix.fr&gt;&#10;# Co-authored-by: BKsensei &lt;rebecca.kaci@gmail.com&gt;" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="1tZoT2aNgLF2TJfTIaUngGFxJpW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/clement/Developer/elytre/fusion&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/clement/dev/elytre/fusion/node_modules/prettier&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/covers" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="01892870-91e1-4aa0-9849-0372d03fa576" name="Default Changelist" comment="" />
+      <created>1622985976839</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622985976839</updated>
+      <workItem from="1622985978311" duration="617000" />
+      <workItem from="1623051139580" duration="20000" />
+      <workItem from="1625235576399" duration="11000" />
+      <workItem from="1625235607758" duration="9101000" />
+      <workItem from="1625470986119" duration="326000" />
+      <workItem from="1630676777975" duration="6818000" />
+      <workItem from="1632489799917" duration="5947000" />
+      <workItem from="1632727203281" duration="13000" />
+      <workItem from="1635513499600" duration="1118000" />
+      <workItem from="1635516951552" duration="40000" />
+      <workItem from="1635842627174" duration="34000" />
+      <workItem from="1638547771106" duration="2195000" />
+      <workItem from="1655723517675" duration="1993000" />
+      <workItem from="1663934181320" duration="3377000" />
+      <workItem from="1663940242255" duration="100000" />
+      <workItem from="1669966955908" duration="4392000" />
+      <workItem from="1669991171857" duration="41000" />
+      <workItem from="1676459073060" duration="2953000" />
+      <workItem from="1676475211183" duration="3454000" />
+      <workItem from="1676535187304" duration="1634000" />
+      <workItem from="1676555557812" duration="10000" />
+      <workItem from="1679235267381" duration="1633000" />
+      <workItem from="1679407665951" duration="29000" />
+      <workItem from="1682519137037" duration="2622000" />
+      <workItem from="1688563325740" duration="1120000" />
+      <workItem from="1688565143233" duration="12000" />
+      <workItem from="1688722410621" duration="2485000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
