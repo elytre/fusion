@@ -3,7 +3,6 @@ import { render, waitFor } from '@testing-library/react';
 import { MemoryRouter, Route } from 'react-router-dom';
 
 import ProductView from './ProductView';
-import ElytreSite from './ElytreSite';
 import getMetaTagContent from '../helpers/get-meta-tag-content';
 
 jest.mock('../lib/user-files');
