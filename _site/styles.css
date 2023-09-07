@@ -130,7 +130,6 @@ em {
 
 .Header-site-title a {
   background: black;
-  background-image: url('public/logo.png');
   background-size: 100%;
   color: transparent;
   height: 105px;
@@ -185,7 +184,6 @@ em {
 .SearchForm button {
   border: 0;
   background: black;
-  background-image: url('public/search-button.png');
   color: transparent;
   cursor: pointer;
   margin-left: 5px;
@@ -201,10 +199,6 @@ em {
 
 .SearchForm:hover {
   box-shadow: 4px 4px 0px 0px rgba(255, 0, 0, 1);
-}
-
-.SearchForm:hover button {
-  background-image: url('public/search-button.png');
 }
 
 @media (min-width: 1024px) {
@@ -1053,7 +1047,6 @@ em {
 }
 
 .Footer::before {
-  background-image: url('public/footer.png');
   background-position: center center;
   background-repeat: no-repeat;
   content: '';
@@ -1065,7 +1058,6 @@ em {
 }
 
 .Footer::after {
-  background-image: url('public/footer-logo.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
