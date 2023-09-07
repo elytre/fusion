@@ -1,6 +1,4 @@
-import { Index } from 'lunr';
-
-import { Catalog, Product, SiteConfig } from '../../shared/types';
+import { Catalog, Product, SiteConfig } from '../types';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -10,12 +8,12 @@ import catalog from '../catalog.json';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 // eslint-disable-next-line import/no-unresolved
-import site from '../site.json';
+import site from '../../../_site/site.json';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 // eslint-disable-next-line import/no-unresolved
-import searchIndex from '../search-index.json';
+// import searchIndex from '../search-index.json';
 
 /**
  * This imports the user's JSON config files (converted from YAML)
@@ -26,6 +24,7 @@ export function getSiteConfig(): SiteConfig {
 }
 
 export function getCatalog(): Catalog {
+  const catalog = { products: [] };
   return {
     ...catalog,
     products: catalog.products.map((product: Product) => ({
@@ -38,6 +37,6 @@ export function getCatalog(): Catalog {
   };
 }
 
-export function getSearchIndex(): Index {
-  return searchIndex;
+export function getSearchIndex(): null {
+  return null;
 }

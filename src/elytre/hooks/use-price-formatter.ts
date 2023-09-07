@@ -1,12 +1,7 @@
-import { useParams } from 'react-router-dom';
-
-import { Locale } from '../../shared/types';
+import { Locale } from '../types';
 
 export default function usePriceFormatter(price: number): string {
-  // Get current locale from route
-  const { locale } = useParams<{ locale: Locale }>();
-
-  const formatter = new Intl.NumberFormat(locale, {
+  const formatter = new Intl.NumberFormat('fr', {
     style: 'currency',
     currency: 'EUR',
   });

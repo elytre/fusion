@@ -1,7 +1,4 @@
 import React from 'react';
-import { Link, useParams } from 'react-router-dom';
-import ReactMarkdown from 'react-markdown';
-import slugify from 'slugify';
 
 import Trans from './Trans';
 import Price from './Price';
@@ -12,7 +9,7 @@ import {
   Extra as ExtraType,
   Product as ProductType,
   Review as ReviewType,
-} from '../../shared/types';
+} from '../types';
 
 // Import all files with name matching ../*.cover.jpg pattern
 require.context('../', false, /.*\.cover\.jpg$/);
