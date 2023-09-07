@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 
 export type MenuEntryType = {
   label: string;
@@ -20,7 +19,7 @@ export default function MenuEntry({
           {entry.label}
         </a>
       ) : (
-        <NavLink to={entry.href}>{entry.label}</NavLink>
+        <a href={entry.href}>{entry.label}</a>
       )}
     </li>
   );
