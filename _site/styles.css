@@ -288,6 +288,7 @@ em {
 
 .HomeView .headline-image {
   width: 100%;
+  height: auto;
 }
 
 @media (min-width: 1024px) {
@@ -330,6 +331,7 @@ em {
 
 .HomeView .home-product-cover {
   max-width: 100%;
+  height: auto;
 }
 
 .HomeView .home-product-title {
@@ -467,6 +469,7 @@ em {
 
 .ProductList .Product-cover-image {
   max-width: 100%;
+  height: auto;
 }
 
 .ProductList .Product-title {
@@ -536,6 +539,7 @@ em {
 
 .contributors-page .contributor-portrait-image {
   max-width: 100%;
+  height: auto;
 }
 
 .contributors-page .contributor-name {
@@ -574,6 +578,7 @@ em {
 .contributor-books-product-cover,
 .contributor-books-product-cover-image {
   max-width: 100%;
+  height: auto;
 }
 
 .contributor-books-product-title,
@@ -773,6 +778,7 @@ em {
 .about-page .about-page-photo {
   margin-bottom: 15px;
   max-width: 100%;
+  height: auto;
 }
 
 @media (min-width: 1024px) {
