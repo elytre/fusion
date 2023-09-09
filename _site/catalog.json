@@ -6,6 +6,7 @@
     {
       "ean": 9791036000638,
       "title": "Nuit bleue",
+      "slug": "nuit-bleue",
       "author": "Simone Buchholz",
       "contributors": [
         {
@@ -75,6 +76,7 @@
     {
       "ean": 9791036000690,
       "title": "Clark",
+      "slug": "clark",
       "author": "Anouk Langaney",
       "contributors": [
         {
@@ -111,6 +113,7 @@
     {
       "ean": 9791036000935,
       "title": "Appartement 816",
+      "slug": "appartement-816",
       "author": "Olivier Bordaçarre",
       "contributors": [
         {
@@ -126,6 +129,7 @@
     {
       "ean": 9791036001000,
       "title": "Béton rouge",
+      "slug": "beton-rouge",
       "author": "Simone Buchholz",
       "contributors": [
         {
@@ -149,6 +153,7 @@
     {
       "ean": 9791036001253,
       "title": "Le Mur grec",
+      "slug": "le-mur-grec",
       "author": "Nicolas Verdan",
       "contributors": [
         {
@@ -168,6 +173,7 @@
     {
       "ean": 9791036001338,
       "title": "Rue Mexico",
+      "slug": "rue-mexico",
       "author": "Simone Buchholz",
       "contributors": [
         {
@@ -187,6 +193,7 @@
     {
       "ean": 9791036001413,
       "title": "Un conte parisien violent",
+      "slug": "un-conte-parisien-violent",
       "author": "Clément Milian",
       "contributors": [
         {
@@ -202,6 +209,7 @@
     {
       "ean": 9791036001635,
       "title": "La Récolte des enfants",
+      "slug": "la-recolte-des-enfants",
       "author": "Nicolas Verdan",
       "releaseDate": "2023-10-05T00:00:00.000Z",
       "pageCount": 352,
