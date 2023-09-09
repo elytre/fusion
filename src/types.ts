@@ -39,7 +39,7 @@ export type Extra = {
 }
 
 export type Product = {
-  ean: number;
+  ean: string;
   title: string;
   slug: string;
   author: string;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { getSiteConfig } from '../lib/user-files';
+import { getSiteConfig } from '@/lib/user-files';
 import Menu from './Menu';
 import Trans from './Trans';
 

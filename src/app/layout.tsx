@@ -2,12 +2,12 @@ import './globals.css'
 import '../../_site/styles.css';
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import Header from "@/elytre/components/Header";
-import Menu from "@/elytre/components/Menu";
-import Footer from "@/elytre/components/Footer";
+import Header from "@/components/Header";
+import Menu from "@/components/Menu";
+import Footer from "@/components/Footer";
 import React from "react";
 
-import { getSiteConfig } from '@/elytre/lib/user-files';
+import { getSiteConfig } from '@/lib/user-files';
 
 const inter = Inter({ subsets: ['latin'] })
 

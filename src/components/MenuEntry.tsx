@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export type MenuEntryType = {
   label: string;
@@ -15,11 +16,11 @@ export default function MenuEntry({
   return (
     <li className="MenuEntry">
       {entry.href.match(/^http(s)?:\/\//) ? (
-        <a href={entry.href} target="_blank" rel="noopener noreferrer">
+        <Link href={entry.href} target="_blank" rel="noopener noreferrer">
           {entry.label}
-        </a>
+        </Link>
       ) : (
-        <a href={entry.href}>{entry.label}</a>
+        <Link href={entry.href}>{entry.label}</Link>
       )}
     </li>
   );
