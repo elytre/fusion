@@ -1,18 +1,12 @@
-import { Catalog, Product, SiteConfig } from '../types';
+import { Catalog, Product, SiteConfig } from '@/types';
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 // eslint-disable-next-line import/no-unresolved
 import catalog from '../catalog.json';
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 // eslint-disable-next-line import/no-unresolved
-import site from '../../../_site/site.json';
-
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-// eslint-disable-next-line import/no-unresolved
+import site from '../../_site/site.json';
 // import searchIndex from '../search-index.json';
 
 /**
@@ -27,6 +21,7 @@ export function getCatalog(): Catalog {
   const catalog = { products: [] };
   return {
     ...catalog,
+    // @ts-ignore
     products: catalog.products.map((product: Product) => ({
       ...product,
       // Convert release date string as a Date object

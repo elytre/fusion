@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 import { getSiteConfig } from '../lib/user-files';
 import Menu from './Menu';
@@ -10,7 +11,7 @@ export default function Header(): React.ReactElement {
   return (
     <header className="Header">
       <h1 className="Header-site-title">
-        <a href="/">{site.title}</a>
+        <Link href="/">{site.title}</Link>
       </h1>
       <SearchForm />
       {site.menus?.header && <Menu entries={site.menus.header} />}

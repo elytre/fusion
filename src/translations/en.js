@@ -1,4 +1,4 @@
-export default [
+const translations = [
   /* Global */
   { key: 'Powered by', text: 'Powered by' },
   { key: 'Search', text: 'Search' },
@@ -25,3 +25,4 @@ export default [
   { key: 'Photographer', text: 'Photographer' },
   { key: 'Translator', text: 'Translator' },
 ];
+export default translations;
