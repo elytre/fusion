@@ -1,11 +1,5 @@
 import { Catalog, Product, SiteConfig } from '@/types';
-
-// @ts-ignore
-// eslint-disable-next-line import/no-unresolved
-import catalog from '../catalog.json';
-
-// @ts-ignore
-// eslint-disable-next-line import/no-unresolved
+import catalog from '../../_site/catalog.json';
 import site from '../../_site/site.json';
 // import searchIndex from '../search-index.json';
 
@@ -18,7 +12,6 @@ export function getSiteConfig(): SiteConfig {
 }
 
 export function getCatalog(): Catalog {
-  const catalog = { products: [] };
   return {
     ...catalog,
     // @ts-ignore
@@ -28,6 +21,8 @@ export function getCatalog(): Catalog {
       releaseDate: product.releaseDate
         ? new Date(product.releaseDate)
         : undefined,
+      coverImage: `/covers/${product.slug}.jpg`,
+      buyLink: catalog.global.buyLink.replace(':ean', product.ean)
     }))
   };
 }
