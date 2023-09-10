@@ -1,31 +1,34 @@
 'use client';
 
 import React, { useState } from 'react';
+import { useEffect } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 
 import Trans from './Trans';
 import useTrans from '../hooks/use-trans';
 
 export default function SearchForm(): React.ReactElement {
-  const [query, setQuery] = useState('');
+  const searchParams = useSearchParams();
+  const qParam = searchParams.get('q');
+  const [query, setQuery] = useState(qParam);
 
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault();
-    // history.push(`/fr/search?q=${query}`);
-  }
+  const { push } = useRouter();
+  useEffect(() => {
+    if (query !== null) {
+      push(`/fr/search?q=${query}`);
+    }
+  }, [query]);
 
   return (
-    <form action="/search" className="SearchForm" onSubmit={handleSubmit}>
+    <form action="/search" className="SearchForm">
       <input
         name="query"
         type="search"
         placeholder={useTrans('Search…')}
         className="SearchForm-input"
-        value={query}
+        value={query ?? ''}
         onChange={({ target }) => setQuery(target.value)}
       />
-      <button type="submit">
-        <Trans>Search</Trans>
-      </button>
     </form>
   );
 }
