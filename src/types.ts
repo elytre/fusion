@@ -61,3 +61,10 @@ export type Catalog = {
   };
   products: Product[];
 };
+
+export type NewsPost = {
+  title: string;
+  date: Date;
+  image: string;
+  content: string;
+}

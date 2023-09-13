@@ -699,6 +699,7 @@ em {
 }
 
 .news-illustration-image {
+  height: auto;
   max-width: 100%;
   height: auto;
 }
