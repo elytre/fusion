@@ -28,6 +28,7 @@ export default function RootLayout({
       <head>
         <meta property="og:site_name" content={site.title} />
         <meta property="og:title" content={site.title} />
+        <script async src="https://analytics.umami.is/script.js" data-website-id="7ccdb353-3c41-4a34-afa3-1bbfca74553b"></script>
       </head>
       <body className={inter.className}>
         <div className="ElytreSite">
