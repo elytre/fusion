@@ -2,6 +2,7 @@
 image: 'quais_du_polar_prix.jpg'
 title: 'Appartement 816 – Sélection prix Quais du polar 2022'
 date: 2021-12-08T00:00:00Z
+html: true
 ---
 
 <p>

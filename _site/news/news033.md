@@ -2,6 +2,7 @@
 image: 'latache_vignette_2023.jpg'
 title: 'Rencontre avec Simone Buchholz à la Librairie-Café La Tache noire'
 date: 2023-02-25T00:00:00Z
+html: true
 ---
 
 <p>

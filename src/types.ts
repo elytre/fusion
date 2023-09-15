@@ -1,6 +1,3 @@
-/* I18n */
-export type Locale = 'en' | 'fr';
-
 /* Site config */
 
 type MenuEntry = {
@@ -67,4 +64,5 @@ export type NewsPost = {
   date: Date;
   image: string;
   content: string;
+  html: boolean;
 }

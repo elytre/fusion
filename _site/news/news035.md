@@ -2,6 +2,7 @@
 image: 'ITW-clement-milian-fit.jpg'
 title: 'Interview de Clément Milian'
 date: 2023-05-17T00:00:00Z
+html: true
 ---
 
 <!--suppress HtmlDeprecatedAttribute -->

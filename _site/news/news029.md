@@ -2,6 +2,7 @@
 image: 'ROMAN-NOIR-SOCIAL_vignette copie.jpg'
 title: 'Festival du Roman noir et social'
 date: 2022-12-01T00:00:00Z
+html: true
 ---
 
 <p>

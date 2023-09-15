@@ -2,6 +2,7 @@
 image: 'EFFRACTIONS_vignette.jpg'
 title: 'Festival Effractions – Paris – Le 28 février 2022'
 date: 2022-02-16T00:00:00Z
+html: true
 ---
 
 <p>
