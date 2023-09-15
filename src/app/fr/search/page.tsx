@@ -17,9 +17,12 @@ export default function SearchResultsView(): React.ReactElement {
     return <div>Aucun résultat pour &laquo; {searchQuery} &raquo;</div>
   }
 
+  const productsSortedByMostRecent = products
+    .sort((product1, product2) => (product1.releaseDate > product2.releaseDate ? -1 : 1))
+
   return (
     <div className="SearchResultsView">
-      <ProductList products={products} />
+      <ProductList products={productsSortedByMostRecent} />
     </div>
   );
 }
