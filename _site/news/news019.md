@@ -2,6 +2,7 @@
 image: 'FusionITW.png'
 title: 'Nos directeurs de collection présentent 5 livres ligériens.'
 date: 2022-05-10T00:00:00Z
+html: true
 ---
 
 <div class="news-youtube-video">

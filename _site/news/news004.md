@@ -2,6 +2,7 @@
 image: 'nuit-bleue-par-les-directeurs.news.jpg'
 title: 'Nuit Bleue de Simone Buchholz : présentation par les directeurs de'
 date: 2021-03-23T00:00:00Z
+html: true
 ---
 
 <div class="news-youtube-video">

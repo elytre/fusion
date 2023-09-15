@@ -2,6 +2,7 @@
 image: 'toulouse-polar-du-sud.jpg'
 title: 'Festival Toulouse Polar du Sud'
 date: 2022-09-21T00:00:00Z
+html: true
 ---
 
 <p>

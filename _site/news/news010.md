@@ -2,6 +2,7 @@
 image: 'pole_art_prix.jpg'
 title: 'Clark – Sélection prix Pôle Art 2021'
 date: 2021-10-01T00:00:00Z
+html: true
 ---
 
 <p>

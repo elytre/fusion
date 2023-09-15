@@ -2,6 +2,7 @@
 image: 'verdan-strasbourg.jpg'
 title: 'Rencontre avec Nicolas Verdan à la Librairie La tache noire'
 date: 2022-11-07T00:00:00Z
+html: true
 ---
 
 <p>

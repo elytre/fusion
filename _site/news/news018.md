@@ -2,6 +2,7 @@
 image: 'pole_interview_anouk.jpg'
 title: 'Interview Anouk Langaney – Poitiers'
 date: 2022-04-20T00:00:00Z
+html: true
 ---
 
 <p>
