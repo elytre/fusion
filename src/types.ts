@@ -45,7 +45,7 @@ export type Product = {
   author: string;
   contributors?: Contributor[];
   coverImage?: string;
-  releaseDate?: Date;
+  releaseDate: Date;
   pageCount?: number;
   originalLanguage?: 'en' | 'fr' | 'de';
   backCoverText?: string;
