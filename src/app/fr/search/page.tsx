@@ -13,6 +13,10 @@ export default function SearchResultsView(): React.ReactElement {
   const searchQuery = searchParams.get('q');
   const products = _getProductsMatchingQuery(searchQuery);
 
+  if (products.length === 0) {
+    return <div>Aucun résultat pour &laquo; {searchQuery} &raquo;</div>
+  }
+
   return (
     <div className="SearchResultsView">
       <ProductList products={products} />
