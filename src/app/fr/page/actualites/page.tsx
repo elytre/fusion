@@ -37,6 +37,7 @@ function _loadNewsPost(slug: string): NewsPostType {
     title: data.title,
     date: data.date,
     image: data.image,
+    html: Boolean(data.html),
     content,
   };
 }
