@@ -700,6 +700,7 @@ em {
 
 .news-illustration-image {
   max-width: 100%;
+  height: auto;
 }
 
 .news-date {
@@ -834,8 +835,8 @@ em {
 }
 
 .ProductView .Product-cover-image {
-  max-height: 300px;
   max-width: 100%;
+  height: auto;
 }
 
 .ProductView .Product-infos {
