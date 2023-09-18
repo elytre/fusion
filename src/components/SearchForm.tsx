@@ -4,12 +4,11 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 
-import Trans from './Trans';
 import useTrans from '../hooks/use-trans';
 
 export default function SearchForm(): React.ReactElement {
   const searchParams = useSearchParams();
-  const qParam = searchParams.get('q');
+  const qParam = searchParams?.get('q');
   const [query, setQuery] = useState(qParam);
 
   const { push } = useRouter();

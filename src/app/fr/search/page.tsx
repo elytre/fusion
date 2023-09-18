@@ -10,7 +10,7 @@ const catalog = getCatalog();
 
 export default function SearchResultsView(): React.ReactElement {
   const searchParams = useSearchParams();
-  const searchQuery = searchParams.get('q');
+  const searchQuery = searchParams?.get('q') ?? '';
   const products = _getProductsMatchingQuery(searchQuery);
 
   if (products.length === 0) {
