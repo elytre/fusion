@@ -2,7 +2,7 @@ import Image from 'next/image';
 import {Metadata} from "next";
 import Link from 'next/link';
 
-import directionDeCollection from '../../../../../_site/images/news/direction-de-collection.jpg';
+import directionDeCollection from '../../../../../_site/images/direction-de-collection.jpg';
 
 export const metadata: Metadata = {
   title: 'A propos - Fusion',
