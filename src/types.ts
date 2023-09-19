@@ -60,6 +60,7 @@ export type Catalog = {
 };
 
 export type NewsPost = {
+  slug: string;
   title: string;
   date: Date;
   image: string;

@@ -690,7 +690,8 @@ em {
   padding: 12px;
 }
 
-.news-title {
+.news-title,
+.news-title a {
   font-family: var(--teko);
   font-size: 3rem;
   color: red;

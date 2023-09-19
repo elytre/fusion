@@ -18,6 +18,7 @@ export function getNewsPostBySlug(slug: string): NewsPostType {
   const fileContents = fs.readFileSync(newsFilePath, 'utf8');
   const {data, content} = matter(fileContents);
   return {
+    slug,
     title: data.title,
     date: data.date,
     image: data.image,
