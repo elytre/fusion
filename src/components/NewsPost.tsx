@@ -14,10 +14,12 @@ export async function NewsPost({post}: NewsPostProps) {
   return <article className="news">
     <div className="news-illustration">
       <Image
-        src={require(`../../_site/images/news/${post.image}`)}
+        src={post.image}
         alt=""
         role="presentation"
         className="news-illustration-image"
+        width="524"
+        height="258"
       />
     </div>
     <h1 className="news-title">

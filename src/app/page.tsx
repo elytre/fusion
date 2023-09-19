@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import bandeauConteParisienFacebook from '../../_site/images/news/bandeau-Conte-Parisien-facebook.jpg';
+import bandeauConteParisienFacebook from '../../_site/images/bandeau-Conte-Parisien-facebook.jpg';
 import Link from 'next/link';
 
 export default function Home () {
