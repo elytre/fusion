@@ -1,3 +1,6 @@
 # Redirect domain aliases to primary domain
 https://fusion-elytre.netlify.app/* https://fusionlatalante.fr/:splat 301!
 https://fusion.elytre.cloud/* https://fusionlatalante.fr/:splat 301!
+
+# TinaCMS admin
+/admin  /admin/index.html  200
