@@ -1,5 +1,5 @@
 ---
-image: 'lamballe_vignette-3.jpg'
+image: '/news/lamballe_vignette-3.jpg'
 title: 'Festival Noir sur la ville – Lamballe'
 date: 2021-09-24T00:00:00Z
 html: true

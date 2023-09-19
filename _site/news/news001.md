@@ -1,5 +1,5 @@
 ---
-image: 'ouest-france.news.jpg'
+image: '/news/ouest-france.news.jpg'
 title: 'Nantes. Les éditions L’Atalante se remettent au polar – Ouest-France'
 date: 2020-07-28T00:00:00Z
 html: false

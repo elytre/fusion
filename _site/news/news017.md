@@ -1,5 +1,5 @@
 ---
-image: 'polarenvalleenoir.jpg'
+image: '/news/polarenvalleenoir.jpg'
 title: 'Salon du Polar en Vallée noire – Montgivray – 5 juin 2022'
 date: 2022-04-10T00:00:00Z
 html: true

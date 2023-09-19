@@ -1,5 +1,5 @@
 ---
-image: 'Le_polar_se_met_au_vert.jpg'
+image: '/news/Le_polar_se_met_au_vert.jpg'
 title: 'Salon Le polar se met au vert'
 date: 2022-09-02T00:00:00Z
 html: true

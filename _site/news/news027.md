@@ -1,5 +1,5 @@
 ---
-image: 'noirsurlaville_vignette.jpg'
+image: '/news/noirsurlaville_vignette.jpg'
 title: 'Salon du roman noir et du polar : Noir sur la ville'
 date: 2022-10-10T00:00:00Z
 html: true

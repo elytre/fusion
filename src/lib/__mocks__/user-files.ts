@@ -42,7 +42,7 @@ Quisque sodales ipsum eget lectus cursus pharetra. Nam eu eleifend ipsum.`,
       title: 'Le Serpent sur la butte aux pommes - édition illustrée',
       slug: 'le-serpent-illustre',
       author: 'Gérard Ferrori',
-      coverImage: 'cover-image.jpg',
+      coverimage: '/news/cover-image.jpg',
     },
   ],
 });

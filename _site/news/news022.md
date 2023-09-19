@@ -1,5 +1,5 @@
 ---
-image: 'Prix-Litteraire-Bordacarre.jpg'
+image: '/news/Prix-Litteraire-Bordacarre.jpg'
 title: 'Prix des lecteurs 2022 – Festival du Polar de Villeneuve lez Avignon'
 date: 2022-07-05T00:00:00Z
 html: true

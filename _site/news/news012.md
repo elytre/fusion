@@ -1,5 +1,5 @@
 ---
-image: 'vitry_vignette.jpg'
+image: '/news/vitry_vignette.jpg'
 title: 'Festival du roman noir et social – Vitry-sur-Seine'
 date: 2021-11-24T00:00:00Z
 html: true

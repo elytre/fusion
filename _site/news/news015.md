@@ -1,5 +1,5 @@
 ---
-image: 'quais-de-polar-agenda.jpg'
+image: '/news/quais-de-polar-agenda.jpg'
 title: 'Festival Quais du Polar – Lyon – Du 1 au 3 Avril 2022'
 date: 2022-03-01T00:00:00Z
 html: true

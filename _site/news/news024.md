@@ -1,5 +1,5 @@
 ---
-image: 'lisle-noir.jpg'
+image: '/news/lisle-noir.jpg'
 title: 'Festival Lisle noir'
 date: 2022-09-02T00:00:00Z
 html: true

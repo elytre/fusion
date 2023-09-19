@@ -1,5 +1,5 @@
 ---
-image: 'simone-buchholz.news.jpg'
+image: '/news/simone-buchholz.news.jpg'
 title: 'Rencontres avec Simone Buchholz'
 date: 2021-06-31T00:00:00Z
 html: true

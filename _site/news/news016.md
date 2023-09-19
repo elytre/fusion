@@ -1,5 +1,5 @@
 ---
-image: 'bordacarre-coleredupresent.jpg'
+image: '/news/bordacarre-coleredupresent.jpg'
 title: 21e Salon du livre d'expression populaire et de critique sociale – Arras – 1er mai 2022
 date: 2022-03-20T00:00:00Z
 html: true
