@@ -1,5 +1,5 @@
 ---
-image: 'les-affluents-bordacarre.jpg'
+image: '/news/les-affluents-bordacarre.jpg'
 title: 'Festival Les Affluents – Ancenis-Saint-Géréon – Du 24 au 26 Juin 2022'
 date: 2022-06-15T00:00:00Z
 html: true

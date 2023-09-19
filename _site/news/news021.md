@@ -1,5 +1,5 @@
 ---
-image: 'Prix-Litteraire-Bordacarre.jpg'
+image: '/news/Prix-Litteraire-Bordacarre.jpg'
 title: 'Grand Prix de Littérature Policière'
 date: 2022-06-21T00:00:00Z
 html: true

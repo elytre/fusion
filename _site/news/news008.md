@@ -1,5 +1,5 @@
 ---
-image: 'bibliotheque-ideales-strasbourg.news.jpg'
+image: '/news/bibliotheque-ideales-strasbourg.news.jpg'
 title: 'Bibliothèques Idéales – Strasbourg'
 date: 2021-08-06T00:00:00Z
 html: true

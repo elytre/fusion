@@ -1,5 +1,5 @@
 ---
-image: 'livres-hebdo.news.png'
+image: '/news/livres-hebdo.news.png'
 title: L'Atalante lance une nouvelle collection - Livres Hebdo
 date: 2020-10-08T00:00:00Z
 html: true

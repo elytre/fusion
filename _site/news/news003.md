@@ -1,5 +1,5 @@
 ---
-image: 12-minutes-avec.news.jpg
+image: '/news/12-minutes-avec.news.jpg'
 title: 12 minutes avec Caroline de Benedetti et Emeric Cloche
 date: 2020-10-08T00:00:00Z
 html: true

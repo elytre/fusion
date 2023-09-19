@@ -1,5 +1,5 @@
 ---
-image: 'croiseemondes_vignette_2023.jpg'
+image: '/news/croiseemondes_vignette_2023.jpg'
 title: 'Rencontre avec Simone Buchholz à la Librairie La Croisée des mondes'
 date: 2023-02-25T00:00:00Z
 html: true

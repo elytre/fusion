@@ -1,5 +1,5 @@
 ---
-image: 'toulouse_vignette-2.jpg'
+image: '/news/toulouse_vignette-2.jpg'
 title: 'Festival Polars du Sud – Toulouse'
 date: 2021-09-24T00:00:00Z
 html: true

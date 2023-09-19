@@ -1,5 +1,5 @@
 ---
-image: 'Festivaldupolar_vignette.jpg'
+image: '/news/Festivaldupolar_vignette.jpg'
 title: 'Festival du Polar à Villeneuve lez Avignon.'
 date: 2022-10-10T00:00:00Z
 html: true

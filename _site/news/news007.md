@@ -1,5 +1,5 @@
 ---
-image: 'coup-de-coeur-chien-jaune.news.jpg'
+image: '/news/coup-de-coeur-chien-jaune.news.jpg'
 title: 'Coup de cœur pour Clark'
 date: 2021-07-26T00:00:00Z
 html: true
