@@ -16,7 +16,7 @@ export default function SearchForm(): React.ReactElement {
     if (query !== null) {
       push(`/fr/search?q=${query}`);
     }
-  }, [query]);
+  }, [query, push]);
 
   return (
     <form action="/search" className="SearchForm">
