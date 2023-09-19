@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import {NewsPost} from "@/types";
 import markdownToHtml from "@/lib/markdown-to-html";
+import Link from "next/link";
 
 type NewsPostProps = {
   post: NewsPost;
@@ -23,7 +24,9 @@ export async function NewsPost({post}: NewsPostProps) {
       />
     </div>
     <h1 className="news-title">
-      {post.title}
+      <Link href={`/news/${post.slug}`}>
+        {post.title}
+      </Link>
     </h1>
     <p className="news-date">
       <time dateTime="2020-07-28">{formattedDate}</time>
