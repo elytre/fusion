@@ -1,6 +1,7 @@
 import {NewsPost} from "@/components/NewsPost";
 import {getAllNewsPostSlugs, getNewsPostBySlug} from "@/lib/api";
 import Link from "next/link";
+import {notFound} from "next/navigation";
 
 type RouteParams = {
   params: {
@@ -8,9 +9,11 @@ type RouteParams = {
   };
 }
 
+const newsPostSlugs = getAllNewsPostSlugs();
+
 // noinspection JSUnusedGlobalSymbols
 export async function generateStaticParams() {
-  return getAllNewsPostSlugs().map((slug) => {
+  return newsPostSlugs.map((slug) => {
     return { slug };
   });
 }
@@ -18,12 +21,11 @@ export async function generateStaticParams() {
 // noinspection JSUnusedGlobalSymbols
 export async function generateMetadata({ params }: RouteParams) {
   const { slug: requestSlug } = params;
-  const newsPost = getNewsPostBySlug(requestSlug);
-
-  if (!newsPost) {
+  if (!newsPostSlugs.includes(requestSlug)) {
     return {};
   }
 
+  const newsPost = getNewsPostBySlug(requestSlug);
   return {
     title: `${newsPost.title} - Fusion`,
   }
@@ -31,6 +33,10 @@ export async function generateMetadata({ params }: RouteParams) {
 
 export default function NewsPostPage({ params }: RouteParams) {
   const { slug: requestSlug } = params;
+  if (!newsPostSlugs.includes(requestSlug)) {
+    return notFound();
+  }
+
   const newsPost = getNewsPostBySlug(requestSlug);
   return <div className="news-post-page">
     <nav className="breadcrumbs">
