@@ -59,10 +59,6 @@ export default defineConfig({
             isBody: true,
           },
         ],
-        ui: {
-          // This is an DEMO router. You can remove this to fit your site
-          router: ({ document }) => `/news/${document._sys.filename}`,
-        },
       },
 ],
   },
