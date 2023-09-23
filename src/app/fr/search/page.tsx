@@ -3,10 +3,11 @@
 import React from 'react';
 import { useSearchParams } from 'next/navigation';
 
-import { getCatalog } from '@/lib/user-files';
+import { getSearchIndex } from '@/lib/user-files';
 import ProductList from "@/components/ProductList";
+import { Product } from "@/types";
 
-const catalog = getCatalog();
+const searchIndex = getSearchIndex();
 
 export default function SearchResultsView(): React.ReactElement {
   const searchParams = useSearchParams();
@@ -27,12 +28,12 @@ export default function SearchResultsView(): React.ReactElement {
   );
 }
 
-function _getProductsMatchingQuery(searchQuery: string|null) {
+function _getProductsMatchingQuery(searchQuery: string|null): Product[] {
   if (searchQuery === null) {
-    return catalog.products;
+    return searchIndex;
   }
 
-  return catalog.products.filter((product) => {
+  return searchIndex.filter((product) => {
     const query = searchQuery.toLowerCase();
     return product.title.toLowerCase().includes(query) || product.author.toLowerCase().includes(query);
   });

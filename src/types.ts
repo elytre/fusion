@@ -8,6 +8,7 @@ type MenuEntry = {
 export type SiteConfig = {
   title: string;
   baseUrl: string;
+  buyLink: string;
   menus?: {
     header?: MenuEntry[];
     nav?: MenuEntry[];
@@ -36,13 +37,13 @@ export type Extra = {
 }
 
 export type Product = {
-  ean: string;
   title: string;
   slug: string;
   author: string;
+  releaseDate: Date;
+  ean?: string;
   contributors?: Contributor[];
   coverImage?: string;
-  releaseDate: Date;
   pageCount?: number;
   originalLanguage?: 'en' | 'fr' | 'de';
   backCoverText?: string;
@@ -59,6 +60,8 @@ export type Catalog = {
   products: Product[];
 };
 
+export type SearchIndex = Product[];
+
 export type NewsPost = {
   slug: string;
   title: string;
@@ -67,3 +70,4 @@ export type NewsPost = {
   content: string;
   html: boolean;
 }
+

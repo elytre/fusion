@@ -2,7 +2,7 @@ import {NewsPost as NewsPostType, Product} from '@/types';
 import fs from 'fs';
 import matter from 'gray-matter';
 import {join} from "path";
-import catalog from "../../_site/catalog.json";
+import { getSiteConfig } from "@/lib/user-files";
 
 /**
  * News API
@@ -62,6 +62,6 @@ export function getProductBySlug(slug: string): Product {
     releaseDate: new Date(data.releaseDate),
     coverImage: `/covers/${data.slug}.jpg`,
     backCoverText: data.backCoverText,
-    buyLink: catalog.global.buyLink.replace(':ean', data.ean)
+    buyLink: getSiteConfig().buyLink.replace(':ean', data.ean)
   };
 }

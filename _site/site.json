@@ -1,6 +1,7 @@
 {
   "title": "Fusion",
   "baseUrl": "https://fusionlatalante.fr",
+  "buyLink": "https://librairielatalante.com/isbn/:ean",
   "menus": {
     "header": [
       {
