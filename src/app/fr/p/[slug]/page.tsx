@@ -1,13 +1,14 @@
-import { getCatalog, getSiteConfig } from '@/lib/user-files';
-import {Product as ProductType, SiteConfig} from "@/types";
 import Head from "next/head";
-import Product from "@/components/Product";
 import {notFound} from "next/navigation";
 import {ReactElement} from "react";
+
+import {getSiteConfig} from '@/lib/user-files';
+import {Product as ProductType, SiteConfig} from "@/types";
+import Product from "@/components/Product";
 import markdownToHtml from "@/lib/markdown-to-html";
+import {getAllProductSlugs, getProductBySlug} from "@/lib/api";
 
 const site = getSiteConfig();
-const catalog = getCatalog();
 
 type RouteParams = {
   params: {
@@ -17,18 +18,15 @@ type RouteParams = {
 
 // noinspection JSUnusedGlobalSymbols
 export async function generateStaticParams() {
-  const slugs = catalog.products.map((product) => {
-    return {slug: product.slug};
+  return getAllProductSlugs().map((slug) => {
+    return { slug: slug };
   });
-  return slugs;
 }
 
 // noinspection JSUnusedGlobalSymbols
 export async function generateMetadata({ params }: RouteParams) {
   const { slug: requestSlug } = params;
-  const product = catalog.products.find(
-    ({ slug }: ProductType) => slug === requestSlug,
-  );
+  const product = getProductBySlug(requestSlug);
 
   if (!product) {
     return {};
@@ -41,9 +39,7 @@ export async function generateMetadata({ params }: RouteParams) {
 
 export default async function ProductPage ({ params }: RouteParams) {
   const { slug: requestSlug } = params;
-  const product = catalog.products.find(
-    ({ slug }: ProductType) => slug === requestSlug,
-  );
+  const product = getProductBySlug(requestSlug);
 
   if (!product) {
     return notFound();
