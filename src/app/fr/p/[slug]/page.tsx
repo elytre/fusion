@@ -59,7 +59,7 @@ export default async function ProductPage ({ params }: RouteParams) {
         <meta name="twitter:card" content="summary" />
         {_getImageMetaTag(site.baseUrl, product.coverImage)}
         <meta property="book:author" content={product.author} />
-        <meta property="book:isbn" content={product.ean.toString()} />
+        {product.ean && <meta property="book:isbn" content={product.ean.toString()} />}
         {product.releaseDate && (
           <meta
             property="book:release_date"

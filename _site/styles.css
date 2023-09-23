@@ -51,7 +51,7 @@ em {
 
 .page-block h1 {
   background: var(--red);
-  box-shadow: 4px 4px 0px 0px black;
+  box-shadow: 4px 4px 0 0 black;
   color: white;
   font-family: var(--teko);
   font-size: 3rem;
@@ -81,7 +81,7 @@ em {
 }
 
 .page-block.page-block--black h1 {
-  box-shadow: 4px 4px 0px 0px white;
+  box-shadow: 4px 4px 0 0 white;
   color: black;
 }
 
@@ -139,7 +139,7 @@ em {
 }
 
 .Header-site-title a:hover {
-  box-shadow: 7px 7px 0px 0px rgba(255, 0, 0, 1);
+  box-shadow: 7px 7px 0 0 rgba(255, 0, 0, 1);
 }
 
 .Header .Menu {
@@ -198,7 +198,7 @@ em {
 }
 
 .SearchForm:hover {
-  box-shadow: 4px 4px 0px 0px rgba(255, 0, 0, 1);
+  box-shadow: 4px 4px 0 0 rgba(255, 0, 0, 1);
 }
 
 @media (min-width: 1024px) {
@@ -377,7 +377,7 @@ em {
 
 .HomeView .manifest-title {
   background: white;
-  box-shadow: 4px 4px 0px 0px rgba(255, 0, 0, 1);
+  box-shadow: 4px 4px 0 0 rgba(255, 0, 0, 1);
   color: black;
   font-family: var(--teko);
   font-size: 30px;
@@ -467,33 +467,25 @@ em {
   margin-top: 25px;
 }
 
-.ProductList .Product-cover-image {
+.ProductList .ProductPreview-cover-image {
   max-width: 100%;
   height: auto;
 }
 
-.ProductList .Product-title {
+.ProductList .ProductPreview-title {
   font-family: var(--teko);
   font-size: 5rem;
   font-weight: 400;
   margin-top: 15px;
 }
 
-.ProductList .Product-title a {
+.ProductList .ProductPreview-title a {
   color: var(--red);
 }
 
-.ProductList .Product-author {
+.ProductList .ProductPreview-author {
   font-family: var(--teko);
   font-size: 3rem;
-}
-
-.ProductList .Product-buy-link-button,
-.ProductList .Product-back-cover-text,
-.ProductList .Product-extras,
-.ProductList .Product-reviews,
-.ProductList .Product-details {
-  display: none;
 }
 
 @media (min-width: 1024px) {
@@ -503,7 +495,8 @@ em {
     justify-content: space-between;
   }
 
-  .ProductList .Product {
+  .ProductList .ProductPreview {
+    margin-top: 25px;
     width: 400px;
   }
 }
@@ -550,7 +543,7 @@ em {
 
 .contributors-page .contributor-bio {
   background: white;
-  box-shadow: 4px 4px 0px 0px black;
+  box-shadow: 4px 4px 0 0 black;
   line-height: 1.5em;
   margin-top: 25px;
   padding: 15px 20px;
@@ -619,8 +612,7 @@ em {
 
   .contributors-page .contributor-name {
     font-size: 11rem;
-    padding: 100px;
-    padding-bottom: 0;
+    padding: 100px 100px 0;
     width: 620px;
   }
 
@@ -676,8 +668,7 @@ em {
 @media (min-width: 1024px) {
   .contact-page .contact-page-block {
     margin: 25px auto;
-    padding: 45px;
-    padding-top: 25px;
+    padding: 25px 45px 45px;
     max-width: 600px;
   }
 }
@@ -702,7 +693,6 @@ em {
 .news-illustration-image {
   height: auto;
   max-width: 100%;
-  height: auto;
 }
 
 .news-date {
@@ -887,10 +877,9 @@ em {
 
 .ProductView .Product-back-cover-text {
   background: white;
-  box-shadow: 7px 7px 0px 0px rgba(255, 0, 0, 1);
+  box-shadow: 7px 7px 0 0 rgba(255, 0, 0, 1);
   font-size: 1.5rem;
   line-height: 2rem;
-  margin-top: 25px;
   margin-top: 50px;
   padding: 5px 20px;
 }
@@ -901,10 +890,9 @@ em {
 
 .ProductView .Product-reviews {
   background: white;
-  box-shadow: 7px 7px 0px 0px rgba(255, 0, 0, 1);
+  box-shadow: 7px 7px 0 0 rgba(255, 0, 0, 1);
   font-size: 1.5rem;
   line-height: 2rem;
-  margin-top: 25px;
   margin-top: 50px;
   order: 5;
   padding: 5px 20px;
