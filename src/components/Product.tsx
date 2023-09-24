@@ -64,18 +64,18 @@ export default function Product({
       {product.reviews ? _buildReviews(product.reviews) : null}
 
       <div className="Product-details">
-        {product.contributors
-          ? product.contributors.map((contributor) => {
-            const roleSlug = contributor.role.toLowerCase();
+        {product.contributions
+          ? product.contributions.map((contribution) => {
+            const roleSlug = contribution.role.toLowerCase();
             return (
               <p
                 className={`Product-detail detail-contributor role-${roleSlug}`}
-                key={contributor.name}
+                key={contribution.contributor.name}
               >
                   <span className="detail-label">
-                    <Trans>{contributor.role}</Trans>
+                    <Trans>{contribution.role}</Trans>
                   </span>{' '}
-                <span className="detail-value">{contributor.name}</span>
+                <span className="detail-value">{contribution.contributor.name}</span>
               </p>
             );
           })

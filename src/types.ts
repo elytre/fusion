@@ -27,6 +27,10 @@ export type Review = {
 
 export type Contributor = {
   name: string;
+};
+
+export type Contribution = {
+  contributor: Contributor;
   role: 'Author' | 'Translator' | 'Cover artist' | 'Photographer';
 };
 
@@ -42,7 +46,7 @@ export type Product = {
   author: string;
   releaseDate: Date;
   ean?: string;
-  contributors?: Contributor[];
+  contributions?: Contribution[];
   coverImage?: string;
   pageCount?: number;
   originalLanguage?: 'en' | 'fr' | 'de';
