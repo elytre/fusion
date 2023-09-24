@@ -53,7 +53,7 @@ export const products = _getAllProducts();
 export function getProductBySlug(slug: string): Product {
   const productFilePath = `${catalogDirectory}/${slug}.md`;
   const fileContents = fs.readFileSync(productFilePath, 'utf8');
-  const { data } = matter(fileContents);
+  const { data, content } = matter(fileContents);
   return {
     ean: data.ean,
     title: data.title,
@@ -67,7 +67,7 @@ export function getProductBySlug(slug: string): Product {
     reviews: data.reviews,
     releaseDate: new Date(data.releaseDate),
     coverImage: `/covers/${data.slug}.jpg`,
-    backCoverText: data.backCoverText,
-    buyLink: getSiteConfig().buyLink.replace(':ean', data.ean)
+    buyLink: getSiteConfig().buyLink.replace(':ean', data.ean),
+    backCoverText: content,
   };
 }
