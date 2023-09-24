@@ -149,6 +149,31 @@ export default defineConfig({
             ]
           },
           {
+            label: "Contributions",
+            name: "contributions",
+            type: "object",
+            list: true,
+            fields: [
+              {
+                label: "Contributeur·trice",
+                name: "contributor",
+                type: "reference",
+                collections: ["contributors"],
+              },
+              {
+                label: "Role",
+                name: "role",
+                type: "string",
+                options: [
+                  {label: "Auteur·trice", value: "Author"},
+                  {label: "Traducteur·trice", value: "Translator"},
+                  {label: "Illustrateur·trice de couverture", value: "Cover artist"},
+                  {label: "Photographe", value: "Photographer"},
+                ]
+              },
+            ]
+          },
+          {
             type: 'image',
             label: 'Image de couverture',
             description: 'Dimensions: 1024px * 1448px',

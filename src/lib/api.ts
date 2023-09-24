@@ -1,8 +1,9 @@
-import {NewsPost as NewsPostType, Product} from '@/types';
 import fs from 'fs';
 import matter from 'gray-matter';
-import {join} from "path";
+import { join } from "path";
+
 import { getSiteConfig } from "@/lib/user-files";
+import {Contribution, Contributor, NewsPost as NewsPostType, Product} from '@/types';
 
 /**
  * News API
@@ -50,16 +51,24 @@ function _getAllProducts() {
 }
 export const products = _getAllProducts();
 
+type ProductContribution = {
+  contributor: string;
+  role: Contribution['role'];
+}
+
 export function getProductBySlug(slug: string): Product {
   const productFilePath = `${catalogDirectory}/${slug}.md`;
   const fileContents = fs.readFileSync(productFilePath, 'utf8');
   const { data, content } = matter(fileContents);
+
+  const contributions = _buildContributions(data.contributions);
+
   return {
     ean: data.ean,
     title: data.title,
     slug,
     author: data.author,
-    contributors: data.contributors,
+    contributions,
     pageCount: data.pageCount,
     originalLanguage: data.originalLanguage,
     price: data.price,
@@ -70,4 +79,28 @@ export function getProductBySlug(slug: string): Product {
     buyLink: getSiteConfig().buyLink.replace(':ean', data.ean),
     backCoverText: content,
   };
+}
+
+function _buildContributions(contributions: ProductContribution[]|undefined): Contribution[] {
+  if (!contributions) {
+    return [];
+  }
+
+  return contributions.map((contribution: ProductContribution) => {
+    const contributorFilePath = contribution.contributor;
+    const contributorSlugMatches = contributorFilePath.match(/_site\/contributors\/(.*)\.md/);
+    const contributorSlug = contributorSlugMatches ? contributorSlugMatches[1] : "";
+    return {
+      contributor: _getContributorBySlug(contributorSlug),
+      role: contribution.role,
+    };
+  });
+}
+
+function _getContributorBySlug(slug: string): Contributor {
+  const contributorsDirectory = join(process.cwd(), '_site/contributors');
+  const contributorFilePath = `${contributorsDirectory}/${slug}.md`;
+  const fileContents = fs.readFileSync(contributorFilePath, 'utf8');
+  const { data } = matter(fileContents);
+  return { name: data.name };
 }
