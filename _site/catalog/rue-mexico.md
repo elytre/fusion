@@ -3,9 +3,9 @@ ean: '9791036001338'
 title: Rue Mexico
 author: Simone Buchholz
 contributors:
-  - name: Claudine Layre
+  - contributor: _site/contributors/claudine-layre.md
     role: Translator
-  - name: Olivier Lavigne
+  - contributor: _site/contributors/olivier-lavigne.md
     role: Cover artist
 releaseDate: 2023-02-23T00:00:00.000Z
 pageCount: 256

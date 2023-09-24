@@ -3,7 +3,7 @@ ean: '9791036001413'
 title: Un conte parisien violent
 author: Clément Milian
 contributors:
-  - name: Dorian Danielsen
+  - name: _site/contributors/dorian-danielsen.md
     role: Cover artist
 releaseDate: 2023-04-06T00:00:00.000Z
 pageCount: 256

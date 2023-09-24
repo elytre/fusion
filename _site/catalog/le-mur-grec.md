@@ -3,9 +3,9 @@ ean: '9791036001253'
 title: Le Mur grec
 author: Nicolas Verdan
 contributors:
-  - name: Olivier Lavigne
+  - contributor: _site/contributors/olivier-lavigne.md
     role: Cover artist
-  - name: Matt Hearne
+  - name: _site/contributors/matt-hearne.md
     role: Photographer
 releaseDate: 2022-10-06T00:00:00.000Z
 pageCount: 224

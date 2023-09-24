@@ -2,12 +2,12 @@
 ean: '9791036001000'
 title: Béton rouge
 author: Simone Buchholz
-contributors:
-  - name: Claudine Layre
+contributions:
+  - contributor: _site/contributors/claudine-layre.md
     role: Translator
-  - name: Olivier Lavigne
+  - contributor: _site/contributors/olivier-lavigne.md
     role: Cover artist
-  - name: Apo Genc
+  - contributor: _site/contributors/apo-genc.md
     role: Photographer
 releaseDate: 2022-01-13T00:00:00.000Z
 pageCount: 240
