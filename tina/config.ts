@@ -149,6 +149,13 @@ export default defineConfig({
             ]
           },
           {
+            type: 'image',
+            label: 'Image de couverture',
+            description: 'Dimensions: 1024px * 1448px',
+            name: 'coverImage',
+            required: true,
+          },
+          {
             type: "rich-text",
             name: "body",
             label: "Quatrième de couverture",

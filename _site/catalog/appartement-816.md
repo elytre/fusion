@@ -5,9 +5,10 @@ author: Olivier Bordaçarre
 contributors:
   - name: Olivier Lavigne
     role: Cover artist
-releaseDate: '2021-10-21T00:00:00.000Z'
+releaseDate: 2021-10-21T00:00:00.000Z
 pageCount: 160
 price: 14.9
+coverImage: /covers/appartement-816.jpg
 ---
 
 « *J’ai fait l’expérience que je voulais faire depuis toujours : me raser la tête. Je suis un autre
