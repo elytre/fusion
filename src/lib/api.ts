@@ -57,7 +57,7 @@ export function getProductBySlug(slug: string): Product {
   return {
     ean: data.ean,
     title: data.title,
-    slug: data.slug,
+    slug,
     author: data.author,
     contributors: data.contributors,
     pageCount: data.pageCount,
@@ -66,7 +66,7 @@ export function getProductBySlug(slug: string): Product {
     extras: data.extras,
     reviews: data.reviews,
     releaseDate: new Date(data.releaseDate),
-    coverImage: `/covers/${data.slug}.jpg`,
+    coverImage: `/covers/${slug}.jpg`,
     buyLink: getSiteConfig().buyLink.replace(':ean', data.ean),
     backCoverText: content,
   };

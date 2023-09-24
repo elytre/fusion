@@ -1,7 +1,6 @@
 ---
 ean: '9791036000638'
 title: Nuit bleue
-slug: nuit-bleue
 author: Simone Buchholz
 contributors:
   - name: Claudine Layre

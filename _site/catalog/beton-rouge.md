@@ -1,7 +1,6 @@
 ---
 ean: '9791036001000'
 title: Béton rouge
-slug: beton-rouge
 author: Simone Buchholz
 contributors:
   - name: Claudine Layre

@@ -1,7 +1,6 @@
 ---
 ean: '9791036001635'
 title: La Récolte des enfants
-slug: la-recolte-des-enfants
 author: Nicolas Verdan
 releaseDate: '2023-10-05T00:00:00.000Z'
 pageCount: 352

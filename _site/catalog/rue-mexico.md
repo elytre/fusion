@@ -1,7 +1,6 @@
 ---
 ean: '9791036001338'
 title: Rue Mexico
-slug: rue-mexico
 author: Simone Buchholz
 contributors:
   - name: Claudine Layre
