@@ -2,11 +2,6 @@
 ean: '9791036000638'
 title: Nuit bleue
 author: Simone Buchholz
-contributors:
-  - name: Claudine Layre
-    role: Translator
-  - name: Olivier Lavigne
-    role: Cover artist
 releaseDate: 2021-03-04T00:00:00.000Z
 pageCount: 240
 originalLanguage: de
@@ -45,6 +40,11 @@ reviews:
     author: Eric
     source: Librairie La Tache Noire – Strasbourg
 coverImage: /covers/nuit-bleue.jpg
+contributions:
+  - contributor: _site/contributors/claudine-layre.md
+    role: Translator
+  - contributor: _site/contributors/olivier-lavigne.md
+    role: Cover artist
 ---
 
 « *Joe, qui vous a brisé les os ?*\

@@ -3,7 +3,7 @@ ean: '9791036000690'
 title: Clark
 author: Anouk Langaney
 contributors:
-  - name: Olivier Lavigne
+  - name: _site/contributors/olivier-lavigne.md
     role: Cover artist
 releaseDate: 2021-05-27T00:00:00.000Z
 pageCount: 144
