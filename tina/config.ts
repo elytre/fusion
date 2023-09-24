@@ -1,4 +1,5 @@
 import { defineConfig } from "tinacms";
+import slugify from "slugify";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
@@ -24,6 +25,13 @@ export default defineConfig({
         name: "news",
         label: "Actualités",
         path: "_site/news",
+        ui: {
+          filename: {
+            slugify: (values) => {
+              return values.title ? slugify(values.title, { lower: true }) : "";
+            },
+          },
+        },
         fields: [
           {
             type: "string",
@@ -64,6 +72,13 @@ export default defineConfig({
         name: "products",
         label: "Livres",
         path: "_site/catalog",
+        ui: {
+          filename: {
+            slugify: (values) => {
+              return values.title ? slugify(values.title, { lower: true }) : "";
+            },
+          },
+        },
         fields: [
           {
             type: "string",
