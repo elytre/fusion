@@ -44,6 +44,12 @@ export function getAllProductSlugs() {
   });
 }
 
+function _getAllProducts() {
+  return getAllProductSlugs().map(getProductBySlug)
+    .sort((product1, product2) => (product1.releaseDate > product2.releaseDate ? -1 : 1));
+}
+export const products = _getAllProducts();
+
 export function getProductBySlug(slug: string): Product {
   const productFilePath = `${catalogDirectory}/${slug}.md`;
   const fileContents = fs.readFileSync(productFilePath, 'utf8');
