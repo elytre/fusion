@@ -1,7 +1,6 @@
 ---
 ean: '9791036000690'
 title: Clark
-slug: clark
 author: Anouk Langaney
 contributors:
   - name: Olivier Lavigne

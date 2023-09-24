@@ -1,7 +1,6 @@
 ---
 ean: '9791036001413'
 title: Un conte parisien violent
-slug: un-conte-parisien-violent
 author: Clément Milian
 contributors:
   - name: Dorian Danielsen

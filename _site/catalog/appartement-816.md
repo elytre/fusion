@@ -1,7 +1,6 @@
 ---
 ean: '9791036000935'
 title: Appartement 816
-slug: appartement-816
 author: Olivier Bordaçarre
 contributors:
   - name: Olivier Lavigne

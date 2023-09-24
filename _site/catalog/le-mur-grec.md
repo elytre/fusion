@@ -1,7 +1,6 @@
 ---
 ean: '9791036001253'
 title: Le Mur grec
-slug: le-mur-grec
 author: Nicolas Verdan
 contributors:
   - name: Olivier Lavigne
