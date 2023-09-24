@@ -5,22 +5,25 @@ author: Anouk Langaney
 contributors:
   - name: Olivier Lavigne
     role: Cover artist
-releaseDate: '2021-05-27T00:00:00.000Z'
+releaseDate: 2021-05-27T00:00:00.000Z
 pageCount: 144
 price: 14.9
 extras:
   - type: youtube
     title: Bande-annonce de Clark
-    href: https://www.youtube.com/watch?v=tsRNjxwNkmQ
+    href: 'https://www.youtube.com/watch?v=tsRNjxwNkmQ'
 reviews:
   - text: Un condensé d'humour tendrement noir.
     source: Les Échos
-  - text: Clark est un divertissement étonnant, doublé d’une vision acerbe du monde,
+  - text: >-
+      Clark est un divertissement étonnant, doublé d’une vision acerbe du monde,
       couplé à un fantasme d’éducation flippant.
     source: EmOtionS
-  - text: Avec un humour noir et une plume grinçante, l'auteure nous offre un ovni
+  - text: >-
+      Avec un humour noir et une plume grinçante, l'auteure nous offre un ovni
       littéraire, jubilatoire et inclassable.
     source: Télé 7 Jours
+coverImage: /covers/clark.jpg
 ---
 
 « *... et hop ! Coincée. Pas mal, non ? Avoue que tu ne t’y attendais pas, à celle-là ! Tu coupes les ponts, tu pars au bout du monde, tu restes dix ans sans donner la moindre nouvelle ; quand je tente de reprendre contact, paf ! tu me flanques hors de ta maison et de ta vie, sans l’ombre d’une hésitation… et te voilà malgré tout obligée de me lire. On sous-estime toujours sa vieille mère.* »

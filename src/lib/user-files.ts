@@ -14,6 +14,5 @@ export function getSearchIndex(): SearchIndex {
   return searchIndex.map(entry => ({
     ...entry,
     releaseDate: new Date(entry.releaseDate),
-    coverImage: `/covers/${entry.slug}.jpg`
   }));
 }

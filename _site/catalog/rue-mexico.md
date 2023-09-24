@@ -7,9 +7,10 @@ contributors:
     role: Translator
   - name: Olivier Lavigne
     role: Cover artist
-releaseDate: '2023-02-23T00:00:00.000Z'
+releaseDate: 2023-02-23T00:00:00.000Z
 pageCount: 256
 price: 19.9
+coverImage: /covers/rue-mexico.jpg
 ---
 
 « Les gens qui habitent dans des ports gardent toujours espoir. »

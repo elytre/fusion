@@ -66,7 +66,7 @@ export function getProductBySlug(slug: string): Product {
     extras: data.extras,
     reviews: data.reviews,
     releaseDate: new Date(data.releaseDate),
-    coverImage: `/covers/${slug}.jpg`,
+    coverImage: data.coverImage,
     buyLink: getSiteConfig().buyLink.replace(':ean', data.ean),
     backCoverText: content,
   };

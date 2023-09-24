@@ -7,9 +7,10 @@ contributors:
     role: Cover artist
   - name: Matt Hearne
     role: Photographer
-releaseDate: '2022-10-06T00:00:00.000Z'
+releaseDate: 2022-10-06T00:00:00.000Z
 pageCount: 224
 price: 18.5
+coverImage: /covers/le-mur-grec.jpg
 ---
 
 « Cherchons la vérité, à défaut de faire régner la moindre justice. »

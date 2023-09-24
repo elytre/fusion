@@ -5,9 +5,10 @@ author: Clément Milian
 contributors:
   - name: Dorian Danielsen
     role: Cover artist
-releaseDate: '2023-04-06T00:00:00.000Z'
+releaseDate: 2023-04-06T00:00:00.000Z
 pageCount: 256
 price: 19.9
+coverImage: /covers/un-conte-parisien-violent.jpg
 ---
 
 « À quatorze ans, la gamine fascinait presque tous les zonards du quartier, qui l’appelaient Chewing-gum, comme elle semblait élastique à force de tomber sans jamais se faire mal. Ça lui plaisait d’avoir plusieurs noms : Gomme, Gamine, Sally, Salamandre, et puis Sal ou encore Salomé, tout à la fin de la liste. »
