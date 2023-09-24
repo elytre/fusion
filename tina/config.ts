@@ -210,6 +210,27 @@ export default defineConfig({
           },
         ],
       },
+      {
+        name: "contributors",
+        label: "Contributeur·trice·s",
+        path: "_site/contributors",
+        ui: {
+          filename: {
+            slugify: (values) => {
+              return values.name ? slugify(values.name, { lower: true }) : "";
+            },
+          },
+        },
+        fields: [
+          {
+            type: "string",
+            name: "name",
+            label: "Nom complet",
+            isTitle: true,
+            required: true,
+          },
+        ]
+      }
     ],
   },
 });
