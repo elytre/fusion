@@ -125,30 +125,6 @@ export default defineConfig({
             ]
           },
           {
-            label: "Contributeur·trice·s",
-            name: "contributors",
-            type: "object",
-            list: true,
-            fields: [
-              {
-                label: "Nom",
-                name: "name",
-                type: "string"
-              },
-              {
-                label: "Role",
-                name: "role",
-                type: "string",
-                options: [
-                  {label: "Auteur·trice", value: "Author"},
-                  {label: "Traducteur·trice", value: "Translator"},
-                  {label: "Illustrateur·trice de couverture", value: "Cover artist"},
-                  {label: "Photographe", value: "Photographer"},
-                ]
-              },
-            ]
-          },
-          {
             label: "Contributions",
             name: "contributions",
             type: "object",
