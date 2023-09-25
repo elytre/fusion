@@ -62,12 +62,13 @@ export function getProductBySlug(slug: string): Product {
   const { data, content } = matter(fileContents);
 
   const contributions = _buildContributions(data.contributions);
+  const author = contributions.find(contribution => contribution.role === "Author");
 
   return {
     ean: data.ean,
     title: data.title,
     slug,
-    author: data.author,
+    author: author?.contributor.name || "Anonyme",
     contributions,
     pageCount: data.pageCount,
     originalLanguage: data.originalLanguage,

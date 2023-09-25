@@ -3,6 +3,8 @@ ean: '9791036000935'
 title: Appartement 816
 author: Olivier Bordaçarre
 contributions:
+  - contributor: _site/contributors/olivier-bordacarre.md
+    role: Author
   - contributor: _site/contributors/olivier-lavigne.md
     role: Cover artist
 releaseDate: 2021-10-21T00:00:00.000Z

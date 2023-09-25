@@ -41,6 +41,8 @@ reviews:
     source: Librairie La Tache Noire – Strasbourg
 coverImage: /covers/nuit-bleue.jpg
 contributions:
+  - contributor: _site/contributors/simone-buchholz.md
+    role: Author
   - contributor: _site/contributors/claudine-layre.md
     role: Translator
   - contributor: _site/contributors/olivier-lavigne.md

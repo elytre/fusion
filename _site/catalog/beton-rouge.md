@@ -1,8 +1,9 @@
 ---
 ean: '9791036001000'
 title: Béton rouge
-author: Simone Buchholz
 contributions:
+  - contributor: _site/contributors/simone-buchholz.md
+    role: Author
   - contributor: _site/contributors/claudine-layre.md
     role: Translator
   - contributor: _site/contributors/olivier-lavigne.md
