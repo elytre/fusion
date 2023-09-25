@@ -8,6 +8,7 @@ import ProductReview from "@/components/ProductReview";
 import ProductExtra from "@/components/ProductExtra";
 
 import {
+  Contribution,
   Extra as ExtraType,
   Product as ProductType,
   Review as ReviewType,
@@ -64,22 +65,7 @@ export default function Product({
       {product.reviews ? _buildReviews(product.reviews) : null}
 
       <div className="Product-details">
-        {product.contributions
-          ? product.contributions.map((contribution) => {
-            const roleSlug = contribution.role.toLowerCase();
-            return (
-              <p
-                className={`Product-detail detail-contributor role-${roleSlug}`}
-                key={contribution.contributor.name}
-              >
-                  <span className="detail-label">
-                    <Trans>{contribution.role}</Trans>
-                  </span>{' '}
-                <span className="detail-value">{contribution.contributor.name}</span>
-              </p>
-            );
-          })
-          : null}
+        {product.contributions ? _buildContributions(product.contributions) : null}
 
         {product.releaseDate ? (
           <p className="Product-detail detail-page-count">
@@ -183,4 +169,25 @@ function _buildExtras(extras: ExtraType[]) {
       />
     ))}
   </div>;
+}
+
+function _buildContributions(contributions: Contribution[]) {
+  return contributions.map((contribution) => {
+    if (contribution.role === "Author") {
+      return null;
+    }
+
+    const roleSlug = contribution.role.toLowerCase();
+    return (
+      <p
+        className={`Product-detail detail-contributor role-${roleSlug}`}
+        key={contribution.contributor.name}
+      >
+                  <span className="detail-label">
+                    <Trans>{contribution.role}</Trans>
+                  </span>{' '}
+        <span className="detail-value">{contribution.contributor.name}</span>
+      </p>
+    );
+  });
 }
