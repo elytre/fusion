@@ -107,5 +107,9 @@ export function getContributorBySlug(slug: string): Contributor {
   const contributorFilePath = `${contributorsDirectory}/${slug}.md`;
   const fileContents = fs.readFileSync(contributorFilePath, 'utf8');
   const { data, content } = matter(fileContents);
-  return { name: data.name, biography: content };
+  return {
+    name: data.name,
+    photo: data.photo,
+    biography: content
+  };
 }

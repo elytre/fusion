@@ -225,6 +225,13 @@ export default defineConfig({
             required: true,
           },
           {
+            type: 'image',
+            label: 'Photo',
+            description: 'Dimensions: 356px * 356px',
+            name: 'photo',
+            required: true,
+          },
+          {
             type: "rich-text",
             name: "body",
             label: "Notice biographique",

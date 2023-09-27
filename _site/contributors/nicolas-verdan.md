@@ -1,5 +1,6 @@
 ---
 name: Nicolas Verdan
+photo: /contributors/nicolas-verdan.jpg
 ---
 
 Né en 1971 à Vevey en Suisse, Nicolas Verdan est un ancien journaliste, passionné
@@ -13,6 +14,5 @@ et ancien du Renseignement.
 En 2006, Nicolas Verdan obtient pour son premier roman le prix Bibliomedia, le prix Schiller
 (prix suisse de littérature) en 2012 et le prix du polar romand en 2018. Nicolas Verdan est
 publié pour la première fois en France.
-
 
 Photo © Yves Leresche.
