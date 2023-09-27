@@ -126,7 +126,26 @@ export function getContributorBySlug(slug: string): Contributor {
   const { data, content } = matter(fileContents);
   return {
     name: data.name,
+    slug,
     photo: data.photo,
     biography: content
   };
+}
+
+export function getContributorsByRole(targetRole: Contribution['role']): Contributor[] {
+  const uniqueSlugs: string[] = [];
+  const contributionsWithRole = products.reduce((accumulator: Contribution[], product) => {
+    const productContributionsWithRole = product.contributions?.filter(contribution => {
+      return contribution.role === targetRole;
+    }) || [];
+    return [...accumulator, ...productContributionsWithRole];
+  }, []);
+
+  return contributionsWithRole
+    .map(({ contributor }) => contributor)
+    .filter(contributor => {
+      const isDuplicate = uniqueSlugs.includes(contributor.slug);
+      uniqueSlugs.push(contributor.slug);
+      return !isDuplicate;
+    });
 }
