@@ -98,6 +98,15 @@ function _buildContributions(contributions: ProductContribution[]|undefined): Co
   });
 }
 
+export function getProductsForContributor(contributor: Contributor): Product[] {
+  return products.filter(product => {
+    const contributorsName = product.contributions?.map(contribution => {
+      return contribution.contributor.name;
+    });
+    return contributorsName?.includes(contributor.name);
+  });
+}
+
 /**
  * Contributor API
  */
