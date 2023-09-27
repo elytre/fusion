@@ -224,6 +224,12 @@ export default defineConfig({
             isTitle: true,
             required: true,
           },
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Notice biographique",
+            isBody: true,
+          },
         ]
       }
     ],

@@ -27,6 +27,7 @@ export type Review = {
 
 export type Contributor = {
   name: string;
+  biography: string;
 };
 
 export type Contribution = {
