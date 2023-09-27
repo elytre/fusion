@@ -92,16 +92,20 @@ function _buildContributions(contributions: ProductContribution[]|undefined): Co
     const contributorSlugMatches = contributorFilePath.match(/_site\/contributors\/(.*)\.md/);
     const contributorSlug = contributorSlugMatches ? contributorSlugMatches[1] : "";
     return {
-      contributor: _getContributorBySlug(contributorSlug),
+      contributor: getContributorBySlug(contributorSlug),
       role: contribution.role,
     };
   });
 }
 
-function _getContributorBySlug(slug: string): Contributor {
+/**
+ * Contributor API
+ */
+
+export function getContributorBySlug(slug: string): Contributor {
   const contributorsDirectory = join(process.cwd(), '_site/contributors');
   const contributorFilePath = `${contributorsDirectory}/${slug}.md`;
   const fileContents = fs.readFileSync(contributorFilePath, 'utf8');
-  const { data } = matter(fileContents);
-  return { name: data.name };
+  const { data, content } = matter(fileContents);
+  return { name: data.name, biography: content };
 }
