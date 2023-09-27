@@ -1,5 +1,6 @@
 ---
 name: Clément Milian
+photo: /contributors/clement-milian.jpg
 ---
 
 Clément Milian est né à Nantes en 1981.
