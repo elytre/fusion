@@ -5,6 +5,8 @@ import { join } from "path";
 import { getSiteConfig } from "@/lib/user-files";
 import {Contribution, Contributor, NewsPost as NewsPostType, Product} from '@/types';
 
+const contributorsDirectory = join(process.cwd(), '_site/contributors');
+
 /**
  * News API
  */
@@ -111,8 +113,14 @@ export function getProductsForContributor(contributor: Contributor): Product[] {
  * Contributor API
  */
 
+export const contributorSlugs = function () {
+  const contributorFilenames = fs.readdirSync(contributorsDirectory);
+  return contributorFilenames.map((filename: string) => {
+    return filename.replace('.md', '');
+  });
+}();
+
 export function getContributorBySlug(slug: string): Contributor {
-  const contributorsDirectory = join(process.cwd(), '_site/contributors');
   const contributorFilePath = `${contributorsDirectory}/${slug}.md`;
   const fileContents = fs.readFileSync(contributorFilePath, 'utf8');
   const { data, content } = matter(fileContents);

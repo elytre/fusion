@@ -501,26 +501,26 @@ em {
   }
 }
 
-/* Contributors page */
+/* Contributor */
 
-.contributors-page .contributor {
+.Contributor {
   border-bottom: 2px solid black;
   margin-top: 25px;
   padding-bottom: 29px;
 }
 
-.contributors-page .contributor:last-child {
+.Contributor:last-child {
   border: 0;
 }
 
-.contributors-page .contributor-portrait {
+.Contributor .contributor-portrait {
   height: 275px;
   margin: auto;
   position: relative;
   width: 275px;
 }
 
-.contributors-page .contributor-portrait::before {
+.Contributor .contributor-portrait::before {
   background: var(--red);
   content: '';
   height: 275px;
@@ -530,18 +530,18 @@ em {
   z-index: -1;
 }
 
-.contributors-page .contributor-portrait-image {
+.Contributor .contributor-portrait-image {
   max-width: 100%;
   height: auto;
 }
 
-.contributors-page .contributor-name {
+.Contributor .contributor-name {
   font-family: var(--teko);
   font-size: 5rem;
   margin-top: 20px;
 }
 
-.contributors-page .contributor-bio {
+.Contributor .contributor-bio {
   background: white;
   box-shadow: 4px 4px 0 0 black;
   line-height: 1.5em;
@@ -549,87 +549,87 @@ em {
   padding: 15px 20px;
 }
 
-.contributor-books-title {
+.Contributor .contributor-books-title {
   font-family: var(--teko);
   font-size: 3rem;
   margin-top: 30px;
   text-transform: uppercase;
 }
 
-.contributor-books-products {
+.Contributor .contributor-books-products {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-top: 20px;
 }
 
-.contributor-books-product {
+.Contributor .ProductPreview {
   padding-right: 15px;
   width: 150px;
 }
 
-.contributor-books-product-cover,
-.contributor-books-product-cover-image {
+.Contributor .ProductPreview .ProductPreview-cover,
+.Contributor .ProductPreview .ProductPreview-cover-image {
   max-width: 100%;
   height: auto;
 }
 
-.contributor-books-product-title,
-.contributor-books-product-author {
+.Contributor .ProductPreview .ProductPreview-title,
+.Contributor .ProductPreview .ProductPreview-author {
   font-family: var(--teko);
 }
 
-.contributor-books-product-title {
+.Contributor .ProductPreview-title {
   font-size: 30px;
   margin-top: 5px;
 }
 
-.contributor-books-product-title a {
+.Contributor .ProductPreview-title a {
   color: var(--red);
 }
 
-.contributor-books-product-author {
+.Contributor .ProductPreview-author {
   font-size: 25px;
 }
 
 @media (min-width: 1024px) {
-  .contributors-page .contributor {
+  .Contributor {
     display: flex;
     flex-wrap: wrap;
     margin-top: 45px;
   }
 
-  .contributors-page .contributor-portrait {
+  .Contributor .contributor-portrait {
     height: 356px;
     margin: 0;
     width: 356px;
   }
 
-  .contributors-page .contributor-portrait::before {
+  .Contributor .contributor-portrait::before {
     height: 356px;
     width: 356px;
   }
 
-  .contributors-page .contributor-name {
+  .Contributor .contributor-name {
     font-size: 11rem;
     padding: 100px 100px 0;
     width: 620px;
   }
 
-  .contributors-page .contributor-bio {
+  .Contributor .contributor-bio {
     margin-top: 60px;
     padding: 45px;
   }
 
-  .contributors-page .contributor-books-title {
+  .Contributor .contributor-books-title {
     width: 100%;
   }
 
-  .contributors-page .contributor-books-products {
+  .Contributor .contributor-books-products {
     width: 100%;
   }
 
-  .contributors-page .contributor-books-product {
+  .Contributor .ProductPreview {
     padding-right: 15px;
     width: 200px;
   }

@@ -1,10 +1,31 @@
 // noinspection HtmlUnknownTarget
 
-import Link from "next/link";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 
-import BordacarreImage from "../../../../_site/images/authors/olivier-bordacarre.jpg";
-import {getContributorBySlug, getProductBySlug} from "@/lib/api";
+import { contributorSlugs, getContributorBySlug, getProductsForContributor } from "@/lib/api";
+import markdownToHtml from "@/lib/markdown-to-html";
+import { Contributor as ContributorType, Product } from "@/types";
+import ProductPreview from "@/components/ProductPreview";
+
+export async function generateStaticParams() {
+  return contributorSlugs.map((slug) => {
+    return { slug };
+  });
+}
+
+// noinspection JSUnusedGlobalSymbols
+export async function generateMetadata({ params }: RouteParams) {
+  const { slug } = params;
+  if (!contributorSlugs.includes(slug)) {
+    return {};
+  }
+
+  const contributor = getContributorBySlug(slug);
+  return {
+    title: `${contributor.name} - Fusion`,
+  }
+}
 
 type RouteParams = {
   params: {
@@ -12,41 +33,45 @@ type RouteParams = {
   };
 }
 
-export default function ContributorPage({ params }: RouteParams) {
-  const { slug } = params;
-  const contributor = getContributorBySlug(slug);
+type ContributorProps = {
+  contributor: ContributorType;
+  biography: string;
+  products: Product[],
+}
 
-  return <div className="contributor-page">
-    <article className="contributor">
+function Contributor({ contributor, biography, products }: ContributorProps) {
+return <article className="Contributor">
+    {contributor.photo &&
       <div className="contributor-portrait">
         <Image
-          src={BordacarreImage}
-          alt="Portrait de Olivier Bordaçarre"
+          src={contributor.photo}
+          alt={`Portrait de ${contributor.name}`}
+          width="356"
+          height="356"
           className="contributor-portrait-image"
         />
       </div>
-      <h1 className="contributor-name">{contributor.name}</h1>
-      <p className="contributor-bio">
-        Olivier Bordaçarre est comédien et scénariste. Son premier roman a paru en 2006 chez Fayard. Il est connu des
-        lecteurs pour <em>La France tranquille</em> et <em>Dernier désir</em> (Prix de la ville de Mauves-sur-Loire en
-        2015).
-      </p>
-      <h2 className="contributor-books-title">Livres</h2>
-      <div className="contributor-books-products">
-        <article className="contributor-books-product">
-          <Link href="/fr/p/appartement-816">
-            <Image
-              src=""
-              alt="Appartement 816"
-              className="contributor-books-product-cover"
-            />
-          </Link>
-          <h1 className="contributor-books-product-title">
-            <Link href="/fr/p/appartement-816">Appartement 816</Link>
-          </h1>
-          <p className="contributor-books-product-author">Olivier Bordaçarre</p>
-        </article>
-      </div>
-    </article>
+    }
+    <h1 className="contributor-name">{contributor.name}</h1>
+    {biography && <div className="contributor-bio" dangerouslySetInnerHTML={{__html: biography}} />}
+    <h2 className="contributor-books-title">Livres</h2>
+    <div className="contributor-books-products">
+      {products.map(product => <ProductPreview key={product.slug} product={product} />)}
+    </div>
+  </article>;
+}
+
+export default async function ContributorPage({ params }: RouteParams) {
+  const { slug } = params;
+  if (!contributorSlugs.includes(slug)) {
+    return notFound();
+  }
+
+  const contributor = getContributorBySlug(slug);
+  const biography = await markdownToHtml(contributor.biography);
+  const products = getProductsForContributor(contributor);
+
+  return <div className="contributor-page">
+    <Contributor contributor={contributor} biography={biography} products={products} />
   </div>;
 }
