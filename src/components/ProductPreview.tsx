@@ -39,7 +39,7 @@ export default function ProductPreview({
           <span className="ProductPreview-author-by">
             <Trans>by</Trans>
           </span>{' '}
-          <span className="ProductPreview-author-name">{product.author}</span>
+          <span className="ProductPreview-author-name">{product.author.name}</span>
         </p>
       </div>
     </div>

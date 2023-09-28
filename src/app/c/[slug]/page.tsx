@@ -40,7 +40,7 @@ export default async function ContributorPage({ params }: RouteParams) {
   }
 
   const contributor = getContributorBySlug(slug);
-  const biography = await markdownToHtml(contributor.biography);
+  const biography = await markdownToHtml(contributor.biography || '');
   const products = getProductsForContributor(contributor);
 
   return <>

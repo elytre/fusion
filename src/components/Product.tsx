@@ -54,7 +54,9 @@ export default function Product({
           <span className="Product-author-by">
             <Trans>by</Trans>
           </span>{' '}
-          <span className="Product-author-name">{product.author}</span>
+          <Link href={`/c/${product.author.slug}`} className="Product-author-name">
+            {product.author.name}
+          </Link>
         </p>
 
         {product.buyLink && _buildBuyLink(product.buyLink)}
@@ -172,21 +174,20 @@ function _buildExtras(extras: ExtraType[]) {
 }
 
 function _buildContributions(contributions: Contribution[]) {
-  return contributions.map((contribution) => {
-    if (contribution.role === "Author") {
+  return contributions.map(({ contributor, role }) => {
+    if (role === "Author") {
       return null;
     }
 
-    const roleSlug = contribution.role.toLowerCase();
     return (
       <p
-        className={`Product-detail detail-contributor role-${roleSlug}`}
-        key={contribution.contributor.name}
+        className={`Product-detail detail-contributor`}
+        key={contributor.name}
       >
                   <span className="detail-label">
-                    <Trans>{contribution.role}</Trans>
+                    <Trans>{role}</Trans>
                   </span>{' '}
-        <span className="detail-value">{contribution.contributor.name}</span>
+        <Link href={`/c/${contributor.slug}`} className="detail-value">{contributor.name}</Link>
       </p>
     );
   });

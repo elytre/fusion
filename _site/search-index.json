@@ -2,49 +2,49 @@
   {
     "title": "Nuit bleue",
     "slug": "nuit-bleue",
-    "author": "Simone Buchholz",
+    "author": { "name": "Simone Buchholz", "slug": ""},
     "releaseDate":"2021-03-04"
   },
   {
     "title": "Clark",
     "slug": "clark",
-    "author": "Anouk Langaney",
+    "author": { "name": "Anouk Langaney", "slug": "" },
     "releaseDate": "2021-05-27"
   },
   {
     "title": "Appartement 816",
     "slug": "appartement-816",
-    "author": "Olivier Bordaçarre",
+    "author": { "name": "Olivier Bordaçarre", "slug": "" },
     "releaseDate": "2021-10-21"
   },
   {
     "title": "Béton rouge",
     "slug": "beton-rouge",
-    "author": "Simone Buchholz",
+    "author": { "name": "Simone Buchholz", "slug": "" },
     "releaseDate": "2022-01-13"
   },
   {
     "title": "Le Mur grec",
     "slug": "le-mur-grec",
-    "author": "Nicolas Verdan",
+    "author": { "name": "Nicolas Verdan", "slug": "" },
     "releaseDate": "2022-10-06"
   },
   {
     "title": "Rue Mexico",
     "slug": "rue-mexico",
-    "author": "Simone Buchholz",
+    "author": { "name": "Simone Buchholz", "slug": "" },
     "releaseDate": "2023-02-23"
   },
   {
     "title": "Un conte parisien violent",
     "slug": "un-conte-parisien-violent",
-    "author": "Clément Milian",
+    "author": { "name": "Clément Milian", "slug": "" },
     "releaseDate": "2023-04-06"
   },
   {
     "title": "La Récolte des enfants",
     "slug": "la-recolte-des-enfants",
-    "author": "Nicolas Verdan",
+    "author": { "name": "Nicolas Verdan", "slug": "" },
     "releaseDate": "2023-10-05"
   }
 ]
