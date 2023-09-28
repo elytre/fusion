@@ -35,6 +35,6 @@ function _getProductsMatchingQuery(searchQuery: string|null): Product[] {
 
   return searchIndex.filter((product) => {
     const query = searchQuery.toLowerCase();
-    return product.title.toLowerCase().includes(query) || product.author.toLowerCase().includes(query);
+    return product.title.toLowerCase().includes(query) || product.author.name.toLowerCase().includes(query);
   });
 }

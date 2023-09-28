@@ -28,8 +28,8 @@ export type Review = {
 export type Contributor = {
   name: string;
   slug: string;
-  photo: string;
-  biography: string;
+  photo?: string;
+  biography?: string;
 };
 
 export type Contribution = {
@@ -46,7 +46,7 @@ export type Extra = {
 export type Product = {
   title: string;
   slug: string;
-  author: string;
+  author: Contributor;
   releaseDate: Date;
   ean?: string;
   contributions?: Contribution[];
