@@ -5,6 +5,7 @@ import {notFound} from "next/navigation";
 import {contributorSlugs, getContributorBySlug, getProductsForContributor} from "@/lib/api";
 import markdownToHtml from "@/lib/markdown-to-html";
 import {Contributor} from "@/components/Contributor";
+import Link from "next/link";
 
 // noinspection JSUnusedGlobalSymbols
 export async function generateStaticParams() {
@@ -42,7 +43,13 @@ export default async function ContributorPage({ params }: RouteParams) {
   const biography = await markdownToHtml(contributor.biography);
   const products = getProductsForContributor(contributor);
 
-  return <div className="contributor-page">
-    <Contributor contributor={contributor} biography={biography} products={products} />
-  </div>;
+  return <>
+    <nav className="breadcrumbs">
+      <Link href="/">Accueil</Link> {'>'} <Link href="/fr/page/auteurs">Auteurs</Link>
+    </nav>
+
+    <div className="contributor-page">
+      <Contributor contributor={contributor} biography={biography} products={products} />
+    </div>
+  </>;
 }
