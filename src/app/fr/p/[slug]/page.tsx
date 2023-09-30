@@ -1,11 +1,11 @@
-import Head from "next/head";
-import {notFound} from "next/navigation";
-import {ReactElement} from "react";
+import Head from 'next/head';
+import { notFound } from 'next/navigation';
+import { ReactElement } from 'react';
 
-import {getSiteConfig} from '@/lib/user-files';
-import {Product as ProductType, SiteConfig} from "@/types";
-import Product from "@/components/Product";
-import markdownToHtml from "@/lib/markdown-to-html";
+import { getSiteConfig } from '@/lib/user-files';
+import { Product as ProductType, SiteConfig } from '@/types';
+import Product from '@/components/Product';
+import markdownToHtml from '@/lib/markdown-to-html';
 
 import { productSlugs, getProductBySlug } from "@/lib/api/products";
 
@@ -26,26 +26,24 @@ export async function generateStaticParams() {
 
 // noinspection JSUnusedGlobalSymbols
 export async function generateMetadata({ params }: RouteParams) {
-  const { slug: requestSlug } = params;
-  const product = getProductBySlug(requestSlug);
-
-  if (!product) {
+  const { slug } = params;
+  if (!productSlugs.includes(slug)) {
     return {};
   }
 
+  const product = getProductBySlug(slug);
   return {
     title: `${product.title} - Fusion`,
   }
 }
 
 export default async function ProductPage ({ params }: RouteParams) {
-  const { slug: requestSlug } = params;
-  const product = getProductBySlug(requestSlug);
-
-  if (!product) {
+  const { slug } = params;
+  if (!productSlugs.includes(slug)) {
     return notFound();
   }
 
+  const product = getProductBySlug(slug);
   const backCoverText = await _getBackCoverText(product);
 
   return (
