@@ -1,16 +1,14 @@
 import {Metadata} from 'next';
 import Link from 'next/link';
-import * as fs from 'fs';
-import { join } from 'path';
 
 import { NewsPost } from "@/components/NewsPost";
-import {getAllNewsPostSlugs, getNewsPostBySlug} from "@/lib/api";
+import { newsPostSlugs, getNewsPostBySlug} from "@/lib/api/news";
 
 export const metadata: Metadata = {
   title: 'Actualités - Fusion',
 }
 
-const newsPosts = getAllNewsPostSlugs()
+const newsPosts = newsPostSlugs
   .map(getNewsPostBySlug)
   .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
 

@@ -1,15 +1,14 @@
-import {NewsPost} from "@/components/NewsPost";
-import {getAllNewsPostSlugs, getNewsPostBySlug} from "@/lib/api";
-import Link from "next/link";
-import {notFound} from "next/navigation";
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+
+import { NewsPost } from '@/components/NewsPost';
+import { newsPostSlugs, getNewsPostBySlug } from '@/lib/api/news';
 
 type RouteParams = {
   params: {
     slug: string;
   };
 }
-
-const newsPostSlugs = getAllNewsPostSlugs();
 
 // noinspection JSUnusedGlobalSymbols
 export async function generateStaticParams() {
@@ -38,6 +37,7 @@ export default function NewsPostPage({ params }: RouteParams) {
   }
 
   const newsPost = getNewsPostBySlug(requestSlug);
+  // noinspection HtmlUnknownTarget
   return <div className="news-post-page">
     <nav className="breadcrumbs">
       <Link href="/">Accueil</Link> {'>'} <Link href="/fr/page/actualites">Actualités</Link>

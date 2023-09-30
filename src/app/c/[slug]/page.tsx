@@ -1,11 +1,12 @@
 // noinspection HtmlUnknownTarget
 
 import {notFound} from "next/navigation";
+import Link from "next/link";
 
-import {contributorSlugs, getContributorBySlug, getProductsForContributor} from "@/lib/api";
 import markdownToHtml from "@/lib/markdown-to-html";
 import {Contributor} from "@/components/Contributor";
-import Link from "next/link";
+import { getProductsForContributor } from "@/lib/api/products";
+import { contributorSlugs, getContributorBySlug } from "@/lib/api/contributors";
 
 // noinspection JSUnusedGlobalSymbols
 export async function generateStaticParams() {

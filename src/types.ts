@@ -78,3 +78,7 @@ export type NewsPost = {
   html: boolean;
 }
 
+export type ProductContribution = {
+  contributor: string;
+  role: Contribution['role'];
+}

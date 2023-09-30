@@ -2,7 +2,8 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 import ProductList from '@/components/ProductList';
-import { products } from "../../../../lib/api";
+
+import {products} from "@/lib/api/products";
 
 export const metadata: Metadata = {
   title: 'Livres - Fusion',

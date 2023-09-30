@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import { Metadata } from 'next/types';
 
-import { getContributorsByRole } from "@/lib/api";
 import { ContributorPreview } from "@/components/ContributorPreview";
+import { getContributorsForRole } from '@/lib/api/contributors';
 
 export const metadata: Metadata = {
   title: 'Auteurs - Fusion',
 }
 
-const authors = getContributorsByRole("Author")
+const authors = getContributorsForRole("Author")
   .sort((author1, author2) => (author1.name > author2.name ? 1 : -1));
 
 export default function Page() {

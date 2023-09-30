@@ -1,15 +1,14 @@
-import Image from 'next/image';
-import LayreImage from '../../../../../_site/images/translators/claudine-layre.jpg';
 import {Metadata} from "next";
 import Link from 'next/link';
-import {getContributorsByRole} from "@/lib/api";
 import {ContributorPreview} from "@/components/ContributorPreview";
+
+import { getContributorsForRole } from '@/lib/api/contributors';
 
 export const metadata: Metadata = {
   title: 'Traducteurs - Fusion',
 }
 
-const translators = getContributorsByRole("Translator");
+const translators = getContributorsForRole("Translator");
 
 export default function Page() {
   return <div className="contributors-page">

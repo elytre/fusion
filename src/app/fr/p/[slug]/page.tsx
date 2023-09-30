@@ -6,7 +6,8 @@ import {getSiteConfig} from '@/lib/user-files';
 import {Product as ProductType, SiteConfig} from "@/types";
 import Product from "@/components/Product";
 import markdownToHtml from "@/lib/markdown-to-html";
-import {getAllProductSlugs, getProductBySlug} from "@/lib/api";
+
+import { productSlugs, getProductBySlug } from "@/lib/api/products";
 
 const site = getSiteConfig();
 
@@ -18,7 +19,7 @@ type RouteParams = {
 
 // noinspection JSUnusedGlobalSymbols
 export async function generateStaticParams() {
-  return getAllProductSlugs().map((slug) => {
+  return productSlugs.map((slug) => {
     return { slug: slug };
   });
 }
