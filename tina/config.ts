@@ -4,6 +4,28 @@ import slugify from 'slugify';
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
 
+const bannerBlock: Template = {
+  name: 'bannerBlock',
+  label: 'Bloc bannière',
+  fields: [
+    {
+      type: 'image',
+      label: 'Image',
+      name: 'image',
+    },
+    {
+      type: 'string',
+      label: 'Lien',
+      name: 'link',
+    },
+    {
+      type: 'string',
+      label: 'Texte alternatif',
+      name: 'altText',
+    }
+  ]
+}
+
 const textBlock: Template = {
   name: 'textBlock',
   label: 'Bloc de texte',
@@ -262,16 +284,11 @@ export default defineConfig({
         path: "_site/pages",
         fields: [
           {
-            type: "rich-text",
-            name: "body",
-            label: "Corps",
-          },
-          {
             type: 'object',
             list: true,
             name: 'blocks',
             label: 'Sections',
-            templates: [textBlock],
+            templates: [bannerBlock, textBlock],
           },
         ]
       },
