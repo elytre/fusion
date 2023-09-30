@@ -1,8 +1,25 @@
-import { defineConfig } from "tinacms";
-import slugify from "slugify";
+import { defineConfig, Template } from 'tinacms';
+import slugify from 'slugify';
 
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
+
+const textBlock: Template = {
+  name: 'textBlock',
+  label: 'Bloc de texte',
+  fields: [
+    {
+      type: 'string',
+      label: 'Titre',
+      name: 'title',
+    },
+    {
+      type: 'rich-text',
+      label: 'Texte',
+      name: 'text',
+    },
+  ],
+}
 
 export default defineConfig({
   branch,
@@ -238,7 +255,26 @@ export default defineConfig({
             isBody: true,
           },
         ]
-      }
+      },
+      {
+        name: "pages",
+        label: "Pages",
+        path: "_site/pages",
+        fields: [
+          {
+            type: "rich-text",
+            name: "body",
+            label: "Corps",
+          },
+          {
+            type: 'object',
+            list: true,
+            name: 'blocks',
+            label: 'Sections',
+            templates: [textBlock],
+          },
+        ]
+      },
     ],
   },
 });
