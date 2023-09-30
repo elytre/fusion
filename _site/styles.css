@@ -130,6 +130,7 @@ em {
 
 .Header-site-title a {
   background: black;
+  background-image: url('/site/logo.png');
   background-size: 100%;
   color: transparent;
   height: 105px;
@@ -179,22 +180,6 @@ em {
   font-family: var(--teko);
   font-size: 2.5rem;
   padding: 0 5px;
-}
-
-.SearchForm button {
-  border: 0;
-  background: black;
-  color: transparent;
-  cursor: pointer;
-  margin-left: 5px;
-  height: 20px;
-  width: 20px;
-}
-
-.SearchForm:hover,
-.SearchForm:hover .SearchForm-input,
-.SearchForm:hover button {
-  background: var(--grey);
 }
 
 .SearchForm:hover {
@@ -1108,6 +1093,7 @@ em {
 }
 
 .Footer::before {
+  background-image: url('/site/footer.png');
   background-position: center center;
   background-repeat: no-repeat;
   content: '';
@@ -1119,6 +1105,7 @@ em {
 }
 
 .Footer::after {
+  background-image: url('/site/footer-logo.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% 100%;
