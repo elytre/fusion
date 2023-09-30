@@ -267,17 +267,17 @@ em {
 
 /* Main > Headline */
 
-.HomeView .headline {
+.HomeView .BannerBlock {
   width: 100%;
 }
 
-.HomeView .headline-image {
+.HomeView .BannerBlock__image {
   width: 100%;
   height: auto;
 }
 
 @media (min-width: 1024px) {
-  .HomeView .headline {
+  .HomeView .BannerBlock {
     margin-top: 25px;
   }
 }

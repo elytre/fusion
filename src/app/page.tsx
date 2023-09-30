@@ -8,6 +8,30 @@ import { join } from 'path';
 
 import markdownToHtml from '@/lib/markdown-to-html';
 
+async function Block({ block }: { block: BannerBlockType|TextBlockType}) {
+  if (block._template === 'bannerBlock') {
+    return <BannerBlock block={block} />;
+  }
+
+  if (block._template === 'textBlock') {
+    return <TextBlock block={block} />;
+  }
+}
+
+async function BannerBlock({ block }: { block: BannerBlockType}) {
+  return <div className="BannerBlock">
+    <Link href={block.link}>
+      <Image
+        src={block.image}
+        width="1600"
+        height="529"
+        alt={block.altText}
+        className="BannerBlock__image"
+      />
+    </Link>
+  </div>;
+}
+
 async function TextBlock({ block }: { block: TextBlockType}) {
   const htmlContent = await markdownToHtml(block.text);
 
@@ -19,21 +43,11 @@ async function TextBlock({ block }: { block: TextBlockType}) {
 
 export default async function HomePage () {
   const homePage = _getHomePage();
-  const [textBlock] = homePage.blocks;
+  const [block1, block2] = homePage.blocks;
 
   return <div className="HomeView home-page">
 
-    <div className="headline">
-      <Link href="/fr/p/un-conte-parisien-violent">
-        <Image
-          src="/news/bandeau-Conte-Parisien-facebook.jpg"
-          width="1600"
-          height="529"
-          alt="Un conte parisien violent"
-          className="headline-image"
-        />
-      </Link>
-    </div>
+    <Block block={block1} />
 
     <div className="home-products">
       <div className="home-products-section">
@@ -114,7 +128,7 @@ export default async function HomePage () {
       </div>
     </div>
 
-    <TextBlock block={textBlock} />
+    <Block block={block2} />
 
     <div className="newsletter">
       <iframe
@@ -125,6 +139,13 @@ export default async function HomePage () {
   </div>
 }
 
+type BannerBlockType = {
+  image: string;
+  altText: string;
+  link: string;
+  _template: 'bannerBlock';
+}
+
 type TextBlockType = {
   title: string;
   text: string;
@@ -132,7 +153,7 @@ type TextBlockType = {
 }
 
 type HomePageType = {
-  blocks: TextBlockType[]
+  blocks: (BannerBlockType|TextBlockType)[];
 }
 
 function _getHomePage(): HomePageType {
