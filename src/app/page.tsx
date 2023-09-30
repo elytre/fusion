@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import bandeauConteParisienFacebook from '../../_site/images/bandeau-Conte-Parisien-facebook.jpg';
 import Link from 'next/link';
 
 export default function Home () {
@@ -8,7 +7,9 @@ export default function Home () {
     <div className="headline">
       <Link href="/fr/p/un-conte-parisien-violent">
         <Image
-          src={bandeauConteParisienFacebook}
+          src="/news/bandeau-Conte-Parisien-facebook.jpg"
+          width="1600"
+          height="529"
           alt="Un conte parisien violent"
           className="headline-image"
         />
@@ -23,7 +24,13 @@ export default function Home () {
             5 octobre 2023
           </time>
           <Link href="/fr/p/la-recolte-des-enfants">
-            <Image src={require('../../_site/images/covers/la-recolte-des-enfants.jpg')} alt="Couverture du livre La Récolte des enfants" className="home-product-cover" />
+            <Image
+              src="/covers/la-recolte-des-enfants.jpg"
+              alt="Couverture du livre La Récolte des enfants"
+              width={1024}
+              height={1448}
+              className="home-product-cover"
+            />
           </Link>
           <h1 className="home-product-title">
             <Link href="/fr/p/la-recolte-des-enfants">La Récolte des enfants</Link>
@@ -36,7 +43,13 @@ export default function Home () {
             6 avril 2023
           </time>
           <Link href="/fr/p/un-conte-parisien-violent">
-            <Image src={require('../../_site/images/covers/un-conte-parisien-violent.jpg')} alt="Couverture du livre Un conte parisien violent" className="home-product-cover" />
+            <Image
+              src="/covers/un-conte-parisien-violent.jpg"
+              alt="Couverture du livre Un conte parisien violent"
+              width={1024}
+              height={1448}
+              className="home-product-cover"
+            />
           </Link>
           <h1 className="home-product-title">
             <Link href="/fr/p/un-conte-parisien-violent">Un conte parisien violent</Link>
@@ -48,7 +61,13 @@ export default function Home () {
             23 février 2023
           </time>
           <Link href="/fr/p/rue-mexico">
-            <Image src={require('../../_site/images/covers/rue-mexico.jpg')} alt="Rue Mexico" className="home-product-cover" />
+            <Image
+              src="/covers/rue-mexico.jpg"
+              alt="Couverture du livre Rue Mexico"
+              width={1024}
+              height={1448}
+              className="home-product-cover"
+            />
           </Link>
           <h1 className="home-product-title">
             <Link href="/fr/p/rue-mexico">Rue Mexico</Link>
@@ -60,7 +79,13 @@ export default function Home () {
             06 octobre 2022
           </time>
           <Link href="/fr/p/le-mur-grec">
-            <Image src={require('../../_site/images/covers/le-mur-grec.jpg')} alt="Le Mur grec" className="home-product-cover" />
+            <Image
+              src="/covers/le-mur-grec.jpg"
+              alt="Couverture du livre Le Mur grec"
+              width={1024}
+              height={1448}
+              className="home-product-cover"
+            />
           </Link>
           <h1 className="home-product-title">
             <Link href="/fr/p/le-mur-grec">Le Mur grec</Link>

@@ -2,8 +2,6 @@ import Image from 'next/image';
 import {Metadata} from "next";
 import Link from 'next/link';
 
-import directionDeCollection from '../../../../../_site/images/direction-de-collection.jpg';
-
 export const metadata: Metadata = {
   title: 'A propos - Fusion',
 }
@@ -25,7 +23,9 @@ export default function APropos () {
       <h1>Direction de collection</h1>
 
       <Image
-        src={directionDeCollection}
+        src="/site/direction-de-collection.jpg"
+        width="1048"
+        height="699"
         alt="Photo de Caroline de Benedetti et Emeric Cloche"
         className="about-page-photo"
       />
