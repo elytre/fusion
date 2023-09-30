@@ -352,7 +352,7 @@ em {
 
 /* Main > Home > Manifest */
 
-.HomeView .manifest {
+.HomeView .TextBlock {
   background: black;
   color: white;
   margin-top: 50px;
@@ -360,7 +360,7 @@ em {
   position: relative;
 }
 
-.HomeView .manifest-title {
+.HomeView .TextBlock__title {
   background: white;
   box-shadow: 4px 4px 0 0 rgba(255, 0, 0, 1);
   color: black;
@@ -376,14 +376,14 @@ em {
   width: 275px;
 }
 
-.HomeView .manifest p {
+.HomeView .TextBlock__content p {
   font-size: 1.6rem;
   line-height: 2rem;
   text-align: justify;
   text-indent: 1rem;
 }
 
-.HomeView .manifest-link {
+.HomeView .TextBlock__content a {
   display: block;
   color: white;
   font-family: var(--teko);
@@ -393,12 +393,12 @@ em {
 }
 
 @media (min-width: 1024px) {
-  .HomeView .manifest {
+  .HomeView .TextBlock {
     margin-top: 82px;
     padding: 45px;
   }
 
-  .HomeView .manifest-title {
+  .HomeView .TextBlock__title {
     width: 325px;
   }
 }

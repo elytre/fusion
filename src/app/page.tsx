@@ -1,7 +1,26 @@
+// noinspection HtmlUnknownTarget
+
+import fs from 'fs';
 import Image from 'next/image';
 import Link from 'next/link';
+import matter from 'gray-matter';
+import { join } from 'path';
 
-export default function Home () {
+import markdownToHtml from '@/lib/markdown-to-html';
+
+async function TextBlock({ block }: { block: TextBlockType}) {
+  const htmlContent = await markdownToHtml(block.text);
+
+  return <div className="TextBlock">
+    <h1 className="TextBlock__title">{block.title}</h1>
+    <div className="TextBlock__content" dangerouslySetInnerHTML={{ __html: htmlContent }} />
+  </div>
+}
+
+export default async function HomePage () {
+  const homePage = _getHomePage();
+  const [textBlock] = homePage.blocks;
+
   return <div className="HomeView home-page">
 
     <div className="headline">
@@ -95,15 +114,7 @@ export default function Home () {
       </div>
     </div>
 
-    <div className="manifest">
-      <h1 className="manifest-title">Une nouvelle collection</h1>
-
-      <p> L’acte de naissance du roman policier revient à Edgar Allan Poe, poète et écrivain de littérature fantastique. Dans son sillage, des auteurs de référence comme Conan Doyle, Agatha Christie, Jim Thompson, Fred Vargas et tant d’autres, se nourrissent d’influences diverses. Ils et elles ont créé un va-et-vient chaque jour plus riche entre les genres. </p>
-      <p> Les nouvelles générations débordent le cadre fixé par les codes. Les éléments du polar se retrouvent dans la science-fiction, le fantastique imprègne le noir, et la littérature dite « blanche » s’empare de ces références populaires. Les imaginaires fusionnent. </p>
-      <p>
-        <Link href="/fr/page/a-propos" className="manifest-link">{'>'} Lire la suite</Link>
-      </p>
-    </div>
+    <TextBlock block={textBlock} />
 
     <div className="newsletter">
       <iframe
@@ -112,4 +123,25 @@ export default function Home () {
       </iframe>
     </div>
   </div>
+}
+
+type TextBlockType = {
+  title: string;
+  text: string;
+  _template: 'textBlock';
+}
+
+type HomePageType = {
+  blocks: TextBlockType[]
+}
+
+function _getHomePage(): HomePageType {
+  const homeDirectory = join(process.cwd(), '_site/pages');
+  const slug = 'home';
+  const newsFilePath = `${homeDirectory}/${slug}.md`;
+  const fileContents = fs.readFileSync(newsFilePath, 'utf8');
+  const { data } = matter(fileContents);
+  return {
+    blocks: data.blocks,
+  };
 }
