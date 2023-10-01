@@ -5,9 +5,8 @@ import matter from 'gray-matter';
 import { BlockData, CustomPage } from '@/types';
 import { getProductBySlug } from '@/lib/api/products';
 
-export function getHomePage(): HomePageType {
+export function getCustomPageBySlug(slug: string): HomePageType {
   const homeDirectory = join(process.cwd(), '_site/pages');
-  const slug = 'home';
   const newsFilePath = `${homeDirectory}/${slug}.md`;
   const fileContents = fs.readFileSync(newsFilePath, 'utf8');
   const {data} = matter(fileContents);
