@@ -284,18 +284,18 @@ em {
 
 /* Main > Home > Upcoming */
 
-.HomeView .home-products {
+.HomeView .ProductCarouselBlock {
   margin-top: 25px;
 }
 
-.HomeView .home-products-section {
+.HomeView .ProductCarouselBlock__section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.HomeView .home-products-section-title {
+.HomeView .ProductCarouselItem__title {
   font-family: var(--teko);
   font-weight: 300;
   font-size: 3rem;
@@ -303,48 +303,48 @@ em {
   width: 100%;
 }
 
-.HomeView .home-product {
+.HomeView .ProductCarouselItem {
   width: calc(50% - 3px);
   margin-bottom: 16px;
 }
 
-.HomeView .home-product-publication-date {
+.HomeView .ProductCarouselItem__subtitle {
   display: block;
   font-size: 0.8em;
   padding-bottom: 0.5em;
 }
 
-.HomeView .home-product-cover {
+.HomeView .ProductCarouselItem-cover {
   max-width: 100%;
   height: auto;
 }
 
-.HomeView .home-product-title {
+.HomeView .ProductCarouselItem__product-title {
   font-family: var(--teko);
   font-size: 3rem;
   font-weight: 400;
   margin-top: 15px;
 }
 
-.HomeView .home-product-title a {
+.HomeView .ProductCarouselItem__product-title a {
   color: var(--red);
 }
 
-.HomeView .home-product-author {
+.HomeView .ProductCarouselItem__product-author {
   font-family: var(--teko);
   font-size: 2.5rem;
 }
 
 @media (min-width: 768px) {
-  .HomeView .home-products {
+  .HomeView .ProductCarouselBlock {
     display: flex;
   }
 
-  .HomeView .home-products-section {
+  .HomeView .ProductCarouselBlock__section {
     width: 100%;
   }
 
-  .HomeView .home-product {
+  .HomeView .ProductCarouselItem {
     padding-right: 12px;
     width: 25%;
   }

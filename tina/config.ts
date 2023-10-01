@@ -6,7 +6,7 @@ const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
 
 const bannerBlock: Template = {
   name: 'bannerBlock',
-  label: 'Bloc bannière',
+  label: 'Bannière',
   fields: [
     {
       type: 'image',
@@ -22,6 +22,38 @@ const bannerBlock: Template = {
       type: 'string',
       label: 'Texte alternatif',
       name: 'altText',
+    }
+  ]
+}
+
+const productCarouselBlock: Template = {
+  name: 'productCarouselBlock',
+  label: 'Carousel de livres',
+  fields: [
+    {
+      type: 'object',
+      label: 'Éléments du carousel',
+      name: 'items',
+      list: true,
+      fields: [
+        {
+          type: 'string',
+          label: 'Titre',
+          name: 'title',
+        },
+        {
+          type: 'string',
+          label: 'Sous-titre',
+          name: 'subtitle',
+        },
+        {
+          type: 'reference',
+          label: 'Livre',
+          name: 'product',
+          collections: ['products'],
+          required: true,
+        }
+      ]
     }
   ]
 }
@@ -288,7 +320,7 @@ export default defineConfig({
             list: true,
             name: 'blocks',
             label: 'Sections',
-            templates: [bannerBlock, textBlock],
+            templates: [textBlock, bannerBlock, productCarouselBlock],
           },
         ]
       },
