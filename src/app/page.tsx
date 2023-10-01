@@ -1,10 +1,7 @@
-import { getHomePage } from "@/lib/api/pages";
-import { Block } from "@/app/components/blocks/Block";
+import { CustomPage } from '@/app/components/CustomPage';
+import { getCustomPageBySlug } from "@/lib/api/pages";
 
-export default async function HomePage () {
-  const homePage = getHomePage();
-
-  return <div className="HomeView home-page">
-    {homePage.blocks.map(block => <Block key={block.key} block={block} />)}
-  </div>
+export default function HomePage() {
+  const homePage = getCustomPageBySlug('home');
+  return <CustomPage page={homePage} />
 }
