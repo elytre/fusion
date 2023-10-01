@@ -82,3 +82,39 @@ export type ProductContribution = {
   contributor: string;
   role: Contribution['role'];
 }
+
+export type BannerBlockType = {
+  key: string;
+  image: string;
+  altText: string;
+  link: string;
+  _template: 'bannerBlock';
+}
+
+export type TextBlockType = {
+  key: string;
+  title: string;
+  text: string;
+  _template: 'textBlock';
+}
+
+export type ProductCarouselItemType = {
+  key: string;
+  title: string;
+  subtitle: string;
+  product: Product;
+}
+
+export type ProductCarouselBlockType = {
+  items: ProductCarouselItemType[];
+  _template: 'productCarouselBlock'
+}
+
+export type HomePageType = {
+  blocks: (BannerBlockType | TextBlockType)[];
+}
+
+export type BlockData = {
+  _template: 'textBlock' | 'bannerBlock' | 'productCarouselBlock';
+  items: [{ product: string; }];
+}
