@@ -31,7 +31,7 @@ blocks:
       références populaires. Les imaginaires fusionnent.
 
 
-      [> Lire la suite](/fr/page/a-propos)
+      [> Lire la suite](/page/a-propos)
     _template: textBlock
 title: Accueil
 ---

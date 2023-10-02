@@ -4,3 +4,8 @@ https://fusion.elytre.cloud/* https://fusionlatalante.fr/:splat 301!
 
 # TinaCMS admin
 /admin  /admin/index.html  200
+
+# Legacy URLs
+/fr/page/a-propos /page/a-propos 301
+/fr/page/contact /page/contact 301
+/fr/page/mentions-legales /page/mentions-legales 301
