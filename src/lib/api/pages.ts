@@ -5,10 +5,18 @@ import matter from 'gray-matter';
 import { BlockData, CustomPage } from '@/types';
 import { getProductBySlug } from '@/lib/api/products';
 
-export function getCustomPageBySlug(slug: string): HomePageType {
-  const homeDirectory = join(process.cwd(), '_site/pages');
-  const newsFilePath = `${homeDirectory}/${slug}.md`;
-  const fileContents = fs.readFileSync(newsFilePath, 'utf8');
+const pagesDirectory = join(process.cwd(), '_site/pages');
+
+export const pageSlugs = function () {
+  const pageFilenames = fs.readdirSync(pagesDirectory);
+  return pageFilenames.map((filename: string) => {
+    return filename.replace('.md', '');
+  });
+}();
+
+export function getCustomPageBySlug(slug: string): CustomPage {
+  const pageFilePath = `${pagesDirectory}/${slug}.md`;
+  const fileContents = fs.readFileSync(pageFilePath, 'utf8');
   const {data} = matter(fileContents);
 
   const blocks = data.blocks.map((block: BlockData) => {
@@ -24,7 +32,7 @@ export function getCustomPageBySlug(slug: string): HomePageType {
     };
   });
 
-  return {blocks};
+  return { title: data.title, slug, blocks };
 }
 
 function _buildCarouselItems(block: BlockData) {

@@ -99,22 +99,30 @@ export type TextBlockType = {
 }
 
 export type ProductCarouselItemType = {
-  key: string;
   title: string;
   subtitle: string;
   product: Product;
 }
 
 export type ProductCarouselBlockType = {
+  key: string;
   items: ProductCarouselItemType[];
   _template: 'productCarouselBlock'
 }
 
-export type HomePageType = {
-  blocks: (BannerBlockType | TextBlockType)[];
+export type CustomPage = {
+  title: string;
+  slug: string;
+  blocks: (TextBlockType|BannerBlockType|ProductCarouselBlockType)[];
 }
 
 export type BlockData = {
   _template: 'textBlock' | 'bannerBlock' | 'productCarouselBlock';
   items: [{ product: string; }];
+}
+
+export type RouteParams = {
+  params: {
+    slug: string;
+  };
 }

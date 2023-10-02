@@ -715,7 +715,7 @@ em {
 
 /* Contact page */
 
-.contact-page .contact-page-block {
+.page-contact .TextBlock {
   background: black;
   color: white;
   font-size: 1.5rem;
@@ -723,28 +723,24 @@ em {
   padding: 1px 15px 15px;
 }
 
-.contact-page .contact-page-block h2 {
+.page-contact .TextBlock h2 {
   font-family: var(--teko);
   font-size: 2.5rem;
   margin-top: 1em;
   margin-bottom: 0.5em;
 }
 
-.contact-page .contact-page-block p {
+.page-contact .TextBlock p {
   line-height: 2.5rem;
   margin-bottom: 0.5em;
 }
 
-.contact-page .contact-page-block a {
+.page-contact .TextBlock a {
   color: white;
 }
 
-.contact-page p.contact-page-manuscripts {
-  line-height: 1.25em;
-}
-
 @media (min-width: 1024px) {
-  .contact-page .contact-page-block {
+  .page-contact .TextBlock {
     margin: 25px auto;
     padding: 25px 45px 45px;
     max-width: 600px;
