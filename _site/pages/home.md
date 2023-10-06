@@ -2,7 +2,7 @@
 title: Accueil
 blocks:
   - image: /site/Bandeau_Verdan.jpg
-    link: fr/p/la-recolte-des-enfants
+    link: 'https://fusionlatalante.fr/fr/p/la-recolte-des-enfants'
     altText: Le récolte des enfants
     _template: bannerBlock
   - items:
