@@ -1,8 +1,9 @@
 ---
+title: Accueil
 blocks:
-  - image: /news/bandeau-Conte-Parisien-facebook.jpg
-    link: /fr/p/un-conte-parisien-violent
-    altText: '"Un roman noir et social qui frappe" Tram Librairie'
+  - image: /site/Bandeau_Verdan.jpg
+    link: fr/p/la-recolte-des-enfants
+    altText: Le récolte des enfants
     _template: bannerBlock
   - items:
       - title: À paraître
@@ -22,7 +23,7 @@ blocks:
       écrivain de littérature fantastique. Dans son sillage, des auteurs de
       référence comme Conan Doyle, Agatha Christie, Jim Thompson, Fred Vargas et
       tant d’autres, se nourrissent d’influences diverses. Ils et elles ont créé
-      un va-et-vient chaque jour plus riche entre les genres. 
+      un va-et-vient chaque jour plus riche entre les genres.
 
 
       Les nouvelles générations débordent le cadre fixé par les codes. Les
@@ -33,12 +34,5 @@ blocks:
 
       [> Lire la suite](/page/a-propos)
     _template: textBlock
-title: Accueil
 ---
-
-
-
-
-
-
 
