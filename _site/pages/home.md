@@ -6,7 +6,7 @@ blocks:
     altText: Le récolte des enfants
     _template: bannerBlock
   - items:
-      - title: Nouveauté
+      - title: Nouveautés
         subtitle: 5 octobre 2023
         product: _site/catalog/la-recolte-des-enfants.md
       - title: ''
