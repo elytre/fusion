@@ -1,5 +1,5 @@
 ---
-title: RENCONTRE AVEC SIMONE BUCHHOLZ AU FESTIVAL DU POLAR DE VILLENEUVE LEZ AVIGNON
+title: Rencontre avec Simone Buchholz au Festival du polar de Villeneuve Lez Avignon
 date: 2023-11-10T23:00:00.000Z
 image: /news/Villeneuve_vignette copie.jpg
 imageAlt: Festival du polar
