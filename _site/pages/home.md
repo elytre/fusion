@@ -9,7 +9,7 @@ blocks:
       - title: Nouveauté
         subtitle: 5 octobre 2023
         product: _site/catalog/la-recolte-des-enfants.md
-      - title: Nouveautés
+      - title: ''
         subtitle: 6 avril 2023
         product: _site/catalog/un-conte-parisien-violent.md
       - subtitle: 23 février 2023
