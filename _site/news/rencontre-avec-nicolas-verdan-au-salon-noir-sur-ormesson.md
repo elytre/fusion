@@ -6,3 +6,5 @@ imageAlt: Noir sur ormesson
 ---
 
 Nicolas Verdan sera présent sur le Festival Noir sur Ormesson, le 18 et 19 novembre 2023.Une belle occasion de découvrir son dernier roman : La récolte des enfants.
+
+\> [Plus d'informations](https://noirsurormesson.gpsea.fr/) \<
