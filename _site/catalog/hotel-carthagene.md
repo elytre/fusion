@@ -6,6 +6,8 @@ price: 19.9
 pageCount: 224
 originalLanguage: de
 contributions:
+  - contributor: _site/contributors/claudine-layre.md
+    role: Translator
   - contributor: _site/contributors/simone-buchholz.md
     role: Author
 coverImage: /covers/buchholz-hotel-carthagene.jpg
@@ -19,5 +21,5 @@ Aujourd’hui, hôtel River Palace. Dernier étage. Douze hommes armés prennent
 
 De flash-backs en introspections psychologiques, à coups d’humour et de dialogues affûtés, Simone Buchholz livre un nouvel opus sous forme de huis clos tendu.
 
-Hôtel Carthagène est au croisement du roman noir, du film d’action et de braquage. 
+Hôtel Carthagène est au croisement du roman noir, du film d’action et de braquage.
 L’autrice y explore sans indulgence une société criminelle et machiste, et fait déguster à Chastity Riley un cocktail au goût de bilan personnel.
