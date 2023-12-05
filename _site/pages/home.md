@@ -7,7 +7,7 @@ blocks:
     _template: bannerBlock
   - items:
       - title: À paraître
-        subtitle: Hôtel Carthagène
+        subtitle: ' 8 février 2024'
         product: _site/catalog/hotel-carthagene.md
       - title: Nouveautés
         subtitle: 5 octobre 2023
