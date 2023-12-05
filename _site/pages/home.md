@@ -6,6 +6,9 @@ blocks:
     altText: Le récolte des enfants
     _template: bannerBlock
   - items:
+      - title: À paraître
+        subtitle: Hôtel Carthagène
+        product: _site/catalog/hotel-carthagene.md
       - title: Nouveautés
         subtitle: 5 octobre 2023
         product: _site/catalog/la-recolte-des-enfants.md
@@ -14,8 +17,6 @@ blocks:
         product: _site/catalog/un-conte-parisien-violent.md
       - subtitle: 23 février 2023
         product: _site/catalog/rue-mexico.md
-      - subtitle: 6 octobre 2022
-        product: _site/catalog/le-mur-grec.md
     _template: productCarouselBlock
   - title: Une nouvelle collection
     text: >
