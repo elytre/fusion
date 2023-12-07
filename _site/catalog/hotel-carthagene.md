@@ -21,5 +21,5 @@ Aujourd’hui, hôtel River Palace. Dernier étage. Douze hommes armés prennent
 
 De flash-backs en introspections psychologiques, à coups d’humour et de dialogues affûtés, Simone Buchholz livre un nouvel opus sous forme de huis clos tendu.
 
-Hôtel Carthagène est au croisement du roman noir, du film d’action et de braquage.
-L’autrice y explore sans indulgence une société criminelle et machiste, et fait déguster à Chastity Riley un cocktail au goût de bilan personnel.
+**Hôtel Carthagène est au croisement du roman noir, du film d’action et de braquage.
+L’autrice y explore sans indulgence une société criminelle et machiste, et fait déguster à Chastity Riley un cocktail au goût de bilan personnel.**
