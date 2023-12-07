@@ -1,9 +1,9 @@
 ---
 title: Accueil
 blocks:
-  - image: /site/Bandeau_Verdan.jpg
+  - image: /site/Hotel_Carthagene_RSX.jpg
     link: 'https://fusionlatalante.fr/fr/p/la-recolte-des-enfants'
-    altText: Le récolte des enfants
+    altText: Hôtel Carthagène
     _template: bannerBlock
   - items:
       - title: À paraître
