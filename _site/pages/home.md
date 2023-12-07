@@ -2,7 +2,7 @@
 title: Accueil
 blocks:
   - image: /site/Hotel_Carthagene_RSX.jpg
-    link: 'https://fusionlatalante.fr/fr/p/la-recolte-des-enfants'
+    link: 'https://fusionlatalante.fr/fr/p/hotel-carthagene'
     altText: Hôtel Carthagène
     _template: bannerBlock
   - items:
