@@ -1,5 +1,5 @@
 ---
-title: Rencontre musicale avec clément Milian au théâtre la ruche
+title: 'Rencontre musicale avec clément Milian, au théâtre la ruche'
 date: 2023-12-13T23:00:00.000Z
 image: /news/La ruche_vignette.jpg
 imageAlt: La ruche
