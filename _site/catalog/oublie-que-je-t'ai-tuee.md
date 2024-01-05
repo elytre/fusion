@@ -5,6 +5,9 @@ releaseDate: 2024-03-20T23:00:00.000Z
 price: 19.9
 pageCount: 288
 originalLanguage: fr
+contributions:
+  - contributor: _site/contributors/kenan-gorgun.md
+    role: Author
 coverImage: /covers/gorgun-oublie-que-je-t-ai-tuee.jpg
 ---
 
