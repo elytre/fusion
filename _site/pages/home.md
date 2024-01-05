@@ -6,8 +6,9 @@ blocks:
     altText: Hôtel Carthagène
     _template: bannerBlock
   - items:
-      - subtitle: 23 février 2023
-        product: _site/catalog/rue-mexico.md
+      - title: À paraître
+        subtitle: 21 mars 2024
+        product: _site/catalog/oublie-que-je-t'ai-tuee.md
       - title: ''
         subtitle: ' 8 février 2024'
         product: _site/catalog/hotel-carthagene.md
