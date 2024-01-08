@@ -75,7 +75,7 @@ export default function Product({
               <Trans>Release date</Trans>
             </span>{' '}
             <span className="detail-value">
-              {product.releaseDate.toLocaleDateString()}
+              {product.releaseDate.toLocaleDateString('fr-FR')}
             </span>
           </p>
         ) : null}
