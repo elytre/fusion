@@ -9,7 +9,7 @@ blocks:
       - title: À paraître
         subtitle: 21 mars 2024
         product: _site/catalog/oublie-que-je-t'ai-tuee.md
-      - title: ''
+      - title: Nouveautés
         subtitle: ' 8 février 2024'
         product: _site/catalog/hotel-carthagene.md
       - title: ''
