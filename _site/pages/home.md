@@ -12,7 +12,7 @@ blocks:
       - title: ''
         subtitle: ' 8 février 2024'
         product: _site/catalog/hotel-carthagene.md
-      - title: Nouveautés
+      - title: ''
         subtitle: 5 octobre 2023
         product: _site/catalog/la-recolte-des-enfants.md
       - title: ''
