@@ -1,9 +1,9 @@
 ---
 title: Accueil
 blocks:
-  - image: /site/Hotel_Carthagene_RSX.jpg
+  - image: /site/Oublie_que_je_tai_tuee_FB.jpg
     link: 'https://fusionlatalante.fr/fr/p/hotel-carthagene'
-    altText: Hôtel Carthagène
+    altText: Oublie que je t'ai tuée
     _template: bannerBlock
   - items:
       - title: À paraître
