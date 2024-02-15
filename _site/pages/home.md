@@ -2,7 +2,7 @@
 title: Accueil
 blocks:
   - image: /site/Oublie_que_je_tai_tuee_FB.jpg
-    link: 'https://fusionlatalante.fr/fr/p/hotel-carthagene'
+    link: 'https://fusionlatalante.fr/fr/p/oublie-que-je-t''ai-tuee'
     altText: Oublie que je t'ai tuée
     _template: bannerBlock
   - items:
