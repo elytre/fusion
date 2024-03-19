@@ -5,6 +5,8 @@ image: /news/Quais_de_polar_2024.jpg
 imageAlt: Quais du polar
 ---
 
-Kenan Görgün et Olivier Bordaçarre seront au festival Quais du polar, du 5 au 7 avril 2024, à Lyon.
+Kenan Görgün et Olivier Bordaçarre seront au festival Quais du polar, du 5 au 7 avril 2024, à Lyon.\
+\
+Rencontre avec Kenan Görgün :  Dimanche 7 avril, à 10h. Sur la thématique : "Grands sentiments, grands dépassements : du parfait amour à l'amour fatal"
 
-[Plus d'informations ](https://www.quaisdupolar.com/) 
+[Plus d'informations ](https://www.quaisdupolar.com/)
