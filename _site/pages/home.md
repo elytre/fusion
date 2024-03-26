@@ -6,10 +6,10 @@ blocks:
     altText: Oublie que je t'ai tuée
     _template: bannerBlock
   - items:
-      - title: À paraître
+      - title: Nouveautés
         subtitle: 21 mars 2024
         product: _site/catalog/oublie-que-je-t'ai-tuee.md
-      - title: Nouveautés
+      - title: ''
         subtitle: ' 8 février 2024'
         product: _site/catalog/hotel-carthagene.md
       - title: ''
