@@ -27,6 +27,9 @@ export async function generateMetadata({ params }: RouteParams) {
   const newsPost = getNewsPostBySlug(requestSlug);
   return {
     title: `${newsPost.title} - Fusion`,
+    alternates: {
+    canonical: `https://fusionlatalante.fr/news/${requestSlug}`,
+  },
   }
 }
 

@@ -25,6 +25,9 @@ export async function generateMetadata({ params }: RouteParams) {
   const contributor = getContributorBySlug(slug);
   return {
     title: `${contributor.name} - Fusion`,
+    alternates: {
+    canonical: `https://fusionlatalante.fr/fr/${slug}`,
+  },
   }
 }
 

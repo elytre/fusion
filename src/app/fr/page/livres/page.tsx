@@ -7,6 +7,9 @@ import {products} from "@/lib/api/products";
 
 export const metadata: Metadata = {
   title: 'Livres - Fusion',
+  alternates: {
+    canonical: 'https://fusionlatalante.fr/fr/page/livres',
+  },
 }
 
 export default function Page() {

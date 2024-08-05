@@ -34,6 +34,9 @@ export async function generateMetadata({ params }: RouteParams) {
   const product = getProductBySlug(slug);
   return {
     title: `${product.title} - Fusion`,
+    alternates: {
+      canonical: `https://fusionlatalante.fr/fr/p/${slug}`,
+    },
   }
 }
 

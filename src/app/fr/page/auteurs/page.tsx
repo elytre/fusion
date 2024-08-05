@@ -6,6 +6,9 @@ import { getContributorsForRole } from '@/lib/api/contributors';
 
 export const metadata: Metadata = {
   title: 'Auteurs - Fusion',
+  alternates: {
+    canonical: 'https://fusionlatalante.fr/fr/page/auteurs',
+  },
 }
 
 const authors = getContributorsForRole("Author")

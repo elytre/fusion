@@ -6,6 +6,9 @@ import { getContributorsForRole } from '@/lib/api/contributors';
 
 export const metadata: Metadata = {
   title: 'Traducteurs - Fusion',
+  alternates: {
+    canonical: 'https://fusionlatalante.fr/fr/page/traducteurs',
+  },
 }
 
 const translators = getContributorsForRole("Translator");
