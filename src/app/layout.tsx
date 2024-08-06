@@ -13,6 +13,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Fusion',
   description: 'Le site de la collection Fusion, par les éditions L\'Atalante',
+  alternates: {
+    canonical: 'https://fusionlatalante.fr',
+  },
 }
 
 export default function RootLayout({
