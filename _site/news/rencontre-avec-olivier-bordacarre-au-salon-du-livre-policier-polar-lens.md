@@ -1,5 +1,5 @@
 ---
-title: Rencontre avec Olivier Bordaçarre au Salon du livre policier Polar Lens
+title: Rencontre avec Olivier Bordaçarre au Salon du livre policier Polar Lens 2024
 date: 2024-03-15T23:00:00.000Z
 image: /news/PolarLens_vignette_2024.jpg
 imageAlt: Polarlens
