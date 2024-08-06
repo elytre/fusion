@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 
 import { RouteParams } from "@/types";
 import { getCustomPageBySlug, pageSlugs } from "@/lib/api/pages";
-import { CustomPage } from "@/app/components/CustomPage";
+import { CustomPage } from "@/components/CustomPage";
 
 // noinspection JSUnusedGlobalSymbols
 export async function generateStaticParams() {

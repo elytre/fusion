@@ -1,4 +1,4 @@
-import { CustomPage } from '@/app/components/CustomPage';
+import { CustomPage } from '@/components/CustomPage';
 import { getCustomPageBySlug } from "@/lib/api/pages";
 
 export default function HomePage() {

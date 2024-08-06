@@ -1,5 +1,5 @@
 import { ProductCarouselBlockType } from '@/types';
-import { ProductCarouselItem } from '@/app/components/blocks/ProductCarouselItem';
+import { ProductCarouselItem } from '@/components/blocks/ProductCarouselItem';
 
 export function ProductCarouselBlock({block}: { block: ProductCarouselBlockType }) {
   return <div className="ProductCarouselBlock">

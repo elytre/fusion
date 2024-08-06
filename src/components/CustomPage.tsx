@@ -1,4 +1,4 @@
-import { Block } from '@/app/components/blocks/Block';
+import { Block } from '@/components/blocks/Block';
 import { CustomPage } from "@/types";
 
 export function CustomPage({ page }: { page: CustomPage; }) {
