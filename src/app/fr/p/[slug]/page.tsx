@@ -8,6 +8,7 @@ import Product from '@/components/Product';
 import markdownToHtml from '@/lib/markdown-to-html';
 
 import { productSlugs, getProductBySlug } from "@/lib/api/products";
+import {formatForMetaDescription} from "@/lib/formatForMetaDescription";
 
 const site = getSiteConfig();
 
@@ -34,6 +35,7 @@ export async function generateMetadata({ params }: RouteParams) {
   const product = getProductBySlug(slug);
   return {
     title: `${product.title} - Fusion`,
+    description: formatForMetaDescription(product.backCoverText),
     alternates: {
       canonical: `https://fusionlatalante.fr/fr/p/${slug}`,
     },

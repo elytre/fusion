@@ -7,6 +7,7 @@ import {products} from "@/lib/api/products";
 
 export const metadata: Metadata = {
   title: 'Livres - Fusion',
+  description: 'Tous les livres de la collection Fusion, par les éditions L\'Atalante',
   alternates: {
     canonical: 'https://fusionlatalante.fr/fr/page/livres',
   },

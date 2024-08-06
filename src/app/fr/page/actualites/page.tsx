@@ -6,6 +6,7 @@ import { newsPostSlugs, getNewsPostBySlug} from "@/lib/api/news";
 
 export const metadata: Metadata = {
   title: 'Actualités - Fusion',
+  description: 'Les dernières actualités de la collection Fusion, par les éditions L\'Atalante',
   alternates: {
     canonical: 'https://fusionlatalante.fr/fr/page/actualites',
   },

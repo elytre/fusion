@@ -22,6 +22,7 @@ export async function generateMetadata({ params }: RouteParams) {
   const page = getCustomPageBySlug(slug);
   return {
     title: `${page.title} - Fusion`,
+    description: '',
     alternates: {
       canonical: `https://fusionlatalante.fr/page/${slug}`,
     },

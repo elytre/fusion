@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 
 import { NewsPost } from '@/components/NewsPost';
 import { newsPostSlugs, getNewsPostBySlug } from '@/lib/api/news';
+import { formatForMetaDescription } from "@/lib/formatForMetaDescription";
 
 type RouteParams = {
   params: {
@@ -27,9 +28,10 @@ export async function generateMetadata({ params }: RouteParams) {
   const newsPost = getNewsPostBySlug(requestSlug);
   return {
     title: `${newsPost.title} - Fusion`,
+    description: formatForMetaDescription(newsPost.content),
     alternates: {
-    canonical: `https://fusionlatalante.fr/news/${requestSlug}`,
-  },
+      canonical: `https://fusionlatalante.fr/news/${requestSlug}`,
+    },
   }
 }
 

@@ -7,6 +7,7 @@ import markdownToHtml from "@/lib/markdown-to-html";
 import {Contributor} from "@/components/Contributor";
 import { getProductsForContributor } from "@/lib/api/products";
 import { contributorSlugs, getContributorBySlug } from "@/lib/api/contributors";
+import { formatForMetaDescription } from "@/lib/formatForMetaDescription";
 
 // noinspection JSUnusedGlobalSymbols
 export async function generateStaticParams() {
@@ -25,9 +26,10 @@ export async function generateMetadata({ params }: RouteParams) {
   const contributor = getContributorBySlug(slug);
   return {
     title: `${contributor.name} - Fusion`,
+    description: formatForMetaDescription(contributor.biography),
     alternates: {
-    canonical: `https://fusionlatalante.fr/fr/${slug}`,
-  },
+      canonical: `https://fusionlatalante.fr/fr/${slug}`,
+    },
   }
 }
 
