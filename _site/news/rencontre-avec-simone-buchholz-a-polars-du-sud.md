@@ -1,6 +1,6 @@
 ---
 title: Rencontre avec Simone Buchholz à Polars du Sud
-date: 2024-10-11T22:00:00.000Z
+date: 2024-09-02T22:00:00.000Z
 image: /news/Toulouse_vignette2024.jpg
 imageAlt: Toulouse Polars du Sud
 ---
