@@ -9,6 +9,11 @@ export const ProductCarouselBlock: Template = {
       label: 'Éléments du carousel',
       name: 'items',
       list: true,
+      ui: {
+        itemProps: (item: Record<string, any>) => ({
+          label: `${item.subtitle} : ${_getProductTitleFromFileName(item)}`,
+        }),
+      },
       fields: [
         {
           type: 'string',
@@ -30,4 +35,10 @@ export const ProductCarouselBlock: Template = {
       ]
     }
   ]
+}
+
+function _getProductTitleFromFileName(item: Record<string, any>) {
+  const regex = /_site\/catalog\/(.*)$/gm;
+  const matches = regex.exec(item.product);
+  return matches ? matches[1] : 'inconnu';
 }
