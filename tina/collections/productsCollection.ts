@@ -1,5 +1,12 @@
-import { Collection } from 'tinacms';
+import {Collection} from 'tinacms';
 import slugify from 'slugify';
+
+const roles = [
+  {label: "Auteur·trice", value: "Author"},
+  {label: "Traducteur·trice", value: "Translator"},
+  {label: "Illustrateur·trice de couverture", value: "Cover artist"},
+  {label: "Photographe", value: "Photographer"},
+];
 
 export const productsCollection: Collection = {
   name: "products",
@@ -56,6 +63,11 @@ export const productsCollection: Collection = {
       name: "contributions",
       type: "object",
       list: true,
+      ui: {
+        itemProps: (item: Record<string, any>) => ({
+          label: `${_getContributorNameFromFileName(item)} (${_getRoleLabelFromValue(item)})`
+        }),
+      },
       fields: [
         {
           label: "Contributeur·trice",
@@ -67,12 +79,7 @@ export const productsCollection: Collection = {
           label: "Role",
           name: "role",
           type: "string",
-          options: [
-            {label: "Auteur·trice", value: "Author"},
-            {label: "Traducteur·trice", value: "Translator"},
-            {label: "Illustrateur·trice de couverture", value: "Cover artist"},
-            {label: "Photographe", value: "Photographer"},
-          ]
+          options: roles,
         },
       ]
     },
@@ -94,6 +101,9 @@ export const productsCollection: Collection = {
       name: "reviews",
       type: "object",
       list: true,
+      ui: {
+        itemProps: (item: Record<string, any>) => ({label: `${item.source} : ${item.text}`})
+      },
       fields: [
         {
           label: "Citation",
@@ -117,6 +127,9 @@ export const productsCollection: Collection = {
       name: "extras",
       type: "object",
       list: true,
+      ui: {
+        itemProps: (item: Record<string, any>) => ({label: `${item.title} (${item.type})`})
+      },
       fields: [
         {
           label: "Type",
@@ -138,3 +151,14 @@ export const productsCollection: Collection = {
     },
   ],
 };
+
+function _getRoleLabelFromValue(item: Record<string, any>) {
+  return roles.find((role) => role.value === item.role)?.label;
+}
+
+function _getContributorNameFromFileName(item: Record<string, any>) {
+  const regex = /_site\/contributors\/(.*).md/gm;
+  const matches = regex.exec(item.contributor);
+  const contributorName = matches ? matches[1] : 'inconnu·e';
+  return contributorName.split('-').map((word) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+}
