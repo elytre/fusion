@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: RouteParams) {
     title: `${contributor.name} - Fusion`,
     description: formatForMetaDescription(contributor.biography),
     alternates: {
-      canonical: `https://fusionlatalante.fr/fr/${slug}`,
+      canonical: `https://fusionlatalante.fr/c/${slug}`,
     },
   }
 }
