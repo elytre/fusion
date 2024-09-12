@@ -1,6 +1,6 @@
 import React from 'react';
 import Trans from './Trans';
-import Image from "next/image";
+import Image from "./Image";
 import Link from 'next/link';
 
 import Price from "@/components/Price";
@@ -34,8 +34,8 @@ export default function Product({
           <Image
             src={product.coverImage}
             alt={product.title}
-            width={1024}
-            height={1448}
+            width={300}
+            height={424}
             className="Product-cover-image"
           />
         </div>

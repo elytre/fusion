@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from '../Image';
 
 import { BannerBlockType } from '@/types';
 
@@ -8,8 +8,8 @@ export async function BannerBlock({block}: { block: BannerBlockType }) {
     <Link href={block.link}>
       <Image
         src={block.image}
-        width="1600"
-        height="529"
+        width={1600}
+        height={529}
         alt={block.altText}
         className="BannerBlock__image"
       />

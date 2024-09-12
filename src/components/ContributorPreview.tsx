@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from './Image';
 import Link from 'next/link';
 
 import { Contributor as ContributorType } from "@/types";
@@ -15,8 +15,8 @@ export function ContributorPreview({ contributor }: ContributorProps) {
           <Image
             src={contributor.photo}
             alt={`Portrait de ${contributor.name}`}
-            width="356"
-            height="356"
+            width={356}
+            height={356}
             className="ContributorPreview-portrait-image"
           />
         </Link>

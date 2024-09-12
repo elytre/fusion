@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "./Image";
 import ProductPreview from "@/components/ProductPreview";
 import {Contributor as ContributorType, Product} from "@/types";
 
@@ -15,8 +15,8 @@ export function Contributor({contributor, biography, products}: ContributorProps
         <Image
           src={contributor.photo}
           alt={`Portrait de ${contributor.name}`}
-          width="356"
-          height="356"
+          width={356}
+          height={356}
           className="contributor-portrait-image"
         />
       </div>

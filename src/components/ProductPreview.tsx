@@ -1,6 +1,6 @@
 import React from 'react';
 import Trans from './Trans';
-import Image from "next/image";
+import Image from "./Image";
 import Link from 'next/link';
 
 import {
@@ -22,8 +22,8 @@ export default function ProductPreview({
             <Image
               src={product.coverImage}
               alt={product.title}
-              width={1024}
-              height={1448}
+              width={400}
+              height={566}
               className="ProductPreview-cover-image"
             />
           </Link>
