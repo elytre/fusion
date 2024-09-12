@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "./Image";
 
 import {NewsPost} from "@/types";
 import markdownToHtml from "@/lib/markdown-to-html";
@@ -19,8 +19,8 @@ export async function NewsPost({post}: NewsPostProps) {
         alt=""
         role="presentation"
         className="news-illustration-image"
-        width="524"
-        height="258"
+        width={524}
+        height={258}
       />
     </div>
     <h1 className="news-title">

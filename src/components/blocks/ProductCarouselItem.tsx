@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from '../Image';
 
 import { ProductCarouselItemType } from '@/types';
 
@@ -15,8 +15,8 @@ export function ProductCarouselItem({item}: { item: ProductCarouselItemType }) {
         <Image
           src={item.product.coverImage}
           alt={`Couverture du livre ${item.product.title}`}
-          width={1024}
-          height={1448}
+          width={232}
+          height={328}
           className="ProductCarouselItem-cover"
         />
       }
