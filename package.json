@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "tinacms dev -c \"next dev\"",
-    "optimize": "npx @343dev/optimizt public",
-    "build": "yarn optimize && tinacms build && next build",
+    "optimize": "npx @343dev/optimizt out",
+    "build": "tinacms build && next build && yarn optimize",
     "start": "tinacms build && next start",
     "lint": "next lint"
   },
