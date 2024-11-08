@@ -24,9 +24,14 @@ export async function generateMetadata({ params }: RouteParams) {
   }
 
   const contributor = getContributorBySlug(slug);
+  let metaDescription = `Les livres de ${contributor.name} dans la collection Fusion`;
+  if (contributor.biography?.trim()) {
+    metaDescription = formatForMetaDescription(contributor.biography);
+  }
+
   return {
     title: `${contributor.name} - Fusion`,
-    description: formatForMetaDescription(contributor.biography),
+    description: metaDescription,
     alternates: {
       canonical: `https://fusionlatalante.fr/c/${slug}`,
     },
