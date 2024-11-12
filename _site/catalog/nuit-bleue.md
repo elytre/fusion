@@ -1,15 +1,19 @@
 ---
-ean: '9791036000638'
-title: Nuit bleue
 author: Simone Buchholz
+ean: '9791036000638'
+title: 'Nuit bleue '
 releaseDate: 2021-03-04T00:00:00.000Z
+price: 19.9
 pageCount: 240
 originalLanguage: de
-price: 19.9
-extras:
-  - type: youtube
-    title: Bande-annonce de Nuit bleue
-    href: 'https://www.youtube.com/watch?v=5OpS5cPGfcw'
+contributions:
+  - contributor: _site/contributors/simone-buchholz.md
+    role: Author
+  - contributor: _site/contributors/claudine-layre.md
+    role: Translator
+  - contributor: _site/contributors/olivier-lavigne.md
+    role: Cover artist
+coverImage: /covers/nuit-bleue.jpg
 reviews:
   - text: Un très grand talent de la littérature noire.
     author: Élodie
@@ -39,14 +43,10 @@ reviews:
       croisée de tous les possibles.
     author: Eric
     source: Librairie La Tache Noire – Strasbourg
-coverImage: /covers/nuit-bleue.jpg
-contributions:
-  - contributor: _site/contributors/simone-buchholz.md
-    role: Author
-  - contributor: _site/contributors/claudine-layre.md
-    role: Translator
-  - contributor: _site/contributors/olivier-lavigne.md
-    role: Cover artist
+extras:
+  - type: youtube
+    title: Bande-annonce de Nuit bleue
+    href: 'https://www.youtube.com/watch?v=5OpS5cPGfcw'
 ---
 
 « *Joe, qui vous a brisé les os ?*\
