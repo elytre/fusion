@@ -6,7 +6,7 @@ blocks:
     altText: Oublie que je t'ai tuée
     _template: bannerBlock
   - items:
-      - title: River Clyde
+      - title: À paraître
         subtitle: 13 février 2025
         product: _site/catalog/river-clyde.md
       - title: Nouveautés
