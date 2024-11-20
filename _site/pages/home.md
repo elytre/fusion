@@ -6,6 +6,9 @@ blocks:
     altText: Oublie que je t'ai tuée
     _template: bannerBlock
   - items:
+      - title: River Clyde
+        subtitle: 13 février 2025
+        product: _site/catalog/river-clyde.md
       - title: Nouveautés
         subtitle: 21 mars 2024
         product: _site/catalog/oublie-que-je-t'ai-tuee.md
@@ -15,9 +18,6 @@ blocks:
       - title: ''
         subtitle: 5 octobre 2023
         product: _site/catalog/la-recolte-des-enfants.md
-      - title: ''
-        subtitle: 6 avril 2023
-        product: _site/catalog/un-conte-parisien-violent.md
     _template: productCarouselBlock
   - title: Une nouvelle collection
     text: >
