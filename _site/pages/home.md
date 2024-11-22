@@ -1,9 +1,9 @@
 ---
 title: Accueil
 blocks:
-  - image: /site/Oublie_que_je_tai_tuee_FB.jpg
-    link: 'https://fusionlatalante.fr/fr/p/oublie-que-je-t''ai-tuee'
-    altText: Oublie que je t'ai tuée
+  - image: /site/BANDEAU_RIVER_CLYDE.jpg
+    link: 'https://fusionlatalante.fr/fr/p/river-clyde'
+    altText: River Clyde
     _template: bannerBlock
   - items:
       - title: À paraître
