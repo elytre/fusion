@@ -4,14 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "tinacms dev -c \"next dev\"",
-    "optimize": "npx @343dev/optimizt out",
-    "build": "tinacms build && next build && npm run optimize",
+    "build": "tinacms build && next build",
     "postbuild": "next-sitemap",
     "start": "tinacms build && next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@343dev/optimizt": "^6.0.0",
     "@mdx-js/loader": "^2.3.0",
     "@mdx-js/react": "^2.3.0",
     "@next/mdx": "^13.4.19",
