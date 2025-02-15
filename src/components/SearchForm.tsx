@@ -19,7 +19,7 @@ export default function SearchForm(): React.ReactElement {
   }, [query, push]);
 
   return (
-    <form action="/search" className="SearchForm">
+    <form action="/fr/search" className="SearchForm">
       <input
         name="query"
         type="search"
