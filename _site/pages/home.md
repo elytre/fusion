@@ -6,7 +6,7 @@ blocks:
     altText: River Clyde
     _template: bannerBlock
   - items:
-      - title: À paraître
+      - title: Nouveautés
         subtitle: 13 février 2025
         product: _site/catalog/river-clyde.md
       - title: ''
