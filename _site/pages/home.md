@@ -9,7 +9,7 @@ blocks:
       - title: À paraître
         subtitle: 13 février 2025
         product: _site/catalog/river-clyde.md
-      - title: Nouveautés
+      - title: ''
         subtitle: 21 mars 2024
         product: _site/catalog/oublie-que-je-t'ai-tuee.md
       - title: ''
